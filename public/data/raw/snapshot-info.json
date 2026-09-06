@@ -1,0 +1,8 @@
+{
+  "fetchedAt": "2026-09-06T12:52:13.395Z",
+  "sources": [
+    "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000",
+    "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404",
+    "https://data.objkt.com/v3/graphql"
+  ]
+}

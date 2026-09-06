@@ -1,0 +1,110 @@
+[
+  {
+    "id": "generative",
+    "theme": "generative",
+    "order": 1,
+    "title": "生成之間",
+    "name": "生成之間",
+    "titleEn": "Between Rules and Chance",
+    "subtitle": "當規則成為畫筆，偶然留下形狀",
+    "description": "從一組規則出發，作品在秩序與偶然之間長出差異。線條、色面與反覆出現的結構，讓程式成為觀看世界的方法。這一廳沿著 FAB DAO 收藏的生成藝術展開：先看整體的節奏，再走近每一件作品的細節。共同收藏，也讓不同創作者的實驗在同一個空間相遇。",
+    "color": "#476879",
+    "documentIds": ["project-percentage", "ars-2022-project-percentage"],
+    "sourceUrls": ["https://fabdao.world/project-percentage/", "https://ars.electronica.art/planetb/en/studiotopia/"],
+    "curatorialInterpretation": true,
+    "selection": {
+      "artworkTheme": "generative",
+      "featuredOnly": true,
+      "sortBy": "curatorialOrder",
+      "principle": "以已核對持有的生成、幾何與視覺演算作品為主；具動態原作時，靜態畫面明示為預覽。"
+    },
+    "room": {
+      "character": "藍灰展牆、奶油色柱式與細金框，沿長廊形成舒緩節奏。",
+      "lighting": "柔和頂光與框外聚光；作品畫面維持原色，不承受暖色光染。",
+      "arrangement": "先呈現明確的幾何秩序，再轉向密度、質地與有機變化。"
+    },
+    "verificationStatus": "curatorial_text_grounded_in_public_sources",
+    "lastVerifiedAt": "2026-09-06"
+  },
+  {
+    "id": "islands",
+    "theme": "islands",
+    "order": 2,
+    "title": "群山成島",
+    "name": "群山成島",
+    "titleEn": "Mountains Becoming Islands",
+    "subtitle": "從一座山的輪廓，看見彼此相連的島嶼",
+    "description": "百岳計畫把山岳的形象與共同參與連在一起；藝術銀行的收藏，則把目光帶向更多地景。本廳讓群島、山形與海面彼此對照，邀請觀眾在具象與抽象之間辨認地方的輪廓。島嶼既是創作的題材，也是本次策展理解社群關係的方法：各自存在，仍能互相靠近。",
+    "color": "#5d7564",
+    "documentIds": ["project-percentage", "aquaponics-kana-proposal"],
+    "sourceUrls": ["https://fabdao.world/project-percentage/", "https://hackmd.io/@AquaponicsKana/BJspEPwJn"],
+    "curatorialInterpretation": true,
+    "selection": {
+      "artworkTheme": "islands",
+      "featuredOnly": true,
+      "sortBy": "curatorialOrder",
+      "principle": "以群島資料庫、山形、島嶼與海景之實際持有作品形成視覺對話；Project % 的發行敘事另以專案文獻呈現。"
+    },
+    "room": {
+      "character": "鼠尾草綠展牆、古典拱門與淺石地坪，在轉角留出遠眺作品的距離。",
+      "lighting": "側向日光塑造柱廊深度，展牆使用均勻照明。",
+      "arrangement": "從生成山形走向海面與城市地景，並置兩件群島資料庫作出版物預覽，提供原始 PDF 閱讀入口。"
+    },
+    "verificationStatus": "curatorial_text_grounded_in_public_sources",
+    "lastVerifiedAt": "2026-09-06"
+  },
+  {
+    "id": "commons",
+    "theme": "commons",
+    "order": 3,
+    "title": "收藏作為行動",
+    "name": "收藏作為行動",
+    "titleEn": "Collecting as a Common Act",
+    "subtitle": "一件作品，也可以是一段關係的開始",
+    "description": "收藏如何從個人的選擇，成為一群人的行動？從小花支持創作者入門，到藝術銀行的提案、討論與決選，FAB DAO 持續嘗試把藝術與公共生活接在一起。本廳將作品與制度文件並置，讓觀眾看見收藏背後的人際連結、資源分配，以及共同決定值得留下什麼的過程。",
+    "color": "#98674f",
+    "documentIds": ["supporter", "fip-1", "fip-2", "art-bank-protocol", "art-bank-origins"],
+    "sourceUrls": ["https://fabdao.world/projects/supporter/", "https://fabdao.world/FIP-1.pdf", "https://hackmd.io/@mashbean/SklFizJ4T", "https://hackmd.io/@FABDAO/Sy8SGSHx3"],
+    "curatorialInterpretation": true,
+    "selection": {
+      "artworkTheme": "commons",
+      "featuredOnly": true,
+      "sortBy": "curatorialOrder",
+      "principle": "並置共同體、交換、支持與參與相關作品；制度展板說明公共行動，不把持有餘額當成捐款或購買證據。"
+    },
+    "room": {
+      "character": "暖陶色展牆、深木座椅與中央閱讀桌，延續客廳的會聚感。",
+      "lighting": "暖光留給建築與閱讀桌，作品另用中性光；文件可開啟高對比閱讀視窗。",
+      "arrangement": "從支持藝術家的小額行動，走向共同選擇與制度形成；作品和文件各有清楚標示。"
+    },
+    "verificationStatus": "curatorial_text_grounded_in_public_sources",
+    "lastVerifiedAt": "2026-09-06"
+  },
+  {
+    "id": "memory",
+    "theme": "memory",
+    "order": 4,
+    "title": "留白與記憶",
+    "name": "留白與記憶",
+    "titleEn": "Silence, Memory, Persistence",
+    "subtitle": "當聲音難以留下，收藏如何回應",
+    "description": "一張白紙能承載多少聲音？本廳從白紙基金出發，並置關於自由、故土、衝突與消逝的作品。收藏在此成為關注與記錄的行動；鏈上紀錄之外，圖像、文字與創作脈絡仍需要持續照顧。留白讓觀看放慢，也把問題留給觀眾：我們願意為哪些記憶保留位置？",
+    "color": "#786270",
+    "documentIds": ["white-paper-fund", "fab-museum-2024"],
+    "sourceUrls": ["https://fabdao.world/projects/whitepaper/", "https://fabdao.world/projects/fab-museum/"],
+    "curatorialInterpretation": true,
+    "selection": {
+      "artworkTheme": "memory",
+      "featuredOnly": true,
+      "sortBy": "curatorialOrder",
+      "principle": "以自由、記憶與社會事件相關實際持有作品為主；個別政治或歷史意涵依作者原說明呈現，策展推論另行標示。"
+    },
+    "room": {
+      "character": "柔灰紫牆面、較疏的掛畫間距與獨立座椅，終點回望中央大廳。",
+      "lighting": "低對比環境光與溫和牆面照明，避免以戲劇效果替作品預設情緒。",
+      "arrangement": "白紙作品成為入口，逐步走向故土、文字與保存；出口連接本館建館歷史文件。"
+    },
+    "verificationStatus": "curatorial_text_grounded_in_public_sources",
+    "lastVerifiedAt": "2026-09-06"
+  }
+]

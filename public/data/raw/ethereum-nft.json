@@ -1,0 +1,1352 @@
+{
+  "items": [
+    {
+      "animation_url": null,
+      "external_app_url": null,
+      "id": "1000128",
+      "image_url": "https://media-proxy.artblocks.io/0x00000007cc35dcab4a396249aefa295a8b6e16ba/1000128.png",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://media-proxy.artblocks.io/0x00000007cc35dcab4a396249aefa295a8b6e16ba/1000128.png",
+      "metadata": {
+        "artist": "Harvey Rayner",
+        "aspect_ratio": 0.85,
+        "authenticity_signature": "0x5679293ce2103850b254b74a3a13bb772fdbd450041ead3ec0094dd92d1942e5347412ad27d4879841ad04fea0a0241274dbcf780b40b9b457b18fa26b78dc641b",
+        "collection_name": "Amplitudes of Canvas by Harvey Rayner",
+        "collection_owner": "0x76a5e5202b097cf115494a20653b2fa17740f436",
+        "collection_uuid": "f822ec01-6d02-4e8e-8844-00f0dd3666ea",
+        "description": "# Algorithmic Expressionism and the Landscape of Madness #\n# . #\n## Landscape Inversion ##\nThis project began with a whimsical idea: to invert the convention of landscape painting on canvas—one of the most ubiquitous motifs in art history. Instead of painting a scene or vista onto the canvas, I imagined an algorithmic domain shaped by the flowing material properties of the canvas itself. \n# . #\n## Mark Making and the Digital Surface ##\nBold gestural markings within this algorithm also evolved into a way of defining scale and movement in the landscape. They serve as a bridge between the illusion of receding depth and the true flatness of the digital surface. For centuries, bold brushstrokes—evidence of the painterly act—have created intentional tension between illusionism and the physical reality of the canvas. The gestural marks in this series, although complex and layered, are still clearly derived from rudimentary vector-based primitives. Preserving the evidence of a digitally native process is my reinterpretation of this same artifact found in representational painting.\n# . #\n## Gesture and Abstraction ##\nAlgorithmic mark making reminiscent of human gesture is not really abstract. They are more representational of artifacts created by the human skeleton in the creative act. Through this association gesture seems to have a direct expressive path to our deep human emotions. When gestures become incoherent and turbulent, something in us feels this as a kind of violence. Although Amplitudes of Canvas started life as gently flowing landscape-esk forms, the use of gesture became stronger and the spectrum of movement and expressive power of the work ramped up considerably. The addition of the floor plane reminded me of Victorian hospital rooms. In some of these works emerged the traces of an asylum, a container for the more extreme gestural madness appearing at the out edges of the algorithm's expressive space.\n# . #\n## The Infinite Sketchbook of a Mad Person ##\nOutputs are like sketches in the sense they are only glimpses into the totality of the algorithm. They are never fully crystalized. They are like the outflow of a mad person because the insane often get caught in loops, obsessing over the same patterns. Through their interaction with the world, the patterns get expressed in varied ways, each time new, but recognizable as belonging to the same behavior. The mad person compared to the average person thus has a limited range of functionality and adaptability. The algo can only explore a tiny space of possibilities compared to say the space of all art. It is still an infinite space, but not all infinities are equal.\n# . #\n## Expressionism and Madness ##\nIt seems likely that expressionism has been linked to madness in the past, both academically and by the casual observer. De Kooning’s Woman paintings have a ferocious presence and are wonderfully disturbing. Alcoholic, bad tempered Pollock expresses a destabilizing frenetic power. Rothko, who was the counter type in the movement painted sacred meditative works, but killed himself. Rothko was on record as saying he wanted to paint the deep human emotions. This has always been my hope. I feel I consistently fail, but make tiny steps towards that goal. It is not at all obvious how to progress when working in the domain of abstract art. I do feel however, that when literal representation in Art is set aside there is a more direct path to the human heart for those artists who achieve it.\n# . #\n## Text as Texture ##\nThe cursive writing in these works are entirely algorithmic. There is no meaning, other than the meta meaning of something that looks like Pseudo notation. In the course of building the project I tried numerous ways to introduce the texture of writing into the work without finding a way that satisfied me. Text adds a textural depth to the work that’s hard to create in any other way. The writing also looks like the scribing of a mad person which seemed to tie in nicely with the emerging feeling of madness in some of the outputs. I call these bands of cursive texture - Notes from the Asylum.\n# . #\n## Algorithmic Process vs Skeuomorphism ##\nCreating surfaces that look worn and discolored might be seen as skeuomorphic, however I feel there is an honesty to this type of treatment because objects in real life are also typically aged in an algorithmic way. Usually through a repetition of partially constrained movements and patterns of specific interactions. The intrinsic visual properties we find comforting and fascinating in antique surfaces can be created in generative art in a very direct and authentic way. When I remove these layers of textural distress the underlying work is often somewhat unapproachable and cold. I feel the compositional flow is also softened and unified by the addition of algorithmic distress. Transitions are easier to visually digest and the overall visual variety and interest of the surface is increased. Perhaps what’s more important is there is a sense in which the art has settled into the physical world and has had interactions with it. Of course this is a lie but every story we tell in art is a lie. When creating the distress marks I am careful to leave the simple circle and line primitive building blocks at a scale that makes it easy to see on close examination how the art is constructed. This reveals the truth about the lie and creates visual tension between the illusionistic and abstracted mark making.\n# . #\n## Recursive Curation ##\nAmplitudes of Canvas uses this new type of structure that enables me to evolve the algorithm over a long period of time without losing outstanding outputs from the previous versions. It's a little like the fx(hash) Open Form model, but only I am in control of what gets bred. All the breeding also happens prior to release within my studio. Every part of the algorithmic journey is contained in the single algorithm so I can put it fully on-chain and make it work within the very solid, but quite constrained Art Blocks infrastructure. Recursion refers to the fact I can use social WIP sharing to help steer new versions in the algorithm's evolution. If and when I share something that both captures my audience's attention and excites me I can capture the visual DNA of that output and use it as the basis to breed new children without losing previous outputs and version possibilities.\n",
+        "engine_type": "studio",
+        "generator_url": "https://generator.artblocks.io/0x00000007cc35dcab4a396249aefa295a8b6e16ba/1000128",
+        "image": "https://media-proxy.artblocks.io/0x00000007cc35dcab4a396249aefa295a8b6e16ba/1000128.png",
+        "is_static": true,
+        "license": "CC BY-NC-ND 4.0",
+        "minted": false,
+        "name": "Amplitudes of Canvas #128",
+        "payout_address": "0x036f3d03c1ccdde1878f01607922ea12110ee9bd",
+        "platform": "Art Blocks Studio | 7",
+        "preview_asset_url": "https://media-proxy.artblocks.io/0x00000007cc35dcab4a396249aefa295a8b6e16ba/1000128.png",
+        "project_id": "1",
+        "royaltyInfo": {
+          "additionalPayee": "0x0000000000000000000000000000000000000000",
+          "additionalPayeePercentage": "0",
+          "artistAddress": "0x76a5e5202b097cf115494a20653b2fa17740f436",
+          "royaltyFeeByID": 5
+        },
+        "script_type": "js@na",
+        "series": "N/A",
+        "tokenID": "1000128",
+        "website": "https://rayner.art/works/2025/#amplitudes-of-canvas"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x00000007cC35dcab4a396249AEFa295A8b6E16Ba",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "615",
+        "icon_url": null,
+        "name": "Art Blocks Studio | 7",
+        "reputation": "ok",
+        "symbol": "ABSTUDIO_7",
+        "total_supply": null,
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/Qmcy2d6AJw7fYaHFUcA4NopXHDXRbm7pSAzPwEmrnB8oBX/index.html#45",
+      "external_app_url": null,
+      "id": "45",
+      "image_url": "https://dweb.link/ipfs/QmU549AwShQQzvZovqwow1SNuegqmRMjR7CP4xAtJCtmQ3/inkField_45.jpg",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmU549AwShQQzvZovqwow1SNuegqmRMjR7CP4xAtJCtmQ3/inkField_45.jpg",
+      "metadata": {
+        "animation_url": "ipfs://Qmcy2d6AJw7fYaHFUcA4NopXHDXRbm7pSAzPwEmrnB8oBX/index.html#45",
+        "attributes": [
+          {
+            "trait_type": "Flow",
+            "value": "Vertical"
+          },
+          {
+            "trait_type": "Format",
+            "value": "Square"
+          },
+          {
+            "trait_type": "Paper",
+            "value": "Plain"
+          },
+          {
+            "trait_type": "Metallic",
+            "value": "Silver"
+          },
+          {
+            "trait_type": "Mask",
+            "value": "None"
+          },
+          {
+            "trait_type": "Strokes",
+            "value": "Moderate"
+          }
+        ],
+        "description": "Each inkField is not an image but a recorded act.\n\nEvery brushstroke I made is stored as data: its path, its speed, its pressure, and the pauses in between. When you open a piece, your browser re-performs the entire painting in real time. This is not a video. It is the act of painting, executed again in front of you.\n\nWhat the data preserves is a body. A signature carries a person because those few seconds of movement contain muscle habits no one else has. inkField keeps that layer: the hesitation before a stroke, the acceleration that reveals urgency, the breathing rhythm hidden in the gaps between timestamps. In Eastern ink painting, qi, the breath of life, matters more than technique. Here qi is given a data form. The empty space between strokes is part of the work.\n\nA seed lives inside each recording. The skeleton of every gesture is fixed, but the ink blooms a little differently on every viewing. The same hand, never the exact same mark. Each piece is both a fossil of intention and a living thing.\n\nAI can generate a flawless ink painting in a second, but it does not know why the painter paused before the third stroke. Those seconds are real, spent, and impossible to fake. inkField is my answer to this era: computing power can be faked, but the time a person spent cannot.\n\nFifty recordings. Companions rather than variations.",
+        "image": "ipfs://QmU549AwShQQzvZovqwow1SNuegqmRMjR7CP4xAtJCtmQ3/inkField_45.jpg",
+        "media": {
+          "mimeType": "text/html"
+        },
+        "name": "inkField #45"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x05fBBEccECB61F710e5b3907A68b28DF21965a82",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "38",
+        "icon_url": null,
+        "name": "inkField",
+        "reputation": "ok",
+        "symbol": "INK",
+        "total_supply": "50",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://arweave.net/W4KudXeTKdZmc-_ctPf3oEt6usJfYXygXPet-BA8rMU",
+      "external_app_url": "https://www.memo.tv/",
+      "id": "19",
+      "image_url": "https://arweave.net/58hd1xR-e2dL6o-uPLWaopQUErDTkfRAL3K3X1JazEk",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://arweave.net/58hd1xR-e2dL6o-uPLWaopQUErDTkfRAL3K3X1JazEk",
+      "metadata": {
+        "animation": "https://arweave.net/W4KudXeTKdZmc-_ctPf3oEt6usJfYXygXPet-BA8rMU",
+        "animation_details": {
+          "bytes": 99017366,
+          "codecs": [
+            "H.264",
+            "AAC"
+          ],
+          "duration": 60,
+          "format": "MP4",
+          "height": 1080,
+          "sha256": "689dd353792fd0dfd0572b6433cf86f28ba1569cfdbd199344c07f635ef813a5",
+          "width": 1920
+        },
+        "animation_url": "https://arweave.net/W4KudXeTKdZmc-_ctPf3oEt6usJfYXygXPet-BA8rMU",
+        "created_by": "Memo Akten",
+        "description": "1920x1080 30fps video; 1min seamless loop.  \nby Memo Akten, memo.tv  \n---\n\nThis is the first piece from a new branch in a long on-going series of works, oscillating around (if you pardon the pun) the theme of \"Waves\" - from ocean waves, to sound waves, to quantum field waves, to social & political waves, ... and now to waves in the crust of the Earth, slow motion waves on geological timescales, mountains.  \nThe work was created using a number of different AI (Artificial Intelligence) techniques. \n\nPersonal note:  \nIn a tragic foreshadowing, I made this work before the devastating earthquake on February 6th 2023 in Turkey, my home country, and Syria. 100% of all of my primary sales will be donated to rescue and care efforts. ",
+        "external_url": "https://www.memo.tv/",
+        "image": "https://arweave.net/58hd1xR-e2dL6o-uPLWaopQUErDTkfRAL3K3X1JazEk",
+        "image_details": {
+          "bytes": 900764,
+          "format": "JPEG",
+          "height": 1080,
+          "sha256": "a30193cdf6b88536f8aa93dfaa4978416de181acf190344b59bddbbf1ed18012",
+          "width": 1920
+        },
+        "image_url": "https://arweave.net/58hd1xR-e2dL6o-uPLWaopQUErDTkfRAL3K3X1JazEk",
+        "name": "Waves 2.0: Mountains, fragment #001"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x15ABC6361bc161073324634eF2A1E3B4B9508BbC",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "134",
+        "icon_url": null,
+        "name": "Memo Akten - Waves 2.0: Mountains, fragment #001",
+        "reputation": "ok",
+        "symbol": "MAW21",
+        "total_supply": null,
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+      "external_app_url": "https://fxhash.xyz/gentk/0x1c9583333058d7833eC41D640744cE50A8C286be-22",
+      "id": "22",
+      "image_url": "https://dweb.link/ipfs/QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "metadata": {
+        "animation_url": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "artifactUri": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "description": "This Gentk is waiting to be signed by Fxhash Signer module",
+        "displayUri": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "external_url": "https://fxhash.xyz/gentk/0x1c9583333058d7833eC41D640744cE50A8C286be-22",
+        "image": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "name": "[WAITING TO BE SIGNED] Generato non creato #22",
+        "symbol": "GENTK",
+        "thumbnailUri": "ipfs://QmbvEAn7FLMeYBDroYwBP8qWc3d3VVWbk19tTB83LCMB5S"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x1c9583333058d7833eC41D640744cE50A8C286be",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "18",
+        "icon_url": null,
+        "name": "Generato non creato",
+        "reputation": "ok",
+        "symbol": "FXGEN",
+        "total_supply": "29",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": null,
+      "external_app_url": null,
+      "id": "19",
+      "image_url": "https://alba.art/images/pending-edition.png",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://alba.art/images/pending-edition.png",
+      "metadata": {
+        "attributes": null,
+        "collectionId": "22c89b54-37f9-4eb1-9665-718f078c061d",
+        "description": "What stays with us from the things that are gone? What is kept, lost or changed by memory? What remains of the flowers of yesterday? Evanescencia is not about representing the concrete, but fading memories, vague imaginations, and the quiet dissolution of everything around us.",
+        "image": "https://alba.art/images/pending-edition.png",
+        "name": "Evanescencia #19",
+        "seed": "",
+        "tokenId": 19
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x1EdcFAa42EE2D9Ad7413a7a6A3cd3e5C82eF3E49",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "15",
+        "icon_url": null,
+        "name": "Evanescencia by Leonardo Solaas",
+        "reputation": "ok",
+        "symbol": "evanescencia",
+        "total_supply": "20",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": null,
+      "external_app_url": null,
+      "id": "38",
+      "image_url": "https://0prod.infura-ipfs.io/ipfs/bafybeian4b4rgzh62fq4hoybqhdgjhdstknw56tk6tlnfkrogbjdfizxhq",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://0prod.infura-ipfs.io/ipfs/bafybeian4b4rgzh62fq4hoybqhdgjhdstknw56tk6tlnfkrogbjdfizxhq",
+      "metadata": {
+        "attributes": [
+          {
+            "trait_type": "Artist",
+            "value": "Ni Petrov"
+          },
+          {
+            "trait_type": "Artwork",
+            "value": "[ŚŪ]"
+          }
+        ],
+        "description": "Series *[ŚŪ]*, inspired by the philosophical concept of śūnyatā — a Buddhist view on emptiness, where all phenomena exist only in interdependence, without independent essence. The works, created with the help of artificial intelligence, explore the fragility of everyday reality in the urban world. They capture spontaneous scenes of urban crowds, where silhouettes of people dissolve in pixel distortions, glitches, and cutouts, symbolizing the illusoriness of individuality and connection in the digital age.\n\nThe connection between digital art and śūnyatā is manifested in the use of digital tools to demonstrate the \"emptiness\" of form: pixels and animations emphasize that visible reality is a temporary construct, devoid of essence, as śūnyatā teaches about the interconnected emptiness of all things. In these works, the crowd, seemingly dense and alive, fades into emptiness, reflecting loneliness in a hyper-connected society and inviting viewers to recognize the profound emptiness behind the facade of digital layers. The series challenges the traditions of static art, offering a dynamic experience of reflection on how technologies enhance the sense of śūnyatā — where the physical and virtual merge, leaving only an echo of absence.",
+        "hash": "0x7ce96db2b2e6b9a2eae49f58261e83b636e1d111d8db050e29afafb1ce39300e",
+        "image": "https://0prod.infura-ipfs.io/ipfs/bafybeian4b4rgzh62fq4hoybqhdgjhdstknw56tk6tlnfkrogbjdfizxhq",
+        "ipfs": "https://0prod.infura-ipfs.io/ipfs/bafybeian4b4rgzh62fq4hoybqhdgjhdstknw56tk6tlnfkrogbjdfizxhq",
+        "license": "",
+        "name": "[ŚŪ] #39"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x2C8B9265aA21e3C6ca420274CE15ca82Bf13AB76",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "21",
+        "icon_url": null,
+        "name": "[ŚŪ] by Ni Petrov",
+        "reputation": "ok",
+        "symbol": null,
+        "total_supply": "52",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+      "external_app_url": "https://fxhash.xyz/gentk/0x3D1dd535769D05a83F85d1AC9B32714D2F9CAc3E-54",
+      "id": "54",
+      "image_url": "https://dweb.link/ipfs/QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "metadata": {
+        "animation_url": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "artifactUri": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "description": "This Gentk is waiting to be signed by Fxhash Signer module",
+        "displayUri": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "external_url": "https://fxhash.xyz/gentk/0x3D1dd535769D05a83F85d1AC9B32714D2F9CAc3E-54",
+        "image": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "name": "[WAITING TO BE SIGNED] in osculari #54",
+        "symbol": "GENTK",
+        "thumbnailUri": "ipfs://QmbvEAn7FLMeYBDroYwBP8qWc3d3VVWbk19tTB83LCMB5S"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x3D1dd535769D05a83F85d1AC9B32714D2F9CAc3E",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "50",
+        "icon_url": null,
+        "name": "in osculari",
+        "reputation": "ok",
+        "symbol": "FXGEN",
+        "total_supply": "61",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+      "external_app_url": "https://fxhash.xyz/gentk/0x430f0fAFf1694E5E1D404AC9e5D377934AA82A0A-36",
+      "id": "36",
+      "image_url": "https://dweb.link/ipfs/QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "metadata": {
+        "animation_url": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "artifactUri": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "description": "This Gentk is waiting to be signed by Fxhash Signer module",
+        "displayUri": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "external_url": "https://fxhash.xyz/gentk/0x430f0fAFf1694E5E1D404AC9e5D377934AA82A0A-36",
+        "image": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "name": "[WAITING TO BE SIGNED] The Anatomy of Reflection #36",
+        "symbol": "GENTK",
+        "thumbnailUri": "ipfs://QmbvEAn7FLMeYBDroYwBP8qWc3d3VVWbk19tTB83LCMB5S"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x430f0fAFf1694E5E1D404AC9e5D377934AA82A0A",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "35",
+        "icon_url": null,
+        "name": "The Anatomy of Reflection",
+        "reputation": "ok",
+        "symbol": "FXGEN",
+        "total_supply": "46",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/QmVnAUWebemhpUDb2DWypt389yRukfCLkXpThCV8dT85ox/?payload=eyJoYXNoIjoiMHg2ZTEzNWExMzkyMDk5ODdiOGQxZGIzYzNlMjgzZWQwZWI4ZTg0OTUwYjUwZWJkNzNhZDQyY2U2NDU4ZGUyYTBiIiwiZWRpdGlvbk51bWJlciI6MjIsInRvdGFsRWRpdGlvbnMiOjIyLCJpbnB1dCI6eyIkc2VlZF9jcmVhdG9yX3VzZXJuYW1lIjoiRmFiRGFvQXJ0YmFuayIsIiR1c2VybmFtZSI6IkZhYkRhb0FydGJhbmsifX0=",
+      "external_app_url": null,
+      "id": "21",
+      "image_url": "https://dweb.link/ipfs/bafybeieuapkihl3xedr5745r6uxktyzheievp4ri4ff546koqb7dm5mgem",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://bafybeieuapkihl3xedr5745r6uxktyzheievp4ri4ff546koqb7dm5mgem",
+      "metadata": {
+        "animation_url": "ipfs://QmVnAUWebemhpUDb2DWypt389yRukfCLkXpThCV8dT85ox/?payload=eyJoYXNoIjoiMHg2ZTEzNWExMzkyMDk5ODdiOGQxZGIzYzNlMjgzZWQwZWI4ZTg0OTUwYjUwZWJkNzNhZDQyY2U2NDU4ZGUyYTBiIiwiZWRpdGlvbk51bWJlciI6MjIsInRvdGFsRWRpdGlvbnMiOjIyLCJpbnB1dCI6eyIkc2VlZF9jcmVhdG9yX3VzZXJuYW1lIjoiRmFiRGFvQXJ0YmFuayIsIiR1c2VybmFtZSI6IkZhYkRhb0FydGJhbmsifX0%3D",
+        "attributes": [
+          {
+            "trait_type": "Artist",
+            "value": "loackme"
+          },
+          {
+            "trait_type": "Artwork",
+            "value": "Topology of Loss"
+          },
+          {
+            "trait_type": "Seed Creator",
+            "value": "FabDaoArtbank"
+          },
+          {
+            "trait_type": "Colour",
+            "value": "Black"
+          }
+        ],
+        "description": "Each work in this series begins with raw fractal noise and is put through a repetitive cycle of resizing and extreme JPEG compression. The codec, designed to discard visual information deemed imperceptible, starts producing characteristic block artifacts and distortions when pushed well beyond its intended range. After each recompression, a fresh layer of noise is reintroduced at partial opacity. Artifacts accumulate into a dense, fragmented image surface. Colour cycling and dithering are then used to animate the resulting image, revealing what the codec and rescaling leave behind.\n\nControls:  \nG - GIF export  \nS - PNG export  \nF - fullscreen  \nArrow keys - adjust display size  \nSwipe left/right (mobile) - export PNG/GIF  \nClick/tap overlay messages to dismiss",
+        "hash": "0x6e135a139209987b8d1db3c3e283ed0eb8e84950b50ebd73ad42ce6458de2a0b",
+        "image": "ipfs://bafybeieuapkihl3xedr5745r6uxktyzheievp4ri4ff546koqb7dm5mgem",
+        "license": "",
+        "name": "Topology of Loss #22"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x4fAdFd5d6E9f101529b7DF3fC9f3DE6C4ecb1E2b",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "11",
+        "icon_url": null,
+        "name": "Topology of Loss by loackme",
+        "reputation": "ok",
+        "symbol": null,
+        "total_supply": "28",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+      "external_app_url": "https://fxhash.xyz/gentk/0x5e000097583A92c2c17102Aa9d6907cd4bD2fC63-20",
+      "id": "20",
+      "image_url": "https://dweb.link/ipfs/QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "metadata": {
+        "animation_url": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "artifactUri": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "description": "This Gentk is waiting to be signed by Fxhash Signer module",
+        "displayUri": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "external_url": "https://fxhash.xyz/gentk/0x5e000097583A92c2c17102Aa9d6907cd4bD2fC63-20",
+        "image": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "name": "[WAITING TO BE SIGNED] Impossible Sentinels #20",
+        "symbol": "GENTK",
+        "thumbnailUri": "ipfs://QmbvEAn7FLMeYBDroYwBP8qWc3d3VVWbk19tTB83LCMB5S"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x5e000097583A92c2c17102Aa9d6907cd4bD2fC63",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "19",
+        "icon_url": null,
+        "name": "Impossible Sentinels",
+        "reputation": "ok",
+        "symbol": "FXGEN",
+        "total_supply": "34",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": null,
+      "external_app_url": null,
+      "id": "95",
+      "image_url": "https://alba.art/images/pending-edition.png",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://alba.art/images/pending-edition.png",
+      "metadata": {
+        "attributes": null,
+        "collectionId": "377998e9-f735-4740-b0b5-a2a9a637de4e",
+        "description": "An infinite and seamless animated loop using pixel quantization and shader feedback to create a rhythmic and meditative pixel dance.\n\nSeamless 90 frame loop.\nInfinite runtime.\nDimensions variable.\nJavaScript and GLSL.",
+        "image": "https://alba.art/images/pending-edition.png",
+        "name": "BUFFERS #95",
+        "seed": "",
+        "tokenId": 95
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x64201583cC6219B6749488eA643EFa65dA0BeB04",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "54",
+        "icon_url": null,
+        "name": "BUFFERS by itsgalo",
+        "reputation": "ok",
+        "symbol": "buffers",
+        "total_supply": "96",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://generator.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+      "external_app_url": null,
+      "id": "81",
+      "image_url": "https://media-proxy.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81.png",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://media-proxy.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81.png",
+      "metadata": {
+        "animation_url": "https://generator.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+        "artist": "Kazuhiro Tanimoto",
+        "aspect_ratio": 1.7778,
+        "authenticity_signature": "0x89cb296fe8b1f0a3452663df14992348bcd1804fb776697690b136313c1f97fc56d35c0a405c4c75b1382e8116570b1058f07f15d2181dbd59f3ea80951e07b11b",
+        "collection_name": "Rain Blooms by Kazuhiro Tanimoto",
+        "collection_owner": "0x2f55e30c6f510d897c27a6e2d4c4e17f189996d5",
+        "collection_uuid": "c469c36e-5782-4403-a037-648b5e4db57a",
+        "contract_address": "0x70270e65bc37832ef845fa330c2b71501970dab9",
+        "description": "**\"Rain Blooms\"** is an audiovisual work built on an original cellular automaton designed by Kazuhiro Tanimoto to produce complex behavior. By running a cellular automaton program, one of the representative models in ALife (Artificial Life), the work generates visual and audio change in real time through ongoing interactions among multiple elements.\n\nIn its presentation at **NEORT++ (Tokyo)** in May 2026, this real-time generative process is configured as an immersive environment. Images that continue to transform through the execution of code fill the walls, while the corresponding sound creates an environment in which vision and hearing are closely linked. The viewer is placed inside images and sounds that are continuously updated through computation.\n\nIn many visual works, including those produced with AI generation, the creator often defines in advance the image they want to show, shapes the output toward that target, and then presents the result as fixed data. In this work, what the artist designs is not a completed image, but local rules at the pixel level: an algorithm. The rendering proceeds through the real-time iterative execution of that algorithm, and diverse patterns and movements not directly specified in advance by the artist continue to arise from interactions among elements.\n\nThe cellular automaton used in this work is not a reproduction of a classical cellular automaton such as the Game of Life. It is constructed as an extended rule system combining how neighborhoods are defined, interactions among multiple species, interactions such as attack, assimilation, and indifference, and a vitality parameter held by each cell. Through repeated application of these local rules, the work produces a range of changes including organic, upwelling motion, linear and inorganic motion, collapse, proliferation, and cycles.\n\nSimple geometric forms are periodically introduced from outside, much like dropping paint onto a canvas. These forms are not preserved as independent motifs; they immediately begin to behave as part of the cellular automaton itself. Through local interactions with surrounding cells, they break apart, proliferate, and transform into other patterns. What the viewer observes is not the inserted form itself, but how it is transformed within the computational system and unfolds into the overall image.\n\nThe sound is not added afterward to accompany the image. Changes in the cells are detected, and sound frequencies and other parameters are varied according to information such as hue, brightness, and saturation, generating an ambient soundscape that corresponds to the changes on screen. Image and sound originate from the same computational process, and the changes occurring on screen also appear as sound.\n\nAt the start of each run, the work determines neighborhood settings and various parameter sets involved in the generation of both image and sound. When the work is run again, a different parameter set is selected. Even though the program itself remains the same, generation begins under different conditions and produces different results. Rather than playing back a fixed video, the work presents a process in which image and sound are continuously updated through computation.\n\nWhat is attempted here is not to fix a single determinate meaning, claim, or interpretation in advance as the work itself. Rather, the work consists in designing computational rules, such as how neighborhoods are defined, how multiple species relate to one another, how vitality operates, and how image and sound are linked, and in presenting a bottom-up, dynamic generative system in which change continues to emerge from their interaction. Through this method, the artist examines what forms of expression are possible precisely because they are produced by a computer: forms whose final shape is not directly decided by a human, but arises through repeated computation and interaction among elements.\n\nMore information\n\n- <https://two.neort.io/en/exhibitions/rain_blooms>\n- <https://www.kazuhirotanimoto.com/works/rain_blooms/>",
+        "engine_type": "studio",
+        "external_url": "",
+        "features": {},
+        "generator_url": "https://generator.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+        "image": "https://media-proxy.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81.png",
+        "is_static": false,
+        "license": "CC BY-NC 4.0",
+        "minted": true,
+        "name": "Rain Blooms #81",
+        "payout_address": "0x036f3d03c1ccdde1878f01607922ea12110ee9bd",
+        "platform": "Art Blocks Studio | 93",
+        "preview_asset_url": "https://media-proxy.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81.png",
+        "primary_asset_url": "https://generator.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+        "project_id": "0",
+        "royaltyInfo": {
+          "additionalPayee": "0xdd8a0cc8280b30e811a217deb9d66cda0b9c7e32",
+          "additionalPayeePercentage": 50,
+          "artistAddress": "0x2f55e30c6f510d897c27a6e2d4c4e17f189996d5",
+          "royaltyFeeByID": 5
+        },
+        "script_type": "js@na",
+        "series": "N/A",
+        "tokenID": "81",
+        "token_hash": "0x05c25e3d49a1d3b29db65cb73154c8ff2a5177ce5fc643ec214c603e85266503",
+        "traits": [
+          {
+            "trait_type": "Rain Blooms",
+            "value": "All Rain Blooms"
+          }
+        ],
+        "website": "https://www.kazuhirotanimoto.com/works/rain_blooms/"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x70270E65bC37832ef845fA330C2B71501970DaB9",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "77",
+        "icon_url": null,
+        "name": "Art Blocks Studio | 93",
+        "reputation": "ok",
+        "symbol": "ABSTUDIO_93",
+        "total_supply": null,
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://ipfs.io/ipfs/QmXwfwQxrdxg9czutZ5ta1NgJLfea6m1SRoTYnVyjzMTTK?seed=2422#",
+      "external_app_url": "https://ipfs.io/ipfs/QmXwfwQxrdxg9czutZ5ta1NgJLfea6m1SRoTYnVyjzMTTK?seed=2422#",
+      "id": "8623",
+      "image_url": "https://dweb.link/ipfs/QmULUy6VfK8AW3ay7abnhyvdcQTE1cquyTpCZ2tomSt1wX",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmULUy6VfK8AW3ay7abnhyvdcQTE1cquyTpCZ2tomSt1wX",
+      "metadata": {
+        "animation_url": "https://ipfs.io/ipfs/QmXwfwQxrdxg9czutZ5ta1NgJLfea6m1SRoTYnVyjzMTTK?seed=2422#",
+        "description": "The inspiration for this work came from discovering a sense of life in geometric patterns that are symmetrically arranged. With unexpected shapes and patterns, I tried to express the scary yet somehow charming atmosphere of Native American totem poles and indigenous Japanese Yokai.\n\nWebsite: [https://generativemasks.on.fleek.co/](https://generativemasks.on.fleek.co/)\n\nArtist: takawo shunsuke\n\nArtist SNS: [Twitter](https://twitter.com/takawo), [cenkhor.org](http://cenkhor.org/), [OpenProcessing](https://openprocessing.org/user/6533?o=168&view=sketches)\n\nCid: [QmXwfwQxrdxg9czutZ5ta1NgJLfea6m1SRoTYnVyjzMTTK](https://ipfs.io/ipfs/QmXwfwQxrdxg9czutZ5ta1NgJLfea6m1SRoTYnVyjzMTTK?seed=2422#)\n\nLicense: [Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)](https://creativecommons.org/licenses/by-nc-sa/3.0/)\n\nLibrary: [p5.js](https://p5js.org/)",
+        "external_url": "https://ipfs.io/ipfs/QmXwfwQxrdxg9czutZ5ta1NgJLfea6m1SRoTYnVyjzMTTK?seed=2422#",
+        "image": "ipfs://QmULUy6VfK8AW3ay7abnhyvdcQTE1cquyTpCZ2tomSt1wX",
+        "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "name": "Generativemasks #2422"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x80416304142Fa37929f8A4Eee83eE7D2dAc12D7c",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "3118",
+        "icon_url": null,
+        "name": "Generativemasks",
+        "reputation": "ok",
+        "symbol": "GM",
+        "total_supply": null,
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": null,
+      "external_app_url": null,
+      "id": "34",
+      "image_url": "https://dweb.link/ipfs/bafybeigpmkr5rxpvaahdplg4mwq7fbaim25cu6gd3y45hupil6leofna6q",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://bafybeigpmkr5rxpvaahdplg4mwq7fbaim25cu6gd3y45hupil6leofna6q",
+      "metadata": {
+        "attributes": [
+          {
+            "trait_type": "Artist",
+            "value": "Paul Prudence"
+          },
+          {
+            "trait_type": "Artwork",
+            "value": "Geomodulo"
+          }
+        ],
+        "description": "*By rendering geological formations as visualised numerical data, I am attempting to give a visibility – both metaphorically and structurally – to the algorithmic nature of geology and to the complex interactions that go into forming the landscape around us. Real world processes such as erosion or deposition have been canonically represented digitally using various species of activator/inhibitor algorithms. These systems can create an emergence that encapsulates the idea of pancomputationalism – that is the philosophical view that\nthe entire physical universe is a computing system, where every physical process (like a rock, cell, or galaxy) can be described as a computation.*\n\n*Continuing my exploration into the aesthetics of concrete poetry, combined with the generative manipulation of text,* Geomodulo *seeks to hack perception by presenting fragmentary forms and surfaces using only a reductionist palette of glyphs and numbers. In the absence of photographic granularity or three-dimensional\nmodels, perception attempts to complete the puzzle of representation. The aesthetic of this series hinges upon how we work with these gaps of missing data at different scales and different distances of reference.*\n\nPaul Prudence",
+        "hash": "0x8eb97d9cd6b8e4ca5c16e227d1e54b42f771d63e6f8da0260c7ec9348c9c2160",
+        "image": "ipfs://bafybeigpmkr5rxpvaahdplg4mwq7fbaim25cu6gd3y45hupil6leofna6q",
+        "ipfs": "ipfs://bafybeigpmkr5rxpvaahdplg4mwq7fbaim25cu6gd3y45hupil6leofna6q",
+        "license": "",
+        "name": "Geomodulo #35"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x8F090A1C814d5a8278e9E085dDbA58015d852Ab8",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "18",
+        "icon_url": null,
+        "name": "Geomodulo by Paul Prudence",
+        "reputation": "ok",
+        "symbol": null,
+        "total_supply": "52",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://ipfs.verse.works/ipfs/QmQLhD9qJB6AttLzs5Hk3X7ARE163q43ggiLr8iGNNxnr3/?hashSeed=127799509",
+      "external_app_url": null,
+      "id": "53",
+      "image_url": "https://0prod.infura-ipfs.io/ipfs/bafybeig3zfvbvnwd77enrh4bu6vyd3fchfk45bqsrr773dors4crjr76ba",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://0prod.infura-ipfs.io/ipfs/bafybeig3zfvbvnwd77enrh4bu6vyd3fchfk45bqsrr773dors4crjr76ba",
+      "metadata": {
+        "animation_url": "https://ipfs.verse.works/ipfs/QmQLhD9qJB6AttLzs5Hk3X7ARE163q43ggiLr8iGNNxnr3/?hashSeed=127799509",
+        "attributes": [
+          {
+            "trait_type": "DIS_MODEA",
+            "value": "HYBRID"
+          },
+          {
+            "trait_type": "RATIO",
+            "value": "0.8"
+          },
+          {
+            "trait_type": "DrawAutoElement",
+            "value": "True"
+          },
+          {
+            "trait_type": "LAYOUTA",
+            "value": "6"
+          },
+          {
+            "trait_type": "MainToneB",
+            "value": "19"
+          },
+          {
+            "trait_type": "DIS_MODEB",
+            "value": "E,M,C"
+          },
+          {
+            "trait_type": "MainToneA",
+            "value": "15"
+          },
+          {
+            "trait_type": "FORCEA",
+            "value": "2: MAGNET SWAY TWIRL"
+          },
+          {
+            "trait_type": "Artwork",
+            "value": "春分 ｜ Equinox"
+          },
+          {
+            "trait_type": "DRAWNOISE",
+            "value": "False"
+          },
+          {
+            "trait_type": "DRAWFLOWFIELD",
+            "value": "True"
+          },
+          {
+            "trait_type": "FORCEB",
+            "value": "2: MAGNET SWAY TWIRL"
+          },
+          {
+            "trait_type": "DRAWICON",
+            "value": "False"
+          },
+          {
+            "trait_type": "Artist",
+            "value": "Aluan Wang"
+          },
+          {
+            "trait_type": "GOBALSTYLE",
+            "value": "1"
+          }
+        ],
+        "description": "*Mapping is not a mere simulation; it is the transformation of reality.*\n\n*In Asian culture, the equinox symbolizes rebirth and renewal, akin to the significance of Easter in the West. For me, this festival holds special meaning as it is an integral part of my rural upbringing and a vessel for my childhood memories and emotions.*\n\n*Throughout my artistic journey, I have been exploring invisible pathways and overarching systems. From my audiovisual work* Dynamized Center *a decade ago to last year’s* Automatic Messages, *each piece delves into the essence of generative systems. I firmly believe that the heart of generative art lies not only in the visual output but also in the comprehensive systems driving these outputs.*\n\n*In* Equinox, *I designed several interacting systems whose interplay results in unpredictable outcomes, embodying seasonal transitions and natural cycles whilst aiming to capture subtle emotions that are easily overlooked in our fast-paced world. Rather than serving as an imitation of reality,* Equinox *is a reinterpretation and creation of it.*\n\nAluan Wang",
+        "hash": "0x7ff42026aab4a8a91b55427c0d01edad7007a65b77104908f76b8baa14637dcc",
+        "image": "https://0prod.infura-ipfs.io/ipfs/bafybeig3zfvbvnwd77enrh4bu6vyd3fchfk45bqsrr773dors4crjr76ba",
+        "license": "",
+        "name": "春分 ｜ Equinox #54"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x909666D671FEF2f593eF8c70cBD43aBF60e75C24",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "18",
+        "icon_url": null,
+        "name": "春分 ｜ Equinox by Aluan Wang",
+        "reputation": "ok",
+        "symbol": null,
+        "total_supply": "64",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://generator.artblocks.io/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268",
+      "external_app_url": "https://artblocks.io/collections/presents/projects/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434/tokens/434000268",
+      "id": "434000268",
+      "image_url": "https://media-proxy.artblocks.io/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268.png",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://media-proxy.artblocks.io/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268.png",
+      "metadata": {
+        "animation_url": "https://generator.artblocks.io/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268",
+        "artist": "DisruptedStar",
+        "aspect_ratio": 0.6666666,
+        "collection_name": "Voyager by DisruptedStar",
+        "curation_status": "presents",
+        "description": "INTRODUCTION\n\nVoyager 1 and 2 have been launched in 1977. They are the farthest man crafted objects from Earth. It will take tens to hundreds thousands years for them to reach other stars and planetary systems despite a velocity of 17km/s... \nThe on-board camera, mysteriously, sends back images of the remote planets and their moons...\n\nDo not go gentle into that good night.\nRage, rage against the dying of the light.\nDylan Thomas (Do not go gentle into that good night)\n\nARTWORK DESCRIPTION\n\nThe artwork represents a planet and its moons. There is an important variety of planet/moons types, different perspectives (far or near the planet and moons), different space environments (stars, Milky Way, star clusters,  comet, eclipse, Einstein cross and ring, Magellanic Clouds...). A very rare Gravitational Wave affecting space properties can occur. Usually Monochromatic, there is a variation with the addition of one color. In \"live view\" use the interaction possibilities to explore a given planetary system...\n\nTECHNICAL DETAILS\n\nIn the same way photons hit the CCD camera, tiny squares hit the canvas.\nThe algorithm is minimalist : pick a random position in the canvas and decide if a monochromatic tiny square has to be drawn or not (rarely, squares can be drawn in 2 colors). The light parts are drawn only through the absence of drawing. The whole complexity resides in the decision to draw or not to draw. Mathematical functions are underneath each decision, like space and time are underneath all of our world. \n\n\nINTERACTIONS\n\nYou can interact with keyboard commands or through URL parameters.\n- press S : to save the current image in png\n- press 2, 3... 9 (URL, add DP=2) : change resolution. Increase the value step by step. Can be very long to draw, but it's worth it for printing. Very High Resolution can be achieved. The file is saved automatically when finished.\n- press L (URL, add liveMode=true) : to discover different views of your planetary system (images will be drawn one after the other, with the same parameters for the main planet and the space environment).\n- press F (URL, add fitToScreen=true) : to adapt the artwork to any screen size (artwork is changed but parameters remain the same)\n- press M (URL, add monoChromatic=true) : to force the artwork to be monochromatic\n- press G (URL, add GW=false) : to remove the gravitational wave effect\n- URL, add offset=<Number>, to offset the image production (same planet parameters and space environment)\n- URL, add grainy=true, to change the size of the grain (useful for displays to speed up the creation process)\n\nURL Parameters are added to the end of a URL after a ‘?’ symbol, and multiple parameters can be included when separated by the ‘&’ symbol.\nYou can combine \"?liveMode=true&fitToScreen=true&grainy=true\" in the URL for display purpose (TV, Art show...). \nCombining liveMode and DP for resolution allows you to save all the images produced.\n\n\nEXTERNAL LICENSE\n\nVoyager is built with p5js and a simplex noise library under MIT license: simplex-noise.js.\n\n\nDISRUPTED STAR\n\nI am a French astrophysicist (PhD) working in high energy astrophysics.\nMy artist name is related to an astrophysical event in which a star, a pretty common object in the Universe,  comes too close to a Super Massive Black Hole (SMBH), is torn apart and finally tidally disrupted...\nThe Generative Art plays the role of the SMBH that has changed my life in many ways in the past years...",
+        "external_url": "https://artblocks.io/collections/presents/projects/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434/tokens/434000268",
+        "features": {
+          "Cluster": "None",
+          "Color Style": "Monochromatic",
+          "Grain": "Soft",
+          "Gravitational Wave": false,
+          "Margin": "Standard",
+          "Milky Way": true,
+          "Mission Phase": "Far Encounter",
+          "Moon Phase": "Crescent",
+          "Nebula": false,
+          "Number of Moons": 3,
+          "Object": "None",
+          "Palette": "Black",
+          "Planet Category": "Warm Terran"
+        },
+        "generator_url": "https://generator.artblocks.io/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268",
+        "image": "https://media-proxy.artblocks.io/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268.png",
+        "is_static": false,
+        "license": "CC BY-NC 4.0",
+        "minted": true,
+        "name": "Voyager #268",
+        "payout_address": "0x6C093Fe8bc59e1e0cAe2Ec10F0B717D3D182056B",
+        "platform": "Art Blocks Presents",
+        "preview_asset_url": "https://media-proxy.artblocks.io/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268.png",
+        "primary_asset_url": "https://generator.artblocks.io/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268",
+        "project_id": "434",
+        "royaltyInfo": {
+          "additionalPayee": "0x882ac508961f25784e79523995b805ca6a389438",
+          "additionalPayeePercentage": 10,
+          "artistAddress": "0x9103260b568b6cdd88d95657f3142e179be664e2",
+          "royaltyFeeByID": 5
+        },
+        "script_type": "p5@1.0.0",
+        "series": "N/A",
+        "tokenID": "434000268",
+        "token_hash": "0x42138d50bf7993d31d8b64074212ee07d59fe75b15e2a028032d97423c88a089",
+        "traits": [
+          {
+            "trait_type": "Voyager",
+            "value": "All Voyagers"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Grain: Soft"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Margin: Standard"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Nebula: false"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Object: None"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Cluster: None"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Palette: Black"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Milky Way: true"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Moon Phase: Crescent"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Color Style: Monochromatic"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Mission Phase: Far Encounter"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Number of Moons: 3"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Planet Category: Warm Terran"
+          },
+          {
+            "trait_type": "Voyager",
+            "value": "Gravitational Wave: false"
+          }
+        ],
+        "website": "https://sites.google.com/view/tidally-disrupted-star/voyager"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0x99a9B7c1116f9ceEB1652de04d5969CcE509B069",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "7069",
+        "icon_url": null,
+        "name": "Art Blocks",
+        "reputation": "ok",
+        "symbol": "BLOCKS",
+        "total_supply": null,
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+      "external_app_url": "https://fxhash.xyz/gentk/0xAf1cc8f71872d9898d157513A28ACcD741e0AB24-22",
+      "id": "22",
+      "image_url": "https://dweb.link/ipfs/QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "metadata": {
+        "animation_url": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "artifactUri": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "description": "This Gentk is waiting to be signed by Fxhash Signer module",
+        "displayUri": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "external_url": "https://fxhash.xyz/gentk/0xAf1cc8f71872d9898d157513A28ACcD741e0AB24-22",
+        "image": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "name": "[WAITING TO BE SIGNED] Losing Oneself #22",
+        "symbol": "GENTK",
+        "thumbnailUri": "ipfs://QmbvEAn7FLMeYBDroYwBP8qWc3d3VVWbk19tTB83LCMB5S"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0xAf1cc8f71872d9898d157513A28ACcD741e0AB24",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "24",
+        "icon_url": null,
+        "name": "Losing Oneself",
+        "reputation": "ok",
+        "symbol": "FXGEN",
+        "total_supply": "29",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+      "external_app_url": "https://www.fxhash.xyz/iteration/id/0xb1FA7Ff8664fc192268FC586A267927C8819b062-20",
+      "id": "20",
+      "image_url": "https://dweb.link/ipfs/QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "metadata": {
+        "animation_url": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "artifactUri": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "description": "This Gentk is waiting to be signed by Fxhash Signer module",
+        "displayUri": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "external_url": "https://www.fxhash.xyz/iteration/id/0xb1FA7Ff8664fc192268FC586A267927C8819b062-20",
+        "image": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "name": "[WAITING TO BE SIGNED] Deliverance #20",
+        "symbol": "GENTK",
+        "thumbnailUri": "ipfs://QmbvEAn7FLMeYBDroYwBP8qWc3d3VVWbk19tTB83LCMB5S"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0xb1FA7Ff8664fc192268FC586A267927C8819b062",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "57",
+        "icon_url": null,
+        "name": "Deliverance",
+        "reputation": "ok",
+        "symbol": "Deliverance",
+        "total_supply": null,
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/bafybeifu5unv75jehs46lpetfgz2jpqb2pbqn5ufzhelckhavadrcew3by/index.html?payload=eyJoYXNoIjoiMHg2ZmM0YTA4MjVlNTk3ZTc0NTBmOGYwNDIxOWZjYjI4MWNlMTBlZjQ1ZTM3ODljOGRkYTkzZWEwMTU1YjAwYzZmIiwiZWRpdGlvbk51bWJlciI6NjMsInRvdGFsRWRpdGlvbnMiOjYzLCJpbnB1dCI6eyIkcHVyY2hhc2VfcXVldWVfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SW1FeVpETXdPREJrTFRKbU9UUXROR1JsT0MxaFpXTXlMVEk0T1RsbVlUWTVNVEJoWXlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKbGVIQWlPakUzT0RRNE5UazVPVFFzSW1saGRDSTZNVGM0TkRnMU9UWTVOQ3dpYVhOeklqb2lkWEp1T25abGNuTmxMbmR2Y210eklpd2lhblJwSWpvaVlXVXlOakkwTkdVdFl6Z3lPUzAwTnpNMUxXSTJabUV0T0dNMVptSXdaV1ZoWXpCaklpd2ljWFZsZFdVdGFXUWlPaUkzT0RNMlltTTVNaTFqTWpkakxUUTFPVEV0WW1GaVl5MWtNVFJqTWpneE1qWTJaVGdpTENKeGRXVjFaUzF6Ykc5MExXbGtJam9pTnpsa1lqZGhPR1F0WkRZNE1TMDBOalF4TFRnMk5ETXROalZpTkRVelkyRTBOakUwSWl3aWMyRnNaUzFwWkNJNkltTXdaR1ZpWldSbExXTmpNMll0TkRVMU1pMDRZbUprTFdKbFpUSTFZemswTmpsaU5pSXNJbk4xWWlJNkltWmpNMlptTUdGaUxUTTJPVEl0TkRKbE9DMWlZVEJoTFRZM01UYzJZamxtT1RBd1pDSjkuMjdQSDl3SWJvNUFvcmkxR1NHdHdUR21fMUJfNjRmbUE0elVMQUpTeDVWWVdCOW1Fek16NDBBTk5BdmhBYk5GU3ZtdXNzU0l5SkwxcnNLcWdmeExUOHciLCIkdXNlcm5hbWUiOiJGYWJEYW9BcnRiYW5rIn19",
+      "external_app_url": null,
+      "id": "62",
+      "image_url": "https://dweb.link/ipfs/bafybeif7jc5bw7pv6l4qsgwgkgup7m3lrmmjc7hy5kmjkxvogbu7el3ogy",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://bafybeif7jc5bw7pv6l4qsgwgkgup7m3lrmmjc7hy5kmjkxvogbu7el3ogy",
+      "metadata": {
+        "animation_url": "ipfs://bafybeifu5unv75jehs46lpetfgz2jpqb2pbqn5ufzhelckhavadrcew3by/index.html?payload=eyJoYXNoIjoiMHg2ZmM0YTA4MjVlNTk3ZTc0NTBmOGYwNDIxOWZjYjI4MWNlMTBlZjQ1ZTM3ODljOGRkYTkzZWEwMTU1YjAwYzZmIiwiZWRpdGlvbk51bWJlciI6NjMsInRvdGFsRWRpdGlvbnMiOjYzLCJpbnB1dCI6eyIkcHVyY2hhc2VfcXVldWVfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SW1FeVpETXdPREJrTFRKbU9UUXROR1JsT0MxaFpXTXlMVEk0T1RsbVlUWTVNVEJoWXlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKbGVIQWlPakUzT0RRNE5UazVPVFFzSW1saGRDSTZNVGM0TkRnMU9UWTVOQ3dpYVhOeklqb2lkWEp1T25abGNuTmxMbmR2Y210eklpd2lhblJwSWpvaVlXVXlOakkwTkdVdFl6Z3lPUzAwTnpNMUxXSTJabUV0T0dNMVptSXdaV1ZoWXpCaklpd2ljWFZsZFdVdGFXUWlPaUkzT0RNMlltTTVNaTFqTWpkakxUUTFPVEV0WW1GaVl5MWtNVFJqTWpneE1qWTJaVGdpTENKeGRXVjFaUzF6Ykc5MExXbGtJam9pTnpsa1lqZGhPR1F0WkRZNE1TMDBOalF4TFRnMk5ETXROalZpTkRVelkyRTBOakUwSWl3aWMyRnNaUzFwWkNJNkltTXdaR1ZpWldSbExXTmpNMll0TkRVMU1pMDRZbUprTFdKbFpUSTFZemswTmpsaU5pSXNJbk4xWWlJNkltWmpNMlptTUdGaUxUTTJPVEl0TkRKbE9DMWlZVEJoTFRZM01UYzJZamxtT1RBd1pDSjkuMjdQSDl3SWJvNUFvcmkxR1NHdHdUR21fMUJfNjRmbUE0elVMQUpTeDVWWVdCOW1Fek16NDBBTk5BdmhBYk5GU3ZtdXNzU0l5SkwxcnNLcWdmeExUOHciLCIkdXNlcm5hbWUiOiJGYWJEYW9BcnRiYW5rIn19",
+        "attributes": [
+          {
+            "trait_type": "Dynamic Color",
+            "value": "topDark"
+          },
+          {
+            "trait_type": "Flow",
+            "value": "downflow"
+          },
+          {
+            "trait_type": "MAX ITER",
+            "value": "6"
+          },
+          {
+            "trait_type": "TAU",
+            "value": "7.8"
+          },
+          {
+            "trait_type": "Artist",
+            "value": "MCHX"
+          },
+          {
+            "trait_type": "Artwork",
+            "value": "Soft Continuum ∞"
+          },
+          {
+            "trait_type": "colAA Mirror",
+            "value": "normal"
+          },
+          {
+            "trait_type": "colAA Phase",
+            "value": "2"
+          },
+          {
+            "trait_type": "Render Mode",
+            "value": "D"
+          },
+          {
+            "trait_type": "Palette",
+            "value": "C"
+          },
+          {
+            "trait_type": "Persistent Layer",
+            "value": "Off"
+          },
+          {
+            "trait_type": "Static Color",
+            "value": "randomAll"
+          }
+        ],
+        "description": "Soft Continuum ∞ is a real-time generative artwork built with WebGL and GLSL, combining a procedural color field, soft atmospheric masses, and dynamically generated floating layers.\n\nEach load reveals a new balance of motion, palette, and depth within an ever-changing luminous continuum.\n\nAfter one minute, the background of the composition begins to shift continuously through slow, gradual color change.",
+        "hash": "0x6fc4a0825e597e7450f8f04219fcb281ce10ef45e3789c8dda93ea0155b00c6f",
+        "image": "ipfs://bafybeif7jc5bw7pv6l4qsgwgkgup7m3lrmmjc7hy5kmjkxvogbu7el3ogy",
+        "license": "",
+        "name": "Soft Continuum ∞ #63"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0xb59c14a5792B09DbeF4457ADd77DF930a529C789",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "38",
+        "icon_url": null,
+        "name": "Soft Continuum ∞",
+        "reputation": "ok",
+        "symbol": null,
+        "total_supply": "78",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://ginga.neort.io?tx=0x60a7cc70a5479df1c228d4f1e76559d96a6a6a3cb1b7f740091b4ffda1d88a67",
+      "external_app_url": null,
+      "id": "16",
+      "image_url": "https://gallerystat.neort.io/ginga/16.png",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://gallerystat.neort.io/ginga/16.png",
+      "metadata": {
+        "animation_url": "https://ginga.neort.io?tx=0x60a7cc70a5479df1c228d4f1e76559d96a6a6a3cb1b7f740091b4ffda1d88a67",
+        "attributes": [
+          {
+            "trait_type": "Color Theme",
+            "value": "Nocturne"
+          },
+          {
+            "trait_type": "Background Style",
+            "value": "normal"
+          },
+          {
+            "trait_type": "Layout",
+            "value": "Straight"
+          },
+          {
+            "trait_type": "Dot Decoration",
+            "value": false
+          },
+          {
+            "trait_type": "Line Decoration",
+            "value": true
+          }
+        ],
+        "description": "With this collaboration piece between A-Mashiro and Wen, the artists are exploring the conflict between the order and the chaos. While the ink bleeding background flows and spreads in an unpredictable way. The simple geometry shapes on top provide a sense of order and stability to the composition. Together, they create a sense of balance and harmony.\\n\\nFrom up close, the intricate details of the screentone effect and the geometry shapes are more apparent. However from further away, the overall composition and sense of movement in the piece become more apparent.\\n\\nAnd it also symbolizes that two artists come from very different backgrounds. And it is this difference between them that creates conflicts but also brings harmony to this piece.",
+        "image": "https://gallerystat.neort.io/ginga/16.png",
+        "name": "Ginga #16"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0xC26fce11961C022ceAD411612a9EB2ab27356cD1",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "112",
+        "icon_url": null,
+        "name": "GINGA",
+        "reputation": "ok",
+        "symbol": "GINGA",
+        "total_supply": "238",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://arweave.net/HDQ7EdOURD0hjECIj0HQtdO0AAGkOD78xfxig9Bo2Jo",
+      "external_app_url": "https://expanded.art/articles/voice-gems",
+      "id": "170",
+      "image_url": "https://arweave.net/PxLeGDWoqjJzsiDACa8ApfTyc7Cj08swgnh0Ov35G-0",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://arweave.net/PxLeGDWoqjJzsiDACa8ApfTyc7Cj08swgnh0Ov35G-0",
+      "metadata": {
+        "animation": "https://arweave.net/HDQ7EdOURD0hjECIj0HQtdO0AAGkOD78xfxig9Bo2Jo",
+        "animation_details": {
+          "bytes": 196316954,
+          "codecs": [
+            "H.264",
+            "AAC"
+          ],
+          "duration": 84,
+          "format": "MP4",
+          "height": 2000,
+          "sha256": "91a0b5e46846f5c03ff73a4d914a2f859e714557b8aa75009c9a8e6a6f24559d",
+          "width": 2000
+        },
+        "animation_url": "https://arweave.net/HDQ7EdOURD0hjECIj0HQtdO0AAGkOD78xfxig9Bo2Jo",
+        "attributes": [
+          {
+            "trait_type": "Artist",
+            "value": "HERBERT W. FRANKE "
+          },
+          {
+            "trait_type": "Artist ",
+            "value": "REEPS100 "
+          },
+          {
+            "trait_type": "Artist ",
+            "value": "TRUNG BAO "
+          }
+        ],
+        "created_by": "HERBERT W. FRANKE & VOICE GEMS ",
+        "description": "In 2021, Herbert W. Franke and Harry Yeff started a conversation about the concept of VOICE GEMS and an audio-visual collaboration. Franke suggested using the lyrics of ASTROPOETICON because they are a minimalist and associative approach to language that could have been created by an AI. These lyrics were frozen as gemstones, the VOICE GEMS ASTROPOETICON, created by Herbert W. Franke, Harry Yeff, Trung Bao and an AI. (The first three 1/1s have been minted and collected in 2021.)\n\nThe lyrics used for the VOICE GEMS ASTROPOETICON (DESTINATION IN UNCERTAINTY) belong to a cycle of 16 poems called ASTROPOETICON. Written by Franke in 1979 to be published in a book alongside artworks by German space artist Andreas Nottebohm, he voiced them on the occasion of his 80th birthday in 2007. \n\nEvery voice is unique, and with that comes unique fingerprint-like data that can be used for bespoke and human centred generative design. Harry Yeff (aka REEPS100) and Trung Bao have developed a voice-centred generative system utilising data found in a human voice to synthesise the artworks’ form and colour. Features like pitch, resonance, harmonics and pace sculpt 200 000 particle data points in a simulated digital space. The VOICE GEMS series is a vibrant, unprecedented meditation highlighting remarkable and influential voices. Each VOICE GEM is added to the VOICE GEMS: 1000 Year archive. \n\nHerbert W. Franke (1927–2022) was a pioneer of computer art who anticipated the metaverse. For several decades, he separated three lives: the caver and scientist; the artist and curator; and the science fiction author. In the early 1950s, caving led him to experiment with light and technology. He kept his curiosity throughout his life; it was his drive to examine new technologies for their artistic potential. His pioneering spirit made him one of the first computer artists who was more than six decades ahead of his time. In 1979, he co-founded Ars Electronica. Franke has been called “the most prominent German science fiction writer” by Die Zeit, and a “short story fireworker” by the FAZ. In 2022, his first NFT Drop MATH ART sold out within 30 seconds on Quantum, and he was the headliner at the Tezos Booth at Art Basel with MONDRIAN, a work from 1979. Herbert W. Franke died on July 16, 2022, at the age of 95, leaving behind an extensive oeuvre.\n\nPresented by EXPANDED.ART in collaboration with art meets science – Foundation Herbert W. Franke and ELEMENTUM.ART on the occasion of Herbert W. Franke’s solo show CODED BEAUTY at EXPANDED.ART in Berlin. The art meets science – Foundation Herbert W. Franke will use their portion of the sales for a designated purpose: translating significant texts by Herbert W. Franke to English and making them publicly available.\n\n\n\nASTROPOETICON DESTINATION IN UNCERTAINTY by Herbert W. Franke  \nDestination in uncertainty \t\nsolar sail unfolded  \nride on the ion beam  \nhome port: beyond space and time  \nsensors, directed to the void \nsignals from the dark field  \ncircuits on hold \nice crystals in the cells  \nveins without blood  \nmemory wiped out  \nthe past: obliterated  \nexistence between dream and death  \nwill there be an awakening?  \nwill there be any hope  \nin front: clouds and cosmic dust  \nbehind it maybe  \na galaxy \nstar systems, suns  \nplanets bathed in warmth and light -  \nwake-up call from the tape  \nuncharted territory!  \nbehind it, perhaps:  \na void  \n",
+        "external_url": "https://expanded.art/articles/voice-gems",
+        "image": "https://arweave.net/PxLeGDWoqjJzsiDACa8ApfTyc7Cj08swgnh0Ov35G-0",
+        "image_details": {
+          "bytes": 303788,
+          "format": "JPEG",
+          "height": 2000,
+          "sha256": "ab2ff3912d13085674f25e7910926c8f095016d7aaad7e0c49e07581a7165657",
+          "width": 2000
+        },
+        "image_url": "https://arweave.net/PxLeGDWoqjJzsiDACa8ApfTyc7Cj08swgnh0Ov35G-0",
+        "name": "HERBERT W. FRANKE - VOICE GEMS ASTROPOETICON (DESTINATION IN UNCERTAINTY)"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0xC4afDABb3D8C2f6112b832c36F97Aaf4CE90B792",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "274",
+        "icon_url": null,
+        "name": "VOICE GEMS",
+        "reputation": "ok",
+        "symbol": "VG",
+        "total_supply": null,
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+      "external_app_url": "https://fxhash.xyz/gentk/0xd12bC8E85bee076966E69fDaEf1DBfE73Ca2eaD8-22",
+      "id": "22",
+      "image_url": "https://dweb.link/ipfs/QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "metadata": {
+        "animation_url": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "artifactUri": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "description": "This Gentk is waiting to be signed by Fxhash Signer module",
+        "displayUri": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "external_url": "https://fxhash.xyz/gentk/0xd12bC8E85bee076966E69fDaEf1DBfE73Ca2eaD8-22",
+        "image": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "name": "[WAITING TO BE SIGNED] above/beneath all & all above/beneath #22",
+        "symbol": "GENTK",
+        "thumbnailUri": "ipfs://QmbvEAn7FLMeYBDroYwBP8qWc3d3VVWbk19tTB83LCMB5S"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0xd12bC8E85bee076966E69fDaEf1DBfE73Ca2eaD8",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "27",
+        "icon_url": null,
+        "name": "above/beneath all & all above/beneath",
+        "reputation": "ok",
+        "symbol": "FXGEN",
+        "total_supply": "34",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": "https://dweb.link/ipfs/QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+      "external_app_url": "https://fxhash.xyz/gentk/0xe691fB115a4d04152274e91237190068F7d9e999-16",
+      "id": "16",
+      "image_url": "https://dweb.link/ipfs/QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+      "metadata": {
+        "animation_url": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "artifactUri": "ipfs://QmdGV3UqJqX4v5x9nFcDYeekCEAm3SDXUG5SHdjKQKn4Pe",
+        "description": "This Gentk is waiting to be signed by Fxhash Signer module",
+        "displayUri": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "external_url": "https://fxhash.xyz/gentk/0xe691fB115a4d04152274e91237190068F7d9e999-16",
+        "image": "ipfs://QmYwSwa5hP4346GqD7hAjutwJSmeYTdiLQ7Wec2C7Cez1D",
+        "name": "[WAITING TO BE SIGNED] The Longest Night #16",
+        "symbol": "GENTK",
+        "thumbnailUri": "ipfs://QmbvEAn7FLMeYBDroYwBP8qWc3d3VVWbk19tTB83LCMB5S"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0xe691fB115a4d04152274e91237190068F7d9e999",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "17",
+        "icon_url": null,
+        "name": "The Longest Night",
+        "reputation": "ok",
+        "symbol": "FXGEN",
+        "total_supply": "18",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": null,
+      "external_app_url": null,
+      "id": "13",
+      "image_url": "https://dweb.link/ipfs/bafybeieyzbrocklduym527iitbiwvkavvdqoqf3zzew2j2gr5ciigo6qom",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "ipfs://bafybeieyzbrocklduym527iitbiwvkavvdqoqf3zzew2j2gr5ciigo6qom",
+      "metadata": {
+        "attributes": [
+          {
+            "trait_type": "Artist",
+            "value": "Ricky Retouch"
+          },
+          {
+            "trait_type": "Artwork",
+            "value": "Split Logic"
+          }
+        ],
+        "description": "Split Logic is a collection of procedural terminal works built from screen partitions, grid structures, moving fields, coded labels, and rule-based color. The series begins with layout as a kind of logic, dividing the frame into zones that hold fragments of data, measurements, symbols, and empty space.\n\nAcross the works, motion is found through grid walkers, directional noise, and shifting points that respond to various constraints within the algorithm. Some pieces feel like transit diagrams or stock tickers. Others resemble diagnostic screens or monitoring systems from an imagined machine. The information is partly legible and partly invented, sitting somewhere between data, interface, and decoration.\n\nThe series moves away from the paper-like texture of earlier collections and toward a more digital surface. Its imperfections come from glow, blur, density, compression, and instability. It suggests a functioning system designed for clarity, but still shaped by drift, interference, and human selection.\n\nThe pieces are meant to feel like screens from an unknown system that could have existed in a more advanced version of the 1980s, where modern computation is filtered through older display language.\n\nExperience the exhibition through [The Garden](https://thegarden.art/exhibitions/split-logic).\n\nFurther context can be found in the [Unknown Variables](https://thegarden.art/interviews/ricky-retouch) interview.",
+        "hash": "0x158f5ddc7acbbfd4d16f39fc1c392b07f332792a75459438f87e65bc1a94532a",
+        "image": "ipfs://bafybeieyzbrocklduym527iitbiwvkavvdqoqf3zzew2j2gr5ciigo6qom",
+        "ipfs": "ipfs://bafybeieyzbrocklduym527iitbiwvkavvdqoqf3zzew2j2gr5ciigo6qom",
+        "license": "",
+        "media": {
+          "mimeType": "video/mp4",
+          "size": "49034610",
+          "uri": "https://ipfs.verse.works/ipfs/bafybeieyzbrocklduym527iitbiwvkavvdqoqf3zzew2j2gr5ciigo6qom"
+        },
+        "name": "Split Logic #13"
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0xf5705202462F066aC55c293f5798aE027B2f27b5",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "15",
+        "icon_url": null,
+        "name": "Split Logic by Ricky Retouch",
+        "reputation": "ok",
+        "symbol": null,
+        "total_supply": "41",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    },
+    {
+      "animation_url": null,
+      "external_app_url": null,
+      "id": "73",
+      "image_url": "https://alba.art/images/pending-edition.png",
+      "is_unique": null,
+      "media_type": null,
+      "media_url": "https://alba.art/images/pending-edition.png",
+      "metadata": {
+        "attributes": null,
+        "collectionId": "f3d61fff-9e89-4923-b6be-97890c3e27a7",
+        "description": "A generative endless animation crafted with domain warping and a novel pixel-filling algorithm, exploring motion, generative composition, and algorithmic color generation.",
+        "image": "https://alba.art/images/pending-edition.png",
+        "name": "Cinders #73",
+        "seed": "",
+        "tokenId": 73
+      },
+      "owner": null,
+      "thumbnails": null,
+      "token": {
+        "address_hash": "0xfB2182848B40771dB2c56987C48Dd6c4C771AB79",
+        "circulating_market_cap": null,
+        "circulating_supply": null,
+        "decimals": null,
+        "exchange_rate": null,
+        "holders_count": "45",
+        "icon_url": null,
+        "name": "Cinders by ella",
+        "reputation": "ok",
+        "symbol": "cinders",
+        "total_supply": "74",
+        "type": "ERC-721",
+        "volume_24h": null
+      },
+      "token_type": "ERC-721",
+      "value": "1"
+    }
+  ],
+  "next_page_params": null
+}

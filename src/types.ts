@@ -1,0 +1,4 @@
+export type Artwork = { id: string; title: string; artist: string; chain: string; contract?: string; tokenId?: string; image?: string; animation?: string; description?: string; sourceUrl?: string; sourceUrls?: string[]; ownershipStatus?: string; theme: string; mediaStatus?: string; [key: string]: unknown };
+export type Exhibition = { id: string; theme: string; title: string; titleEn: string; subtitle: string; description: string; color: string; documentIds?: string[]; sourceUrls?: string[] };
+export type DocumentItem = { id: string; title: string; theme: string; type: string; summary: string; url: string; date?: string; verificationStatus?: string; credit?: string; displayLabel?: string };
+export type Collection = { verifiedAt: string; artworks: Artwork[]; wallets: unknown[]; [key: string]: unknown };

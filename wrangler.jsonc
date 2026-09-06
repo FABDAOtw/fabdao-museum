@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fabdao-museum",
+  "account_id": "fd8f8ed12dcdfd03ad171a3a74bc712a",
+  "compatibility_date": "2026-09-06",
+  "assets": {"directory": "./dist", "not_found_handling": "single-page-application"},
+  "routes": [{"pattern": "fabdao-museum.mashbean.net", "custom_domain": true}]
+}
