@@ -1,0 +1,87 @@
+{
+  "title": "從藝術支持，到一起建立展示空間",
+  "introduction": "FAB DAO 的收藏與展示，來自藝術家、社群參與者及不同工作組逐步累積的實驗。本館從藝術銀行兩個錢包的可核對持有紀錄出發，選出三十二件作品，讓它們與專案、提案及治理文獻一起被閱讀。",
+  "authorship": "作品署名依作者原文與可核對來源呈現；中文觀看提示、選件和並置關係屬本館編輯詮釋。藝術家、提案者、收藏執行者與觀眾各有不同位置，本展文字不代替歷史決議或全體社群立場。",
+  "collectionScope": "本館館藏資料來自 2026-09-06 Ethereum 與 Tezos 藝術銀行錢包正餘額快照。Project % 等發行計畫另列專案文獻；其他基金、公庫與歷史轉出作品尚未完成完整盤點。",
+  "question": "一座美術館除了保存作品的形狀，還能如何保存參與、討論與繼續改變的可能？",
+  "timeline": [
+    {
+      "date": "2022-02",
+      "title": "小花與種子藝術基金",
+      "description": "supporter.tez 以小花 NFT 募集藝術家開始使用 Tezos 的資源，並搭配教學與陪伴。",
+      "documentIds": [
+        "supporter"
+      ],
+      "sourceUrls": [
+        "https://fabdao.world/projects/supporter/"
+      ]
+    },
+    {
+      "date": "2022",
+      "title": "Project % 百岳計畫",
+      "description": "以生成藝術、臺灣山岳與公共資金連結的發行計畫，亦留下 Ars Electronica 的展覽脈絡；發行系列和藝術銀行持有清單分別呈現。",
+      "documentIds": [
+        "project-percentage",
+        "ars-2022-project-percentage"
+      ],
+      "sourceUrls": [
+        "https://fabdao.world/project-percentage/",
+        "https://ars.electronica.art/planetb/en/studiotopia/"
+      ]
+    },
+    {
+      "date": "2022-12",
+      "title": "白紙基金的藝術回應",
+      "description": "藝術家以作品聲援自由，官網記錄以版稅支持收藏基金的緣起。本館保留事件背景，也逐件區分作品持有與購藏證據。",
+      "documentIds": [
+        "white-paper-fund"
+      ],
+      "sourceUrls": [
+        "https://fabdao.world/projects/whitepaper/"
+      ]
+    },
+    {
+      "date": "2023-02—03",
+      "title": "藝術銀行：研究、提案與共同決定",
+      "description": "公開共筆討論藝術家交流、收藏方向及共同身份；3 月第一版協議把提名、決選、購藏與季度策展寫成流程。",
+      "documentIds": [
+        "art-bank-origins",
+        "art-bank-protocol"
+      ],
+      "sourceUrls": [
+        "https://hackmd.io/@FABDAO/rJt8YQipi",
+        "https://hackmd.io/@FABDAO/Sy8SGSHx3"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "title": "FAB 道館建築競賽",
+      "description": "以 Protoworld 為目標平台，邀請不同背景參與者提出虛擬美術館構想，探索作品的三維呈現與觀眾動線。",
+      "documentIds": [
+        "fab-museum-2024"
+      ],
+      "sourceUrls": [
+        "https://fabdao.world/projects/fab-museum/"
+      ]
+    },
+    {
+      "date": "2026-09",
+      "title": "本館：讓作品與文獻一起被閱讀",
+      "description": "目前網頁從兩個藝術銀行錢包整理館藏，以四廳展覽延續展示空間的提問。建築為本版另行設計，與 2024 年競賽方案分別記錄。",
+      "documentIds": [],
+      "sourceUrls": [
+        "https://fabdao-museum.mashbean.net/"
+      ]
+    }
+  ],
+  "sourceUrls": [
+    "https://fabdao.world/projects/supporter/",
+    "https://fabdao.world/project-percentage/",
+    "https://fabdao.world/projects/whitepaper/",
+    "https://hackmd.io/@FABDAO/rJt8YQipi",
+    "https://hackmd.io/@FABDAO/Sy8SGSHx3",
+    "https://fabdao.world/projects/fab-museum/"
+  ],
+  "lastVerifiedAt": "2026-09-06",
+  "editorialLabel": "本館依公開文獻整理"
+}

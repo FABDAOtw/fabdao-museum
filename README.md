@@ -8,11 +8,11 @@ A desktop-first virtual museum and public-source collection catalogue for FAB DA
 ## What is implemented
 
 - Four connected galleries: 生成之間 / 群山成島 / 收藏作為行動 / 留白與記憶.
-- Procedural fluted columns, arch voussoirs, cornices and dentils, coffered skylights, stone urns, brass picture frames and tiled stone floors. Decorative urns are architectural elements, not NFTs.
+- Procedural fluted columns, arch voussoirs, cornices and dentils, coffered skylights, brass picture frames and low-contrast tiled stone floors. Each room has distinct furniture and a clear circulation route; the commons gallery includes the original Green Sofa GLB.
 - Three.js WebGL2, PBR architecture, environment lighting, directional shadows, SSAO and ACES output. Art previews use sRGB; the HTML detail viewer preserves the image independently of the gallery lighting.
-- WASD movement, arrow-key movement/turning, drag-to-look, optional pointer lock, collision, pause, map teleportation and three quality levels.
-- 32 curated first-exhibition previews, with art rotation by room; 10 permanent document panels beside the arches.
-- Searchable catalogue of 151 publicly indexed holdings, artwork attribution, source links, image zoom, document summaries and a WebGL-unavailable fallback.
+- WASD movement, arrow keys and vertical keyboard look, drag-to-look, optional pointer lock, collision, pause, map teleportation, frontal artwork positioning, a 32-work guided route, quiet mode and three quality levels.
+- 32 fixed first-exhibition works (8 per gallery), with two six/two-work wall pages in the memory gallery. Shared documents follow the curatorial reference order on reading tables and accessible panels.
+- Searchable catalogue of 151 publicly indexed holdings, artwork attribution, source links, fit/100%/zoom/pan/fullscreen image viewing, contextual previous/next and return navigation, shareable artwork URLs, document summaries and a WebGL-unavailable fallback.
 - Relative asset paths and stable chain/contract/token identifiers for domain migration.
 
 ## Stack and development
@@ -26,7 +26,7 @@ npm test
 npm run build
 ```
 
-For browser checks, install Chrome and run `node tests/browser-qa.mjs`. `MUSEUM_URL` selects a deployment. The output directory can be configured with `MUSEUM_OUTPUT`; it defaults to `../../output/fabdao-museum` in this workspace. Browser checks exercise real rendering, controls, map navigation, search, metadata, documents, image zoom, quality settings, rotation and WebGL fallback. They do not imply cross-browser or cross-device performance acceptance.
+Round-two validation includes data and navigation tests, asynchronous scene replacement/disposal tests, and native-media activation/disposal tests. These do not replace browser visual or playback acceptance. `tests/browser-qa.mjs` records the original round-one automated flow and is now historical: its selectors and rotation assumptions need updating before reuse. In Codex desktop, use the approved CUA browser tools for UI checks. Round-two browser acceptance was blocked by the locked Mac at delivery; do not treat round-one screenshots as evidence of this revision.
 
 ```sh
 npm run build
@@ -38,7 +38,7 @@ No application secrets or API keys are needed. Deployment uses the operator's ex
 
 ## Collection and editorial workflow
 
-See [`public/data/README.md`](public/data/README.md) for exact source, ownership, media and reproduction boundaries. `scripts/collection-curation.json` keeps editorial choices separate from indexer responses. `exhibitions.json` and `documents.json` contain authored summaries and their public references.
+See [`public/data/README.md`](public/data/README.md) for exact source, ownership, media and reproduction boundaries. `scripts/collection-curation.json` keeps editorial choices separate from indexer responses. `exhibitions.json`, `documents.json` and `institution.json` contain authored groupings, cross-references, a timeline and source boundaries. Every first-exhibition work has separate viewing/making/curatorial notes; three expanded collection stories distinguish documented artist intent and holdings from missing decision/transaction evidence.
 
 ```sh
 node scripts/ingest-collection.mjs
@@ -52,9 +52,9 @@ Inspect new tokens and media before deploying a refreshed snapshot. Positive bal
 
 ## Media, rights and current scope
 
-The first exhibition uses cached resized previews from real token metadata (one explicitly documented artist-CDN alternative). Originals, animation, executable art, PDF publications and 3D artworks remain available through original-source links; they are not all playable inside the gallery. Per-token licences are preserved where metadata supplies them. Rights remain with their respective authors.
+The first exhibition uses cached resized previews from real token metadata (one explicitly documented artist-CDN alternative). Rain Blooms and Directrix have explicit-activation original HTML viewers in opaque sandboxed iframes. Your First Green Sofa has a verified self-contained original GLB in the gallery and an on-demand rotatable viewer. All other native media retain source links. Closing or changing a work disposes its viewer. External availability remains dependent on its publisher/IPFS gateway; iframe load alone is not successful artwork playback. Per-token licences are preserved where metadata supplies them. Rights remain with their respective authors.
 
-This initial museum is a procedural architectural implementation. It does not yet contain artist-modelled architectural sculptures, offline baked global illumination, multiplayer, an avatar camera, VR, full acquisition/transfer history, Base holdings or proposal-decision reconciliation. Chrome desktop and a narrow-screen catalogue are tested; Safari/Firefox and a representative low-power device still need acceptance testing.
+This initial museum is a procedural architectural implementation. It does not yet contain artist-modelled architectural sculptures, offline baked global illumination, multiplayer, an avatar camera, VR, full acquisition/transfer history, Base holdings or proposal-decision reconciliation. Round-one Chrome and narrow-screen checks were completed before this revision. Round two still requires visual/playback acceptance after unlocking the Mac, plus Safari/Firefox and a representative low-power device.
 
 ## Moving to museum.fabdao.world
 

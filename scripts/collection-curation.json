@@ -1,44 +1,1290 @@
 {
   "featured": {
-    "generative": ["Amplitudes of Canvas #128", "Rain Blooms #81", "Voyager #268", "Generativemasks #2422", "Directrix #86", "Ir/rational Beauty #71", "CENTURY-XXX-METAFRANKE #888", "Exotic Quarpets #141"],
-    "islands": ["pulau gen #399", "lsland Of Mountains #78", "The Moonlit Sea of Taitung 台東月夜海", "Mountains in Mind #191", "Kowloon 1", "Ancestral Guardian 11", "群島資料庫01：吳其育 Nusantara Archive 01: Wu Chi-Yu", "群島資料庫10：張恩滿—蝸牛樂園 Nusantara Archive 10: Chang En-Man – Snail Paradise"],
-    "commons": ["你的第一個綠沙發｜Your First Green Sofa", "a collection of collectors", "DECENTRALIZED", "心動與匯集", "FABDAO 1週年生日派對門票", "FABDAO 1周年紀念笑鼠金幣", "Secondary Market 2", "I have an NFT and am willing to share the proceeds"],
-    "memory": ["Fields of the Abandoned Homeland #120", "Shape of Freedom #1188", "21/29.7 #1619", "Putin's Ashes", "Sunflowers still", "Waves 2.0: Mountains, fragment #001", "THE WORD AFTER US: An AI poetry unreading #83", "每個人心中都有段被刪 - 先總統 蔣公紀念切片03"]
+    "generative": [
+      "Amplitudes of Canvas #128",
+      "Rain Blooms #81",
+      "Voyager #268",
+      "Generativemasks #2422",
+      "Directrix #86",
+      "Ir/rational Beauty #71",
+      "CENTURY-XXX-METAFRANKE #888",
+      "Exotic Quarpets #141"
+    ],
+    "islands": [
+      "pulau gen #399",
+      "lsland Of Mountains #78",
+      "The Moonlit Sea of Taitung 台東月夜海",
+      "Mountains in Mind #191",
+      "Kowloon 1",
+      "Lock-in Vending Machine 095",
+      "群島資料庫01：吳其育 Nusantara Archive 01: Wu Chi-Yu",
+      "群島資料庫10：張恩滿—蝸牛樂園 Nusantara Archive 10: Chang En-Man – Snail Paradise"
+    ],
+    "commons": [
+      "a collection of collectors",
+      "你的第一個綠沙發｜Your First Green Sofa",
+      "DECENTRALIZED",
+      "心動與匯集",
+      "FABDAO 1週年生日派對門票",
+      "FABDAO 1周年紀念笑鼠金幣",
+      "Secondary Market 2",
+      "I have an NFT and am willing to share the proceeds"
+    ],
+    "memory": [
+      "Shape of Freedom #1188",
+      "21/29.7 #1619",
+      "Fields of the Abandoned Homeland #120",
+      "Putin's Ashes",
+      "Sunflowers still",
+      "Waves 2.0: Mountains, fragment #001",
+      "每個人心中都有段被刪 - 先總統 蔣公紀念切片03",
+      "THE WORD AFTER US: An AI poetry unreading #83"
+    ]
   },
   "overrides": {
-    "Generativemasks #2422": {"artist": "Shunsuke Takawo", "artistStatus": "official_artist_source", "artistSource": "https://generativemasks.io/", "previewSources": ["https://d2lvexckornt3q.cloudfront.net/generativemasks_jpg/generativemasks_texture_02422.jpg"], "previewSourceEvidence": "https://generativemasks.io/_next/static/chunks/pages/index-727019e1ea7320f4.js", "previewNote": "原 IPFS 預覽三個 gateway 逾時；使用藝術家官網依作品編號 2422 展示的預覽，配色可能與每次執行的原作不同。"},
-    "Fields of the Abandoned Homeland #120": {"artist": "Kitel87", "artistStatus": "token_description_credit", "theme": "memory"},
-    "Putin's Ashes": {"artist": "Shepard Fairey／Pussy Riot", "issuer": "Pussy Riot", "artistStatus": "token_description_credit", "artistSource": "https://objkt.com/tokens/KT1XE84DKaJqhZ1EvJJCieDUE8GEpSge92Lp/1", "artistCreditNote": "Token description credits the artwork to Shepard Fairey for Pussy Riot's installation."},
-    "Reflection of Olden": {"artist": "Tina G（攝影）", "issuer": "Danny G", "artistStatus": "token_description_credit", "artistSource": "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/850483", "artistCreditNote": "The platform creator account is Danny G; the description explicitly says Photo By Tina G.", "theme": "islands", "themeStatus": "metadata_review", "curatorialBasis": "作品描述記錄挪威 Olden 村鎮、山谷、冰河與瀑布地景。"},
-    "NYOK": {"artist": "bjorn calleja、eskalator3", "issuer": "bjorn calleja", "artistStatus": "token_description_credit", "artistSource": "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/204339", "artistCreditNote": "Token description identifies a collaboration between bjorncalleja and eskalator3."},
-    "Shape of Freedom #1188": {"artist": "林經堯 Jinyao Lin", "artistStatus": "public_source_cross_checked", "artistSource": "https://abmedia.io/20221130-aluan-wang-21-29-7", "theme": "memory"},
-    "21/29.7 #1619": {"artist": "王新仁 Aluan Wang", "artistStatus": "public_source_cross_checked", "artistSource": "https://abmedia.io/20221130-aluan-wang-21-29-7", "theme": "memory"},
-    "每個人心中都有段被刪 - 先總統 蔣公紀念切片03": {"artist": "葉廷皓 YehTingHao", "artistStatus": "creator_account_and_museum_source", "artistSource": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=80075", "theme": "memory"},
-    "Ancestral Guardian 11": {"theme": "islands"},
-    "i248_01": {"theme": "memory", "themeStatus": "metadata_review", "curatorialBasis": "Token description 明列為 FAB 道館建築競圖候選，保存組織建館記憶。"},
-    "Lock-in Vending Machine 095": {"theme": "islands", "themeStatus": "metadata_review", "curatorialBasis": "作品為臺灣夾娃娃機紀錄計畫，metadata 指定彰化海防哨旁地點。"},
-    "De_struggle ( Original version on the SHIBUYA SCREENS )": {"theme": "generative", "themeStatus": "metadata_review", "curatorialBasis": "作者以除錯及生成藝術的完成判準為核心；澀谷是展出地點。"},
-    "Blue fires everywhere": {"theme": "generative", "themeStatus": "metadata_review", "curatorialBasis": "作者描述由 GAN、DALL.E、實體拼貼與 Procreate 重繪交織的生成過程。"},
-    "Constructive 2022 💙💛": {"theme": "memory", "themeStatus": "metadata_review", "curatorialBasis": "Token description 明確記載全部收益支持烏克蘭。"},
-    "Eternal City": {"theme": "memory", "themeStatus": "metadata_review", "curatorialBasis": "Token description 指向支持烏克蘭的捐款合約與非營利組織名單。"},
-    "Open the door": {"theme": "memory", "themeStatus": "metadata_review", "curatorialBasis": "作品以《末代皇帝》為靈感，描述自由、歷史洪流與漂泊者。", "artist": "Ann Chou（作畫）、Nullbaysea（配樂）", "issuer": "Ann Chou II", "artistStatus": "token_description_credit"},
-    "Past, Present, Future": {"theme": "commons", "themeStatus": "metadata_review", "curatorialBasis": "作者將藏家的收藏、燒毀、出售與轉讓鏈上互動納為作品的一部分。"},
-    "HBDFXH01 #67": {"theme": "commons", "themeStatus": "metadata_review", "curatorialBasis": "fxhash 週年作品，metadata 明列首發收入分配至 Tezos4Iran、Women Who Code、巴基斯坦洪災救助與 Processing Foundation。"},
-    "Ginga #16": {"artist": "A-Mashiro、Wen", "artistStatus": "token_description_credit"},
-    "你的第一個綠沙發｜Your First Green Sofa": {"artist": "Green Sofa／GreenPill Taiwan・FAB DAO", "artistStatus": "token_description_collective_credit", "theme": "commons"},
-    "FABDAO 1週年生日派對門票": {"artist": "FAB DAO", "artistStatus": "token_creator_wallet", "theme": "commons"},
-    "FABDAO 1周年紀念笑鼠金幣": {"artist": "FAB DAO", "artistStatus": "token_creator_wallet", "theme": "commons"},
-    "Waves 2.0: Mountains, fragment #001": {"theme": "memory"},
-    "群島資料庫01：吳其育 Nusantara Archive 01: Wu Chi-Yu": {"artist": "吳其育 Wu Chi-Yu／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫02：茲克里拉曼 Nusantara Archive 02: Zikri Rahman": {"artist": "茲克里拉曼 Zikri Rahman／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫03：區秀詒 Nusantara Archive 03: Au Sow Yee": {"artist": "區秀詒 Au Sow Yee／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫04：符芳俊 Nusantara Archive 04: Hoo Fan Chon": {"artist": "符芳俊 Hoo Fan Chon／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫05：KUNCI文化研究中心 Nusantara Archive 05: KUNCI Cultural Studies Center": {"artist": "KUNCI 文化研究中心／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫06：蘇穎欣 Nusantara Archive 06: Show Ying Xin": {"artist": "蘇穎欣 Show Ying Xin／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫07：播音員 Nusantara Archive 07: The Broadcaster(s)": {"artist": "播音員 The Broadcaster(s)／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫08：超自然投資手冊 Nusantara Archive 08: Paririmbon Investasi": {"artist": "超自然投資手冊 Paririmbon Investasi／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫09：人像攝影師 Nusantara Archive 09: A Box Photographer": {"artist": "人像攝影師 A Box Photographer／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫10：張恩滿—蝸牛樂園 Nusantara Archive 10: Chang En-Man – Snail Paradise": {"artist": "張恩滿 Chang En-Man／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"},
-    "群島資料庫12：水土-不伏 Nusantara Archive 12: (In)compatible": {"artist": "水土-不伏 (In)compatible／群島資料庫", "issuer": "RikeyT", "artistStatus": "token_title_credit", "theme": "islands"}
-  }
+    "Generativemasks #2422": {
+      "artist": "Shunsuke Takawo",
+      "artistStatus": "official_artist_source",
+      "artistSource": "https://generativemasks.io/",
+      "previewSources": [
+        "https://d2lvexckornt3q.cloudfront.net/generativemasks_jpg/generativemasks_texture_02422.jpg"
+      ],
+      "previewSourceEvidence": "https://generativemasks.io/_next/static/chunks/pages/index-727019e1ea7320f4.js",
+      "previewNote": "原 IPFS 預覽三個 gateway 逾時；使用藝術家官網依作品編號 2422 展示的預覽，配色可能與每次執行的原作不同。",
+      "viewingNote": "先尋找讓你認出面孔的最少線索，再看左右對稱中有哪些細節差異。暫時放下表情的命名，觀察幾何圖案如何在熟悉與陌生之間，帶出像有生命的感覺。",
+      "makingNote": "作者以 p5.js 生成對稱幾何，原說明提到圖騰柱與日本妖怪帶來的視覺靈感；此預覽來自作者官網。",
+      "curatorialNote": "接在《Voyager》之後，將辨識的對象從天體轉到面孔，再由《Directrix》把觀看轉為手勢介入。",
+      "mediumLabel": "生成圖像；官網靜態預覽",
+      "suggestedDuration": "1 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者以 p5.js 生成對稱幾何，原說明提到圖騰柱與日本妖怪帶來的視覺靈感；此預覽來自作者官網。",
+        "exhibitionReason": "接在《Voyager》之後，將辨識的對象從天體轉到面孔，再由《Directrix》把觀看轉為手勢介入。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x80416304142fa37929f8a4eee83ee7d2dac12d7c/8623",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      },
+      "selectedGroup": "generative-rules",
+      "selectedGroupLabel": "規則留下的表面",
+      "wallNote": "先尋找讓你認出面孔的最少線索，再看左右對稱中有哪些細節差異。",
+      "editorialSourceUrls": [
+        "https://opensea.io/assets/ethereum/0x80416304142fa37929f8a4eee83ee7d2dac12d7c/8623",
+        "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+      ]
+    },
+    "Fields of the Abandoned Homeland #120": {
+      "artist": "Kitel87",
+      "artistStatus": "token_description_credit",
+      "theme": "memory",
+      "viewingNote": "先看麥田如何延伸，再讀作者在撤離途中反覆見到田野的自述。這片地景既是歸途的想望，也連著被迫離家的經驗；請把它留在具體的烏克蘭戰爭背景中觀看。",
+      "makingNote": "Kitel87 以 p5.js 創作，原說明記錄 2022 年逃離戰火的經驗，將作品獻給被迫離家的人。",
+      "curatorialNote": "與《Putin’s Ashes》《Sunflowers still》形成烏克蘭組：離散自述、抗議行動與持續支持彼此對照，不合併為單一情緒。",
+      "mediumLabel": "生成地景影像",
+      "suggestedDuration": "2–3 分鐘；適合先讀自述",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "Kitel87 以 p5.js 創作，原說明記錄 2022 年逃離戰火的經驗，將作品獻給被迫離家的人。",
+        "exhibitionReason": "與《Putin’s Ashes》《Sunflowers still》形成烏克蘭組：離散自述、抗議行動與持續支持彼此對照，不合併為單一情緒。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1585350",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "memory-ukraine",
+      "selectedGroupLabel": "烏克蘭：離散、抗議與支持",
+      "wallNote": "先看麥田如何延伸，再讀作者在撤離途中反覆見到田野的自述。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1585350",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Putin's Ashes": {
+      "artist": "Shepard Fairey／Pussy Riot",
+      "issuer": "Pussy Riot",
+      "artistStatus": "token_description_credit",
+      "artistSource": "https://objkt.com/tokens/KT1XE84DKaJqhZ1EvJJCieDUE8GEpSge92Lp/1",
+      "artistCreditNote": "Token description credits the artwork to Shepard Fairey for Pussy Riot's installation.",
+      "viewingNote": "先看圖像如何直接表達抗議，再讀作者標出的合作對象與支持方向。與前一件的個人逃難敘事相比，這裡採取公開動員的語氣，邀請觀看者面對藝術與政治行動的關係。",
+      "makingNote": "Shepard Fairey 為 Pussy Riot 的同名裝置製作圖像；原說明主張收益支持烏克蘭前線部隊。",
+      "curatorialNote": "置於烏克蘭組中央，清楚區分軍事支持、作者的抗議主張與本館持有事實；不能據持有推定 FAB DAO 的購藏決議或捐款路徑。",
+      "mediumLabel": "數位抗議圖像",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "Shepard Fairey 為 Pussy Riot 的同名裝置製作圖像；原說明主張收益支持烏克蘭前線部隊。",
+        "exhibitionReason": "置於烏克蘭組中央，清楚區分軍事支持、作者的抗議主張與本館持有事實；不能據持有推定 FAB DAO 的購藏決議或捐款路徑。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1XE84DKaJqhZ1EvJJCieDUE8GEpSge92Lp/1",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "memory-ukraine",
+      "selectedGroupLabel": "烏克蘭：離散、抗議與支持",
+      "wallNote": "先看圖像如何直接表達抗議，再讀作者標出的合作對象與支持方向。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1XE84DKaJqhZ1EvJJCieDUE8GEpSge92Lp/1",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Reflection of Olden": {
+      "artist": "Tina G（攝影）",
+      "issuer": "Danny G",
+      "artistStatus": "token_description_credit",
+      "artistSource": "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/850483",
+      "artistCreditNote": "The platform creator account is Danny G; the description explicitly says Photo By Tina G.",
+      "theme": "islands",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "作品描述記錄挪威 Olden 村鎮、山谷、冰河與瀑布地景。"
+    },
+    "NYOK": {
+      "artist": "bjorn calleja、eskalator3",
+      "issuer": "bjorn calleja",
+      "artistStatus": "token_description_credit",
+      "artistSource": "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/204339",
+      "artistCreditNote": "Token description identifies a collaboration between bjorncalleja and eskalator3."
+    },
+    "Shape of Freedom #1188": {
+      "artist": "林經堯 Jinyao Lin",
+      "artistStatus": "public_source_cross_checked",
+      "artistSource": "https://abmedia.io/20221130-aluan-wang-21-29-7",
+      "theme": "memory",
+      "viewingNote": "從一張紙的形狀開始，停留在沒有文字的表面。開啟原作後可前後移動生成步驟，觀察形變如何牽動你的閱讀：當訊息沒有被寫出，它還能如何被辨認？",
+      "makingNote": "林經堯以 p5.js 與 glfx 製作，原說明將紙連到自由，並表明收益支持 FAB DAO 的人權活動。",
+      "curatorialNote": "與《21/29.7》作為入口的白紙組，另附基金文獻交代 2022 年白紙運動背景，之後才進入不同歷史事件。",
+      "mediumLabel": "互動生成影像",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "fund_context_and_holding_verified_acquisition_pending",
+        "title": "白紙基金與一件自由的形狀",
+        "artistIntent": "林經堯以 p5.js 與 glfx 製作，原說明將紙連到自由，並表明收益支持 FAB DAO 的人權活動。",
+        "exhibitionReason": "與《21/29.7》作為入口的白紙組，另附基金文獻交代 2022 年白紙運動背景，之後才進入不同歷史事件。",
+        "verifiedFacts": [
+          "作者原說明表明以作品收益支持 FAB DAO 的人權活動。",
+          "FAB DAO 官網將此系列列入 2022 年白紙運動後的藝術行動，並記錄以版稅成立收藏基金。",
+          "本件 #1188 列於藝術銀行錢包正餘額快照。"
+        ],
+        "openQuestions": [
+          "基金的整體收藏敘事尚未與本件 #1188 的轉入交易、決選或購入費用逐項串接。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1369187",
+          "https://fabdao.world/projects/whitepaper/",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "memory-whitepaper",
+      "selectedGroupLabel": "2022 白紙運動的回應",
+      "wallNote": "從一張紙的形狀開始，停留在沒有文字的表面。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1369187",
+        "https://fabdao.world/projects/whitepaper/",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "21/29.7 #1619": {
+      "artist": "王新仁 Aluan Wang",
+      "artistStatus": "public_source_cross_checked",
+      "artistSource": "https://abmedia.io/20221130-aluan-wang-21-29-7",
+      "theme": "memory",
+      "viewingNote": "先留意畫面的比例與空白，再讀作者留下的簡短文字。題名讓人想到一張紙的尺度；你可以帶著白紙運動的背景觀看，也可停在「無字卻能傳達」這個問題上。",
+      "makingNote": "王新仁的生成作品；作者原說明以一句邀請理解的話與「敬自由」定位作品，官網將其列入白紙基金脈絡。",
+      "curatorialNote": "與《Shape of Freedom》左右對看，共享白紙運動背景；接往烏克蘭作品前，先讀過渡文字，保留事件的差異。",
+      "mediumLabel": "生成影像",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "王新仁的生成作品；作者原說明以一句邀請理解的話與「敬自由」定位作品，官網將其列入白紙基金脈絡。",
+        "exhibitionReason": "與《Shape of Freedom》左右對看，共享白紙運動背景；接往烏克蘭作品前，先讀過渡文字，保留事件的差異。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1370072",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "memory-whitepaper",
+      "selectedGroupLabel": "2022 白紙運動的回應",
+      "wallNote": "先留意畫面的比例與空白，再讀作者留下的簡短文字。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1370072",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "每個人心中都有段被刪 - 先總統 蔣公紀念切片03": {
+      "artist": "葉廷皓 YehTingHao",
+      "artistStatus": "creator_account_and_museum_source",
+      "artistSource": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=80075",
+      "theme": "memory",
+      "viewingNote": "先注意被切下、留下或重複的部分，再讀題名如何指向臺灣的政治紀念語言。當影像被反覆播放，一段時間是否更容易被當成真理？也請留意，本件館藏媒材是靜態切片。",
+      "makingNote": "作者原說明談自動循環、重複時間切片與永恆真理；此 token 的原始媒材為 JPEG，不冒充完整動態裝置。",
+      "curatorialNote": "本展把它作為臺灣歷史影像的獨立段落，再與《THE WORD AFTER US》比較圖像切片與文字消解，不替兩件預設同一政治立場。",
+      "mediumLabel": "系列作品的靜態切片（JPEG）",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者原說明談自動循環、重複時間切片與永恆真理；此 token 的原始媒材為 JPEG，不冒充完整動態裝置。",
+        "exhibitionReason": "本展把它作為臺灣歷史影像的獨立段落，再與《THE WORD AFTER US》比較圖像切片與文字消解，不替兩件預設同一政治立場。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/121",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "memory-taiwan",
+      "selectedGroupLabel": "臺灣歷史影像的切片",
+      "wallNote": "先注意被切下、留下或重複的部分，再讀題名如何指向臺灣的政治紀念語言。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/121",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Ancestral Guardian 11": {
+      "theme": "generative",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "作者只記載混合技法與生成器，尚無島嶼或祖先信仰脈絡可支持首展並置。保留館藏，不以題名推定文化來源。"
+    },
+    "i248_01": {
+      "theme": "memory",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "Token description 明列為 FAB 道館建築競圖候選，保存組織建館記憶。"
+    },
+    "Lock-in Vending Machine 095": {
+      "theme": "islands",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "作品為臺灣夾娃娃機紀錄計畫，metadata 指定彰化海防哨旁地點。",
+      "viewingNote": "先看夾娃娃機在環境中的位置，再觀察日常商業物件如何改變你對海岸的想像。作者標記了彰化海防哨旁的拍攝地點，提醒我們：地方也存在於不被當成風景的角落。",
+      "makingNote": "這件影片屬於作者的臺灣夾娃娃機紀錄計畫，metadata 記載彰化沿岸的拍攝位置與版本編號。",
+      "curatorialNote": "從《Kowloon 1》的城市想像轉入日常紀錄，再走向《群島資料庫》，把地方觀看延伸為訪談、出版與研究。",
+      "mediumLabel": "紀錄影片",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "這件影片屬於作者的臺灣夾娃娃機紀錄計畫，metadata 記載彰化沿岸的拍攝位置與版本編號。",
+        "exhibitionReason": "從《Kowloon 1》的城市想像轉入日常紀錄，再走向《群島資料庫》，把地方觀看延伸為訪談、出版與研究。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/633830",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "islands-place",
+      "selectedGroupLabel": "地方的描繪與紀錄",
+      "wallNote": "先看夾娃娃機在環境中的位置，再觀察日常商業物件如何改變你對海岸的想像。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/633830",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "De_struggle ( Original version on the SHIBUYA SCREENS )": {
+      "theme": "generative",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "作者以除錯及生成藝術的完成判準為核心；澀谷是展出地點。"
+    },
+    "Blue fires everywhere": {
+      "theme": "generative",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "作者描述由 GAN、DALL.E、實體拼貼與 Procreate 重繪交織的生成過程。"
+    },
+    "Constructive 2022 💙💛": {
+      "theme": "memory",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "Token description 明確記載全部收益支持烏克蘭。"
+    },
+    "Eternal City": {
+      "theme": "memory",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "Token description 指向支持烏克蘭的捐款合約與非營利組織名單。"
+    },
+    "Open the door": {
+      "theme": "memory",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "作品以《末代皇帝》為靈感，描述自由、歷史洪流與漂泊者。",
+      "artist": "Ann Chou（作畫）、Nullbaysea（配樂）",
+      "issuer": "Ann Chou II",
+      "artistStatus": "token_description_credit"
+    },
+    "Past, Present, Future": {
+      "theme": "commons",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "作者將藏家的收藏、燒毀、出售與轉讓鏈上互動納為作品的一部分。"
+    },
+    "HBDFXH01 #67": {
+      "theme": "commons",
+      "themeStatus": "metadata_review",
+      "curatorialBasis": "fxhash 週年作品，metadata 明列首發收入分配至 Tezos4Iran、Women Who Code、巴基斯坦洪災救助與 Processing Foundation。"
+    },
+    "Ginga #16": {
+      "artist": "A-Mashiro、Wen",
+      "artistStatus": "token_description_credit"
+    },
+    "你的第一個綠沙發｜Your First Green Sofa": {
+      "artist": "Green Sofa／GreenPill Taiwan・FAB DAO",
+      "artistStatus": "token_description_collective_credit",
+      "theme": "commons",
+      "viewingNote": "先繞到側面，看看沙發如何以立體形狀發出坐下來的邀請。它也帶著加入討論的訊息；想像從觀看者變成參與者，需要的除了入場，還有哪些陪伴與空間？",
+      "makingNote": "GLB 立體物件；原說明由綠沙發／GreenPill Taiwan 自我介紹，邀請參與 FAB DAO 討論頻道。",
+      "curatorialNote": "與《a collection of collectors》形成「流通／停留」的對照，讓本廳中心成為可聚會、可閱讀的地方。",
+      "mediumLabel": "3D 物件（GLB）",
+      "suggestedDuration": "1–2 分鐘；可旋轉",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "GLB 立體物件；原說明由綠沙發／GreenPill Taiwan 自我介紹，邀請參與 FAB DAO 討論頻道。",
+        "exhibitionReason": "與《a collection of collectors》形成「流通／停留」的對照，讓本廳中心成為可聚會、可閱讀的地方。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/25336",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "commons-circulation",
+      "selectedGroupLabel": "收藏與流通",
+      "wallNote": "先繞到側面，看看沙發如何以立體形狀發出坐下來的邀請。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/25336",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "FABDAO 1週年生日派對門票": {
+      "artist": "FAB DAO",
+      "artistStatus": "token_creator_wallet",
+      "theme": "commons",
+      "viewingNote": "先看門票作為立體物件的樣子，再讀它曾邀請人們到場的時間與地點。活動已經過去，入場功能留下的是相聚的線索；持有這張紀念物，和實際到場仍是不同的事。",
+      "makingNote": "2023 年 8 月 5 日生日派對的門票紀念 NFT，原 metadata 記載活動時間、場地及入場功能。",
+      "curatorialNote": "與旁邊的笑鼠金幣對看：門票承載邀請，紀念幣表達參與後的感謝，呈現同一活動的兩種時間。",
+      "mediumLabel": "3D 活動門票（GLB）",
+      "suggestedDuration": "1 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "2023 年 8 月 5 日生日派對的門票紀念 NFT，原 metadata 記載活動時間、場地及入場功能。",
+        "exhibitionReason": "與旁邊的笑鼠金幣對看：門票承載邀請，紀念幣表達參與後的感謝，呈現同一活動的兩種時間。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/14581",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "commons-participation",
+      "selectedGroupLabel": "留下參與的形式",
+      "wallNote": "先看門票作為立體物件的樣子，再讀它曾邀請人們到場的時間與地點。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/14581",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "FABDAO 1周年紀念笑鼠金幣": {
+      "artist": "FAB DAO",
+      "artistStatus": "token_creator_wallet",
+      "theme": "commons",
+      "viewingNote": "從正面看到側面，觀察紀念幣如何把短暫的相聚變成可保存的形狀。作者稱它為生日派對的參與紀念；不妨想想，活動結束以後，一件小物如何繼續喚起關係。",
+      "makingNote": "原說明將 GLB 立體金幣列為 FAB DAO 一週年生日派對的 POAP，向參與者致謝。",
+      "curatorialNote": "與門票成對展示，將活動前的邀請與活動後的紀念放在一起，再轉向交換如何維持藝術家與藏家的連結。",
+      "mediumLabel": "3D 參與紀念物（GLB）",
+      "suggestedDuration": "1 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "原說明將 GLB 立體金幣列為 FAB DAO 一週年生日派對的 POAP，向參與者致謝。",
+        "exhibitionReason": "與門票成對展示，將活動前的邀請與活動後的紀念放在一起，再轉向交換如何維持藝術家與藏家的連結。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/14583",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "commons-participation",
+      "selectedGroupLabel": "留下參與的形式",
+      "wallNote": "從正面看到側面，觀察紀念幣如何把短暫的相聚變成可保存的形狀。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/14583",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Waves 2.0: Mountains, fragment #001": {
+      "theme": "memory",
+      "viewingNote": "請看完一次一分鐘的循環，再想像山脈也是緩慢的波動。作者在作品完成後經歷家鄉震災，才寫下救援捐贈的聲明；作品的形成與後來的回應，發生在不同時間。",
+      "makingNote": "Memo Akten 使用多種 AI 技法製作一分鐘循環影片；原說明回應 2023 年 2 月 6 日土耳其與敘利亞地震。",
+      "curatorialNote": "以獨立段落呈現震災救援脈絡，不與烏克蘭戰爭混稱同一事件；下一段轉向臺灣歷史影像的重複與刪除。",
+      "mediumLabel": "AI 製作的循環影片",
+      "suggestedDuration": "1 分鐘，建議看完一輪",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "Memo Akten 使用多種 AI 技法製作一分鐘循環影片；原說明回應 2023 年 2 月 6 日土耳其與敘利亞地震。",
+        "exhibitionReason": "以獨立段落呈現震災救援脈絡，不與烏克蘭戰爭混稱同一事件；下一段轉向臺灣歷史影像的重複與刪除。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x15abc6361bc161073324634ef2a1e3b4b9508bbc/19",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      },
+      "selectedGroup": "memory-earthquake",
+      "selectedGroupLabel": "2023 土耳其與敘利亞震災",
+      "wallNote": "請看完一次一分鐘的循環，再想像山脈也是緩慢的波動。",
+      "editorialSourceUrls": [
+        "https://opensea.io/assets/ethereum/0x15abc6361bc161073324634ef2a1e3b4b9508bbc/19",
+        "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+      ]
+    },
+    "群島資料庫01：吳其育 Nusantara Archive 01: Wu Chi-Yu": {
+      "artist": "吳其育 Wu Chi-Yu／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands",
+      "viewingNote": "先從目錄選一個入口：影像紀錄、獨立書店訪談，或聲線與地理的筆記。請把它當成可以翻閱的出版物；封面只是入口，內容中的地名、翻譯與誤解同樣值得停留。",
+      "makingNote": "PDF 收錄哥打峇魯影像紀錄、KITARTB 書店專訪與地理筆記，目錄並列中英文篇章。",
+      "curatorialNote": "與第十冊組成閱讀核心，從影像與書店的交流，轉往食物、移動與記憶；出版使地方關係可以慢慢展開。",
+      "mediumLabel": "PDF 出版物",
+      "suggestedDuration": "3–5 分鐘起；可另開 PDF",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "PDF 收錄哥打峇魯影像紀錄、KITARTB 書店專訪與地理筆記，目錄並列中英文篇章。",
+        "exhibitionReason": "與第十冊組成閱讀核心，從影像與書店的交流，轉往食物、移動與記憶；出版使地方關係可以慢慢展開。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY/2",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "islands-reading",
+      "selectedGroupLabel": "群島閱讀桌",
+      "wallNote": "先從目錄選一個入口：影像紀錄、獨立書店訪談，或聲線與地理的筆記。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY/2",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "群島資料庫02：茲克里拉曼 Nusantara Archive 02: Zikri Rahman": {
+      "artist": "茲克里拉曼 Zikri Rahman／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands"
+    },
+    "群島資料庫03：區秀詒 Nusantara Archive 03: Au Sow Yee": {
+      "artist": "區秀詒 Au Sow Yee／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands"
+    },
+    "群島資料庫04：符芳俊 Nusantara Archive 04: Hoo Fan Chon": {
+      "artist": "符芳俊 Hoo Fan Chon／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands"
+    },
+    "群島資料庫05：KUNCI文化研究中心 Nusantara Archive 05: KUNCI Cultural Studies Center": {
+      "artist": "KUNCI 文化研究中心／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands"
+    },
+    "群島資料庫06：蘇穎欣 Nusantara Archive 06: Show Ying Xin": {
+      "artist": "蘇穎欣 Show Ying Xin／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands"
+    },
+    "群島資料庫07：播音員 Nusantara Archive 07: The Broadcaster(s)": {
+      "artist": "播音員 The Broadcaster(s)／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands"
+    },
+    "群島資料庫08：超自然投資手冊 Nusantara Archive 08: Paririmbon Investasi": {
+      "artist": "超自然投資手冊 Paririmbon Investasi／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands"
+    },
+    "群島資料庫09：人像攝影師 Nusantara Archive 09: A Box Photographer": {
+      "artist": "人像攝影師 A Box Photographer／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands"
+    },
+    "群島資料庫10：張恩滿—蝸牛樂園 Nusantara Archive 10: Chang En-Man – Snail Paradise": {
+      "artist": "張恩滿 Chang En-Man／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands",
+      "viewingNote": "從蝸牛食譜或對話篇章開始，留意一道食物如何帶出記憶、階級與反抗的問題。讀到不同語言的篇章時，也可停下來想：地方經驗如何被翻譯給另一群讀者？",
+      "makingNote": "PDF 目錄包含與新加坡藝術家 ila、Kin Chui 的訪談、蝸牛食譜，以及張恩滿蝸牛系列研究。",
+      "curatorialNote": "與第一冊共同把「群島」從風景擴展為研究及出版關係；下一廳則追問，收藏如何照顧這些關係。",
+      "mediumLabel": "PDF 出版物",
+      "suggestedDuration": "3–5 分鐘起；可另開 PDF",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "PDF 目錄包含與新加坡藝術家 ila、Kin Chui 的訪談、蝸牛食譜，以及張恩滿蝸牛系列研究。",
+        "exhibitionReason": "與第一冊共同把「群島」從風景擴展為研究及出版關係；下一廳則追問，收藏如何照顧這些關係。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY/11",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "islands-reading",
+      "selectedGroupLabel": "群島閱讀桌",
+      "wallNote": "從蝸牛食譜或對話篇章開始，留意一道食物如何帶出記憶、階級與反抗的問題。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY/11",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "群島資料庫12：水土-不伏 Nusantara Archive 12: (In)compatible": {
+      "artist": "水土-不伏 (In)compatible／群島資料庫",
+      "issuer": "RikeyT",
+      "artistStatus": "token_title_credit",
+      "theme": "islands"
+    },
+    "Amplitudes of Canvas #128": {
+      "viewingNote": "先退後看彷彿向內延伸的空間，再走近辨認像筆觸與書寫的細節。這些痕跡由演算法組成；在看似手畫的表面，試著找出重複的線與圓。",
+      "makingNote": "作者以向量基本形構成手勢般的痕跡，並以程式生成仿書寫與磨損質地。",
+      "curatorialNote": "與《Rain Blooms》並讀：這裡的表面保留生成結果，下一件則讓變化持續在眼前發生。",
+      "mediumLabel": "程式生成圖像",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者以向量基本形構成手勢般的痕跡，並以程式生成仿書寫與磨損質地。",
+        "exhibitionReason": "與《Rain Blooms》並讀：這裡的表面保留生成結果，下一件則讓變化持續在眼前發生。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x00000007cc35dcab4a396249aefa295a8b6e16ba/1000128",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      },
+      "selectedGroup": "generative-rules",
+      "selectedGroupLabel": "規則留下的表面",
+      "wallNote": "先退後看彷彿向內延伸的空間，再走近辨認像筆觸與書寫的細節。",
+      "editorialSourceUrls": [
+        "https://opensea.io/assets/ethereum/0x00000007cc35dcab4a396249aefa295a8b6e16ba/1000128",
+        "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+      ]
+    },
+    "Rain Blooms #81": {
+      "viewingNote": "先看同一小塊區域如何增生、瓦解，再把視線拉回全幅。開啟聲音後，留意色彩變化與聲響的關係；不必等待一個定稿，變化本身就是觀看的內容。",
+      "makingNote": "作者設計細胞自動機的局部規則，影像與聲音由同一套持續運算的過程產生。",
+      "curatorialNote": "承接《Amplitudes of Canvas》的規則與表面，再與《Voyager》的點狀累積比較不同的生成時間。",
+      "mediumLabel": "即時生成聲畫",
+      "suggestedDuration": "2–3 分鐘；可自行開聲",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者設計細胞自動機的局部規則，影像與聲音由同一套持續運算的過程產生。",
+        "exhibitionReason": "承接《Amplitudes of Canvas》的規則與表面，再與《Voyager》的點狀累積比較不同的生成時間。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      },
+      "selectedGroup": "generative-rules",
+      "selectedGroupLabel": "規則留下的表面",
+      "wallNote": "先看同一小塊區域如何增生、瓦解，再把視線拉回全幅。",
+      "editorialSourceUrls": [
+        "https://opensea.io/assets/ethereum/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+        "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+      ]
+    },
+    "Voyager #268": {
+      "viewingNote": "先把它看成遙遠行星的影像，再放大觀察細小方塊如何形成明暗。亮處也可能來自沒有畫下的空隙，讓觀看在宇宙尺度與畫布上的微小決定之間往返。",
+      "makingNote": "作者以數學函數決定隨機位置是否畫下方塊；原作提供探索同一行星系統的互動模式。",
+      "curatorialNote": "與《Generativemasks》比較：同樣從規則累積形狀，一件讓人辨認星體，另一件讓人辨認面孔。",
+      "mediumLabel": "生成圖像／可互動原作",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者以數學函數決定隨機位置是否畫下方塊；原作提供探索同一行星系統的互動模式。",
+        "exhibitionReason": "與《Generativemasks》比較：同樣從規則累積形狀，一件讓人辨認星體，另一件讓人辨認面孔。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      },
+      "selectedGroup": "generative-rules",
+      "selectedGroupLabel": "規則留下的表面",
+      "wallNote": "先把它看成遙遠行星的影像，再放大觀察細小方塊如何形成明暗。",
+      "editorialSourceUrls": [
+        "https://opensea.io/assets/ethereum/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268",
+        "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+      ]
+    },
+    "Directrix #86": {
+      "viewingNote": "先觀察線束自行移動，再開啟原作並拖曳畫出一條路徑。比較介入前後的曲線：你留下的手勢如何被幾何規則重新組織，成為不完全受你控制的動作？",
+      "makingNote": "作者將準線與沿手勢路徑移動的焦點結合，從拋物線模型生成影像；原作可按 H 查看操作。",
+      "curatorialNote": "與《Ir/rational Beauty》並置，讓身體手勢與比例規則成為兩種可親自觀察的構圖條件。",
+      "mediumLabel": "互動生成影像",
+      "suggestedDuration": "2–3 分鐘；拖曳試畫",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者將準線與沿手勢路徑移動的焦點結合，從拋物線模型生成影像；原作可按 H 查看操作。",
+        "exhibitionReason": "與《Ir/rational Beauty》並置，讓身體手勢與比例規則成為兩種可親自觀察的構圖條件。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT19FqQ3V6gtkxNnFBhgXRqmMZ2zhiQz7zWa/86",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "generative-gesture",
+      "selectedGroupLabel": "手勢、比例與時間",
+      "wallNote": "先觀察線束自行移動，再開啟原作並拖曳畫出一條路徑。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT19FqQ3V6gtkxNnFBhgXRqmMZ2zhiQz7zWa/86",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Ir/rational Beauty #71": {
+      "viewingNote": "比較大矩形與小分割的比例，再沿著重複出現的色塊移動視線。開啟原作後可等待或重新組合，看看同一套比例如何改變整體節奏，並留意自己的偏好是否改變。",
+      "makingNote": "作者以比例控制矩形分割、畫幅與配色，回應 Herbert W. Franke 對美感比例的提問；原作約每分鐘重組。",
+      "curatorialNote": "與《METAFRANKE》同為向 Franke 致意的作品，這裡偏向比較組合，下一件則讓時間逐格累積。",
+      "mediumLabel": "可重組的生成影像",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者以比例控制矩形分割、畫幅與配色，回應 Herbert W. Franke 對美感比例的提問；原作約每分鐘重組。",
+        "exhibitionReason": "與《METAFRANKE》同為向 Franke 致意的作品，這裡偏向比較組合，下一件則讓時間逐格累積。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1208115",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "generative-gesture",
+      "selectedGroupLabel": "手勢、比例與時間",
+      "wallNote": "比較大矩形與小分割的比例，再沿著重複出現的色塊移動視線。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1208115",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "CENTURY-XXX-METAFRANKE #888": {
+      "viewingNote": "先記住一小塊色面的配置，再停留一會兒，回到同一位置比較。變化可能比預期緩慢；這件作品允許影像持續生長，短暫的展牆預覽只截取其中一個時刻。",
+      "makingNote": "REAS 向 Franke 的 MONDRIAN 軟體致意；程式每影格增加一個像素，作者稱之為持續變化的動畫。",
+      "curatorialNote": "接續《Ir/rational Beauty》的電腦藝術前史，再與《Exotic Quarpets》比較色塊累積與紋樣密度。",
+      "mediumLabel": "持續生成動畫",
+      "suggestedDuration": "至少 1 分鐘，可稍後回看",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "REAS 向 Franke 的 MONDRIAN 軟體致意；程式每影格增加一個像素，作者稱之為持續變化的動畫。",
+        "exhibitionReason": "接續《Ir/rational Beauty》的電腦藝術前史，再與《Exotic Quarpets》比較色塊累積與紋樣密度。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1223226",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "generative-gesture",
+      "selectedGroupLabel": "手勢、比例與時間",
+      "wallNote": "先記住一小塊色面的配置，再停留一會兒，回到同一位置比較。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1223226",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Exotic Quarpets #141": {
+      "viewingNote": "從遠處看整張織毯般的配置，再放大其中一格，沿著邊緣與接縫查看細節。重複並不代表完全相同，試著找出讓紋樣保持節奏、又產生差異的小變化。",
+      "makingNote": "作者從創意程式挑戰的拼布題目出發，並以家中冬季使用的波斯地毯作為創作靈感。",
+      "curatorialNote": "本廳以日常紋樣作結；離開前回望最初的畫布，思考程式如何重新處理熟悉的手工視覺。",
+      "mediumLabel": "生成圖像",
+      "suggestedDuration": "1–2 分鐘；適合放大",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者從創意程式挑戰的拼布題目出發，並以家中冬季使用的波斯地毯作為創作靈感。",
+        "exhibitionReason": "本廳以日常紋樣作結；離開前回望最初的畫布，思考程式如何重新處理熟悉的手工視覺。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1598727",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "generative-gesture",
+      "selectedGroupLabel": "手勢、比例與時間",
+      "wallNote": "從遠處看整張織毯般的配置，再放大其中一格，沿著邊緣與接縫查看細節。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1598727",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "pulau gen #399": {
+      "viewingNote": "先辨認地形的層次，再尋找其中的生物。這不是一座待你在地圖上定位的真實島嶼；試著想像它能容納哪些生命，以及地形圖往往省略了什麼。",
+      "makingNote": "daratan 的地形繪畫與 anaglyphic 的遞迴生成方法相遇，並加入動物提醒觀者：地形也是生命的棲地。",
+      "curatorialNote": "與《lsland Of Mountains》對看，把虛構地形與以臺灣山林為題的創作區分開來；旁附提案交代歷史選件理由。",
+      "mediumLabel": "生成地形圖像",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "proposal_and_holding_verified_decision_pending",
+        "title": "從公開提案到錢包持有",
+        "artistIntent": "daratan 的地形繪畫與 anaglyphic 的遞迴生成方法相遇，並加入動物提醒觀者：地形也是生命的棲地。",
+        "exhibitionReason": "與《lsland Of Mountains》對看，把虛構地形與以臺灣山林為題的創作區分開來；旁附提案交代歷史選件理由。",
+        "verifiedFacts": [
+          "作者說明將地形與動物棲地的問題連在一起。",
+          "水耕香菜的公開提案列出 pulau gen 系列，提及山形、動物保育與藝術家交流。",
+          "本件 #399 列於藝術銀行錢包正餘額快照；提案本身沒有指定 #399。"
+        ],
+        "openQuestions": [
+          "尚未查得 #399 對應的決選紀錄與購藏交易；不能由系列提案直接推定此版的購入理由、價格或日期。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1598728",
+          "https://hackmd.io/@AquaponicsKana/BJspEPwJn",
+          "https://hackmd.io/@FABDAO/Sy8SGSHx3",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "islands-landscape",
+      "selectedGroupLabel": "地形與觀看",
+      "wallNote": "先辨認地形的層次，再尋找其中的生物。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1598728",
+        "https://hackmd.io/@AquaponicsKana/BJspEPwJn",
+        "https://hackmd.io/@FABDAO/Sy8SGSHx3",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "lsland Of Mountains #78": {
+      "viewingNote": "先沿著山形的高低移動視線，再看它們如何聚集成一座島。作者將臺灣山林作為創作背景；本展邀請你比較，這種觀看方式與記得的山路或山景有何差異。",
+      "makingNote": "原作以生成程式呈現山岳意象，作者說明將臺灣山林與霧林的多樣性列為背景。",
+      "curatorialNote": "與《pulau gen》比較虛構與地方指涉，再轉往《台東月夜海》，讓山的辨識延伸到岸邊的經驗。",
+      "mediumLabel": "生成圖像",
+      "suggestedDuration": "1 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "原作以生成程式呈現山岳意象，作者說明將臺灣山林與霧林的多樣性列為背景。",
+        "exhibitionReason": "與《pulau gen》比較虛構與地方指涉，再轉往《台東月夜海》，讓山的辨識延伸到岸邊的經驗。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr/65544",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "islands-landscape",
+      "selectedGroupLabel": "地形與觀看",
+      "wallNote": "先沿著山形的高低移動視線，再看它們如何聚集成一座島。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr/65544",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "The Moonlit Sea of Taitung 台東月夜海": {
+      "viewingNote": "先停在能看見全幅的位置，再觀察月光與海面如何形成節奏。作者記錄的是一次難忘的觀看經驗；你可以從畫面回想地點，也可以只沿著明暗感受時間。",
+      "makingNote": "mido 以程式回應 2021 年在台東海邊所見，這個版本為 2024 年 dialog() 亞洲生成藝術展製作。",
+      "curatorialNote": "與同作者《Mountains in Mind》並讀，從具體地點與年份，走向觀看者心中的山；兩者都不等於地理測繪。",
+      "mediumLabel": "程式生成海景",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "mido 以程式回應 2021 年在台東海邊所見，這個版本為 2024 年 dialog() 亞洲生成藝術展製作。",
+        "exhibitionReason": "與同作者《Mountains in Mind》並讀，從具體地點與年份，走向觀看者心中的山；兩者都不等於地理測繪。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1JhHWDfHRrwF5pNfWz1dbbjcKH6e3k4k7M/46",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "islands-landscape",
+      "selectedGroupLabel": "地形與觀看",
+      "wallNote": "先停在能看見全幅的位置，再觀察月光與海面如何形成節奏。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1JhHWDfHRrwF5pNfWz1dbbjcKH6e3k4k7M/46",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Mountains in Mind #191": {
+      "viewingNote": "先辨認讓你想到山的輪廓，再留意自己補入了哪些記憶與距離。作者用短詩把望山、登山連到內心；觀看時也可停在抽象的色面，不急著找出特定山名。",
+      "makingNote": "原作是生成程式；作者以觀看山與跨越心中障礙的短詩提供閱讀入口。",
+      "curatorialNote": "接續《台東月夜海》的個人記憶，轉向《Kowloon 1》對城市的再描繪，讓地方在不同媒材中被重新理解。",
+      "mediumLabel": "生成圖像",
+      "suggestedDuration": "1 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "原作是生成程式；作者以觀看山與跨越心中障礙的短詩提供閱讀入口。",
+        "exhibitionReason": "接續《台東月夜海》的個人記憶，轉向《Kowloon 1》對城市的再描繪，讓地方在不同媒材中被重新理解。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1321661",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "islands-landscape",
+      "selectedGroupLabel": "地形與觀看",
+      "wallNote": "先辨認讓你想到山的輪廓，再留意自己補入了哪些記憶與距離。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1321661",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Kowloon 1": {
+      "viewingNote": "先看整體的建築密度，再選一條線，看看它如何穿過紙上的城市。這是作者對九龍城寨的個人詮釋；細節帶來的臨場感，與逐項可考證的歷史紀錄仍有距離。",
+      "makingNote": "作者原說明記載以針筆與麥克筆在紙上創作，NFT 保存其數位影像。",
+      "curatorialNote": "與《Lock-in Vending Machine 095》比較：一件重新想像城市，一件標記在地拍攝位置，讓地方的再現與紀錄互相提問。",
+      "mediumLabel": "紙上繪畫的數位影像",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者原說明記載以針筆與麥克筆在紙上創作，NFT 保存其數位影像。",
+        "exhibitionReason": "與《Lock-in Vending Machine 095》比較：一件重新想像城市，一件標記在地拍攝位置，讓地方的再現與紀錄互相提問。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/794532",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "islands-place",
+      "selectedGroupLabel": "地方的描繪與紀錄",
+      "wallNote": "先看整體的建築密度，再選一條線，看看它如何穿過紙上的城市。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/794532",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "a collection of collectors": {
+      "viewingNote": "先看結構如何記住曾經的收藏者，再讀作者對轉手的邀請。如果每次流通都能讓作品繼續成長，長期留在同一個錢包裡，會為作品留下什麼，又暫停了什麼？",
+      "makingNote": "作者讓收藏者變更成為結構生長的條件，鼓勵作品繼續流通；原作亦註記依賴 hicdex API。",
+      "curatorialNote": "本廳以這個矛盾為核心：收藏可以保存，也可能限制作品的行動。與綠沙發對看，將所有權的問題轉為如何參與。",
+      "mediumLabel": "依收藏歷史變化的互動作品",
+      "suggestedDuration": "2–3 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "artist_intent_and_holding_verified_decision_pending",
+        "title": "作品希望流動時，收藏意味著什麼？",
+        "artistIntent": "作者讓收藏者變更成為結構生長的條件，鼓勵作品繼續流通；原作亦註記依賴 hicdex API。",
+        "exhibitionReason": "本廳以這個矛盾為核心：收藏可以保存，也可能限制作品的行動。與綠沙發對看，將所有權的問題轉為如何參與。",
+        "verifiedFacts": [
+          "作者明確鼓勵版本持續交換，讓收藏者的更替改變作品結構。",
+          "本件列於藝術銀行錢包正餘額快照。",
+          "原說明註記原作依賴 hicdex API，作品保存仍牽涉外部服務。"
+        ],
+        "openQuestions": [
+          "尚未取得 DAO 當時選件、續藏或轉讓的討論紀錄；本展提出的流通問題是當前策展提問。",
+          "原作是否仍能完整重建全部收藏者歷史，尚未完成驗證。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/364159",
+          "https://hackmd.io/@FABDAO/rJt8YQipi",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "commons-circulation",
+      "selectedGroupLabel": "收藏與流通",
+      "wallNote": "先看結構如何記住曾經的收藏者，再讀作者對轉手的邀請。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/364159",
+        "https://hackmd.io/@FABDAO/rJt8YQipi",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "DECENTRALIZED": {
+      "viewingNote": "先把它當作一幅人物肖像，再讀題名與作者標記的日期。去中心化在這裡仍透過一個人被描繪；作品留下的，是誰的形象、誰的記憶，以及怎樣的平台歷史？",
+      "makingNote": "作者說明將人物指認為 Hic Et Nunc 創辦人 Rafael Lima，並標註 2021 年 11 月 11 日鑄造。",
+      "curatorialNote": "與《心動與匯集》比較平台與群體的呈現：一件以肖像留下關鍵人物，另一件以互動空間匯集多人創作。",
+      "mediumLabel": "數位肖像圖像",
+      "suggestedDuration": "1 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者說明將人物指認為 Hic Et Nunc 創辦人 Rafael Lima，並標註 2021 年 11 月 11 日鑄造。",
+        "exhibitionReason": "與《心動與匯集》比較平台與群體的呈現：一件以肖像留下關鍵人物，另一件以互動空間匯集多人創作。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/530733",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "commons-participation",
+      "selectedGroupLabel": "留下參與的形式",
+      "wallNote": "先把它當作一幅人物肖像，再讀題名與作者標記的日期。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/530733",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "心動與匯集": {
+      "viewingNote": "先看這個房間把哪些入口放在一起，再沿著原作中的連結認識心動家族的創作。收藏者的名字與社群成果在此相遇，但觀看也可以從一件作品、一個人的表達開始。",
+      "makingNote": "互動 NFT 匯集心動家族自 2023 年 8 月開始的 Web3 成果，原說明提供線上美術館與持有者回饋計畫。",
+      "curatorialNote": "與《DECENTRALIZED》的個人肖像相鄰，再接向生日門票，觀察不同群體如何讓參與留下可閱讀的形式。",
+      "mediumLabel": "互動網頁作品",
+      "suggestedDuration": "2–3 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "互動 NFT 匯集心動家族自 2023 年 8 月開始的 Web3 成果，原說明提供線上美術館與持有者回饋計畫。",
+        "exhibitionReason": "與《DECENTRALIZED》的個人肖像相鄰，再接向生日門票，觀察不同群體如何讓參與留下可閱讀的形式。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/25625",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "commons-participation",
+      "selectedGroupLabel": "留下參與的形式",
+      "wallNote": "先看這個房間把哪些入口放在一起，再沿著原作中的連結認識心動家族的創作。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/25625",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Secondary Market 2": {
+      "viewingNote": "先觀看鉛筆筆觸在動畫中如何移動，再讀作者對二級市場交易的感謝。當作品離開第一位買家，原作者與它的關係是否就結束了？這份謝意讓交換多了一個觀看角度。",
+      "makingNote": "作者以鉛筆畫與 Blender 製作動畫，將作品作為二級市場再次售出帶來喜悅的回應。",
+      "curatorialNote": "與《I have an NFT…》並置，從藝術家的感謝走向合作邀請，再回望本廳入口關於流通的問題。",
+      "mediumLabel": "鉛筆畫動畫／數位影片",
+      "suggestedDuration": "1 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "作者以鉛筆畫與 Blender 製作動畫，將作品作為二級市場再次售出帶來喜悅的回應。",
+        "exhibitionReason": "與《I have an NFT…》並置，從藝術家的感謝走向合作邀請，再回望本廳入口關於流通的問題。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/851264",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "commons-exchange",
+      "selectedGroupLabel": "交換與分享的提問",
+      "wallNote": "先觀看鉛筆筆觸在動畫中如何移動，再讀作者對二級市場交易的感謝。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/851264",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "I have an NFT and am willing to share the proceeds": {
+      "viewingNote": "先讀題名，再回到圖像，留意一句願意分享的宣告如何改變你的觀看。作者邀請有意合作的人聯繫；分享的對象、方式與實際結果，則仍需要具體的合作紀錄來回答。",
+      "makingNote": "PNG 圖像；作者原說明提供合作聯繫邀請，沒有載明分潤合約、受益方或已執行的分配。",
+      "curatorialNote": "與《Secondary Market 2》並讀，把交換中的謝意與分享提議區分開來；本展不由題名推定捐款已完成。",
+      "mediumLabel": "數位圖像",
+      "suggestedDuration": "1 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "PNG 圖像；作者原說明提供合作聯繫邀請，沒有載明分潤合約、受益方或已執行的分配。",
+        "exhibitionReason": "與《Secondary Market 2》並讀，把交換中的謝意與分享提議區分開來；本展不由題名推定捐款已完成。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1LEGtWuZ4xoYcpaSwDHM1GadLNG2DMdmHg/48",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "commons-exchange",
+      "selectedGroupLabel": "交換與分享的提問",
+      "wallNote": "先讀題名，再回到圖像，留意一句願意分享的宣告如何改變你的觀看。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1LEGtWuZ4xoYcpaSwDHM1GadLNG2DMdmHg/48",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "Sunflowers still": {
+      "viewingNote": "先看向日葵形成的整體，再慢慢辨認其中的細部。題名裡的「仍然」連著作者對戰爭持續的回應；圖像的美感可以吸引停留，也提醒我們再讀一次作品的發行方式。",
+      "makingNote": "zancan 以 JavaScript 生成圖像，原說明記載將版本贈予烏克蘭藝術家與收藏者，讓受贈者自行出售、保留或贈送。",
+      "curatorialNote": "作為烏克蘭組最後一件，與前兩件對照不同支持方式；接續震災作品時，保留各自受影響的地點與時間。",
+      "mediumLabel": "生成圖像的 JPEG 輸出",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "zancan 以 JavaScript 生成圖像，原說明記載將版本贈予烏克蘭藝術家與收藏者，讓受贈者自行出售、保留或贈送。",
+        "exhibitionReason": "作為烏克蘭組最後一件，與前兩件對照不同支持方式；接續震災作品時，保留各自受影響的地點與時間。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW/31276",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "memory-ukraine",
+      "selectedGroupLabel": "烏克蘭：離散、抗議與支持",
+      "wallNote": "先看向日葵形成的整體，再慢慢辨認其中的細部。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW/31276",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    },
+    "THE WORD AFTER US: An AI poetry unreading #83": {
+      "viewingNote": "先嘗試讀出文字，再看字形如何移向難以辨認的圖案。開啟原作可按 S 顯示原詩行；在讀得懂與讀不懂之間往返，感受意義消退、變形或重新出現的時刻。",
+      "makingNote": "Sasha Stiles 與其 AI 化身的詩文，由 Nathaniel Stern 的演算法轉成持續消解的視覺詩；按 S 可切換原詩行。",
+      "curatorialNote": "以文字實驗作為出口，不將其等同政治審查的紀錄。回看白紙入口，兩端都留下閱讀問題，卻各有不同的創作歷史。",
+      "mediumLabel": "持續生成的視覺詩",
+      "suggestedDuration": "1–2 分鐘",
+      "editorialLabel": "本館觀看提示與策展詮釋",
+      "editorialStatus": "metadata_grounded_editorial",
+      "editorialVerifiedAt": "2026-09-06",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "收藏紀錄待補全",
+        "artistIntent": "Sasha Stiles 與其 AI 化身的詩文，由 Nathaniel Stern 的演算法轉成持續消解的視覺詩；按 S 可切換原詩行。",
+        "exhibitionReason": "以文字實驗作為出口，不將其等同政治審查的紀錄。回看白紙入口，兩端都留下閱讀問題，卻各有不同的創作歷史。",
+        "verifiedFacts": [
+          "本件列於 2026-09-06 藝術銀行錢包的正餘額快照。"
+        ],
+        "openQuestions": [
+          "尚未串接本件的提案、決選紀錄與逐筆入藏交易；持有方式、日期與價格仍待核對。"
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1036686",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      },
+      "selectedGroup": "memory-language",
+      "selectedGroupLabel": "文字的未來與消解",
+      "wallNote": "先嘗試讀出文字，再看字形如何移向難以辨認的圖案。",
+      "editorialSourceUrls": [
+        "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1036686",
+        "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+      ]
+    }
+  },
+  "curatorialVersion": "2026-09-06-round2"
 }

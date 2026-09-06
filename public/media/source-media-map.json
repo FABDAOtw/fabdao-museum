@@ -1,0 +1,68 @@
+{
+  "verifiedAt": "2026-09-06T13:55:59Z",
+  "verificationMethod": "curl GET response headers and body; exact original GLB inspected without modification",
+  "browserVerification": "pending_mac_locked",
+  "availabilityNote": "A subsequent scripted recheck of Directrix returned HTTP 429; the earlier HTTP 200 source observation is retained.",
+  "records": [
+    {
+      "artworkId": "ethereum_0x70270e65bc37832ef845fa330c2b71501970dab9_81",
+      "title": "Rain Blooms #81",
+      "kind": "interactive",
+      "sourceUrl": "https://generator.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+      "resolvedUrl": "https://generator.artblocks.io/1/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+      "originalSourcePage": "https://opensea.io/assets/ethereum/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+      "localPath": null,
+      "httpStatus": 200,
+      "responseDate": "Sun, 06 Sep 2026 13:55:54 GMT",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 79484,
+      "sha256": "183ad958b6ade0b24e6664939e1c8f8823f4bd386a6fed933c326d3cc2c573b4",
+      "embeddingHeaders": {
+        "xFrameOptions": null,
+        "contentSecurityPolicy": null
+      },
+      "verificationScope": "HTTP content and embedding response headers only; successful playback must be verified in a browser.",
+      "scriptHandling": "Remote iframe; sandbox allow-scripts, without allow-same-origin; user activation required."
+    },
+    {
+      "artworkId": "tezos_KT19FqQ3V6gtkxNnFBhgXRqmMZ2zhiQz7zWa_86",
+      "title": "Directrix #86",
+      "kind": "interactive",
+      "sourceUrl": "https://ipfs.io/ipfs/bafybeigxp6h5ptxb6ihnfdd6zb2s4hpyzuhzllq4ifizrzuaopi7zeuxvy?iteration=60&seed=ec12ddd8e212bd36ecff435fe3cdd4893f96ef920f7d6a2663b851a936f8866b&seedGlobal=43d909af70f3e9f579cb5a4560a1c8b1&ts=1763290036",
+      "resolvedUrl": "https://ipfs.io/ipfs/bafybeigxp6h5ptxb6ihnfdd6zb2s4hpyzuhzllq4ifizrzuaopi7zeuxvy/?iteration=60&seed=ec12ddd8e212bd36ecff435fe3cdd4893f96ef920f7d6a2663b851a936f8866b&seedGlobal=43d909af70f3e9f579cb5a4560a1c8b1&ts=1763290036",
+      "originalSourcePage": "https://objkt.com/tokens/KT19FqQ3V6gtkxNnFBhgXRqmMZ2zhiQz7zWa/86",
+      "localPath": null,
+      "httpStatus": 200,
+      "responseDate": "Sun, 06 Sep 2026 13:55:59 GMT",
+      "contentType": "text/html",
+      "bytes": 600,
+      "sha256": "d2124c5e19915bfa9ebb9fc6b54d226c3b4e4ebca25416954d19221ae0c88c89",
+      "embeddingHeaders": {
+        "xFrameOptions": null,
+        "contentSecurityPolicy": null
+      },
+      "verificationScope": "HTTP content and embedding response headers only; successful playback must be verified in a browser.",
+      "scriptHandling": "Remote iframe; sandbox allow-scripts, without allow-same-origin; user activation required."
+    },
+    {
+      "artworkId": "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25336",
+      "title": "你的第一個綠沙發｜Your First Green Sofa",
+      "kind": "model",
+      "sourceUrl": "https://ipfs.io/ipfs/QmbBgyhj7A4VhzhmqpfXRGqWBkXVdypicEAZPVToURn8Az",
+      "resolvedUrl": "https://ipfs.io/ipfs/QmbBgyhj7A4VhzhmqpfXRGqWBkXVdypicEAZPVToURn8Az",
+      "originalSourcePage": "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/25336",
+      "localPath": "/media/green-sofa.glb",
+      "httpStatus": 200,
+      "responseDate": "Sun, 06 Sep 2026 13:55:48 GMT",
+      "contentType": "model/gltf-binary",
+      "bytes": 2422492,
+      "sha256": "1901c3984957903bbb9be28e239364b8bb73a318222a2babff69c886474c8f96",
+      "embeddingHeaders": {
+        "xFrameOptions": null,
+        "contentSecurityPolicy": null
+      },
+      "verificationScope": "HTTP content, GLB structure, self-contained resources and exact-file checksum; browser rendering verified separately.",
+      "scriptHandling": "Original binary model, not executable HTML."
+    }
+  ]
+}

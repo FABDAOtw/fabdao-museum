@@ -7,16 +7,33 @@
     "name": "生成之間",
     "titleEn": "Between Rules and Chance",
     "subtitle": "當規則成為畫筆，偶然留下形狀",
-    "description": "從一組規則出發，作品在秩序與偶然之間長出差異。線條、色面與反覆出現的結構，讓程式成為觀看世界的方法。這一廳沿著 FAB DAO 收藏的生成藝術展開：先看整體的節奏，再走近每一件作品的細節。共同收藏，也讓不同創作者的實驗在同一個空間相遇。",
+    "description": "規則、手勢與時間，共同構成生成藝術的觀看經驗。先從畫面辨認重複與差異，再試著介入原作；有些作品留下結果，有些則在停留中持續改變。",
     "color": "#476879",
-    "documentIds": ["project-percentage", "ars-2022-project-percentage"],
-    "sourceUrls": ["https://fabdao.world/project-percentage/", "https://ars.electronica.art/planetb/en/studiotopia/"],
+    "documentIds": [
+      "project-percentage",
+      "ars-2022-project-percentage"
+    ],
+    "sourceUrls": [
+      "https://fabdao.world/project-percentage/",
+      "https://ars.electronica.art/planetb/en/studiotopia/"
+    ],
     "curatorialInterpretation": true,
     "selection": {
       "artworkTheme": "generative",
       "featuredOnly": true,
       "sortBy": "curatorialOrder",
-      "principle": "以已核對持有的生成、幾何與視覺演算作品為主；具動態原作時，靜態畫面明示為預覽。"
+      "principle": "以已核對持有的生成、幾何與視覺演算作品為主；具動態原作時，靜態畫面明示為預覽。",
+      "groupAssignment": "explicit_reviewed_titles_only",
+      "artworkIds": [
+        "ethereum_0x00000007cc35dcab4a396249aefa295a8b6e16ba_1000128",
+        "ethereum_0x70270e65bc37832ef845fa330c2b71501970dab9_81",
+        "ethereum_0x99a9b7c1116f9ceeb1652de04d5969cce509b069_434000268",
+        "ethereum_0x80416304142fa37929f8a4eee83ee7d2dac12d7c_8623",
+        "tezos_KT19FqQ3V6gtkxNnFBhgXRqmMZ2zhiQz7zWa_86",
+        "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1208115",
+        "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1223226",
+        "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1598727"
+      ]
     },
     "room": {
       "character": "藍灰展牆、奶油色柱式與細金框，沿長廊形成舒緩節奏。",
@@ -24,7 +41,36 @@
       "arrangement": "先呈現明確的幾何秩序，再轉向密度、質地與有機變化。"
     },
     "verificationStatus": "curatorial_text_grounded_in_public_sources",
-    "lastVerifiedAt": "2026-09-06"
+    "lastVerifiedAt": "2026-09-06",
+    "introduction": "從程式到圖像，中間發生了什麼？這一廳並置演算法留下的表面、由手勢介入的線條，以及持續運算的聲畫。作品的規則、材料與時間各不相同，請用遠看、放大、等待與操作，找到適合每件作品的節奏。Project % 與 Ars Electronica 文獻提供 FAB DAO 參與生成藝術的專案脈絡，並不代表本廳每件館藏都出自百岳計畫。",
+    "question": "當作者設計的是規則，我們究竟在看結果，還是在看一段過程？",
+    "transition": "下一廳從程式構成的形狀走向地方：山與島可以是虛構地形、親身記憶，也可以成為研究與出版的入口。",
+    "curatorialVersion": "2026-09-06-round2",
+    "editorialLabel": "本館策展詮釋",
+    "groups": [
+      {
+        "id": "generative-rules",
+        "title": "規則留下的表面",
+        "description": "規則留下的表面：先看作品，再讀本館導讀與作者原文。",
+        "artworkIds": [
+          "ethereum_0x00000007cc35dcab4a396249aefa295a8b6e16ba_1000128",
+          "ethereum_0x70270e65bc37832ef845fa330c2b71501970dab9_81",
+          "ethereum_0x99a9b7c1116f9ceeb1652de04d5969cce509b069_434000268",
+          "ethereum_0x80416304142fa37929f8a4eee83ee7d2dac12d7c_8623"
+        ]
+      },
+      {
+        "id": "generative-gesture",
+        "title": "手勢、比例與時間",
+        "description": "手勢、比例與時間：先看作品，再讀本館導讀與作者原文。",
+        "artworkIds": [
+          "tezos_KT19FqQ3V6gtkxNnFBhgXRqmMZ2zhiQz7zWa_86",
+          "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1208115",
+          "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1223226",
+          "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1598727"
+        ]
+      }
+    ]
   },
   {
     "id": "islands",
@@ -34,24 +80,77 @@
     "name": "群山成島",
     "titleEn": "Mountains Becoming Islands",
     "subtitle": "從一座山的輪廓，看見彼此相連的島嶼",
-    "description": "百岳計畫把山岳的形象與共同參與連在一起；藝術銀行的收藏，則把目光帶向更多地景。本廳讓群島、山形與海面彼此對照，邀請觀眾在具象與抽象之間辨認地方的輪廓。島嶼既是創作的題材，也是本次策展理解社群關係的方法：各自存在，仍能互相靠近。",
+    "description": "地方如何被觀看、命名與記錄？從山海的生成圖像到城市描繪、日常紀錄，最後在《群島資料庫》的閱讀桌停留，讓地景展開為人與人之間的關係。",
     "color": "#5d7564",
-    "documentIds": ["project-percentage", "aquaponics-kana-proposal"],
-    "sourceUrls": ["https://fabdao.world/project-percentage/", "https://hackmd.io/@AquaponicsKana/BJspEPwJn"],
+    "documentIds": [
+      "project-percentage",
+      "aquaponics-kana-proposal"
+    ],
+    "sourceUrls": [
+      "https://fabdao.world/project-percentage/",
+      "https://hackmd.io/@AquaponicsKana/BJspEPwJn"
+    ],
     "curatorialInterpretation": true,
     "selection": {
       "artworkTheme": "islands",
       "featuredOnly": true,
       "sortBy": "curatorialOrder",
-      "principle": "以群島資料庫、山形、島嶼與海景之實際持有作品形成視覺對話；Project % 的發行敘事另以專案文獻呈現。"
+      "principle": "僅以已逐件閱讀 metadata 的八件首展建立地方觀看與出版研究的關係；其餘館藏主題不自動成為展牆分組。",
+      "groupAssignment": "explicit_reviewed_titles_only",
+      "artworkIds": [
+        "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1598728",
+        "tezos_KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr_65544",
+        "tezos_KT1JhHWDfHRrwF5pNfWz1dbbjcKH6e3k4k7M_46",
+        "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1321661",
+        "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_794532",
+        "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_633830",
+        "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_2",
+        "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_11"
+      ]
     },
     "room": {
       "character": "鼠尾草綠展牆、古典拱門與淺石地坪，在轉角留出遠眺作品的距離。",
       "lighting": "側向日光塑造柱廊深度，展牆使用均勻照明。",
-      "arrangement": "從生成山形走向海面與城市地景，並置兩件群島資料庫作出版物預覽，提供原始 PDF 閱讀入口。"
+      "arrangement": "八件首展由虛構地形、山海觀看，走向城市描繪與彰化日常紀錄，最後於兩冊群島資料庫的閱讀桌停留。"
     },
     "verificationStatus": "curatorial_text_grounded_in_public_sources",
-    "lastVerifiedAt": "2026-09-06"
+    "lastVerifiedAt": "2026-09-06",
+    "introduction": "本廳將「島」當作一個需要慢慢閱讀的問題。pulau gen 構築不存在的地形，《台東月夜海》回應一次親身觀看，彰化夾娃娃機影片則記錄日常環境。《群島資料庫》是閱讀核心：從影像、訪談、食物與翻譯，認識跨地方的交流。這些作品並非都屬百岳計畫；百岳的公共敘事與歷史提案，另以文獻說明它們曾經如何被連結。",
+    "question": "如果地方不只是一幅風景，還有哪些聲音、路徑與日常值得被保存？",
+    "transition": "閱讀把地方與不同人的經驗連起來。下一廳繼續追問：當我們收藏作品，是否也需要照顧作品帶來的關係？",
+    "curatorialVersion": "2026-09-06-round2",
+    "editorialLabel": "本館策展詮釋",
+    "groups": [
+      {
+        "id": "islands-landscape",
+        "title": "地形與觀看",
+        "description": "地形與觀看：先看作品，再讀本館導讀與作者原文。",
+        "artworkIds": [
+          "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1598728",
+          "tezos_KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr_65544",
+          "tezos_KT1JhHWDfHRrwF5pNfWz1dbbjcKH6e3k4k7M_46",
+          "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1321661"
+        ]
+      },
+      {
+        "id": "islands-place",
+        "title": "地方的描繪與紀錄",
+        "description": "地方的描繪與紀錄：先看作品，再讀本館導讀與作者原文。",
+        "artworkIds": [
+          "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_794532",
+          "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_633830"
+        ]
+      },
+      {
+        "id": "islands-reading",
+        "title": "群島閱讀桌",
+        "description": "兩件 PDF 在閱讀桌形成核心；可以分別開啟目錄與原始出版物。",
+        "artworkIds": [
+          "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_2",
+          "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_11"
+        ]
+      }
+    ]
   },
   {
     "id": "commons",
@@ -61,24 +160,84 @@
     "name": "收藏作為行動",
     "titleEn": "Collecting as a Common Act",
     "subtitle": "一件作品，也可以是一段關係的開始",
-    "description": "收藏如何從個人的選擇，成為一群人的行動？從小花支持創作者入門，到藝術銀行的提案、討論與決選，FAB DAO 持續嘗試把藝術與公共生活接在一起。本廳將作品與制度文件並置，讓觀眾看見收藏背後的人際連結、資源分配，以及共同決定值得留下什麼的過程。",
+    "description": "當作品希望繼續流動，美術館應該如何收藏它？本廳從一件鼓勵轉手的作品開始，走向聚會、參與、交換與分享，並與藝術銀行的提案和制度文件一起閱讀。",
     "color": "#98674f",
-    "documentIds": ["supporter", "fip-1", "fip-2", "art-bank-protocol", "art-bank-origins"],
-    "sourceUrls": ["https://fabdao.world/projects/supporter/", "https://fabdao.world/FIP-1.pdf", "https://hackmd.io/@mashbean/SklFizJ4T", "https://hackmd.io/@FABDAO/Sy8SGSHx3"],
+    "documentIds": [
+      "supporter",
+      "fip-1",
+      "fip-2",
+      "art-bank-protocol",
+      "art-bank-origins",
+      "aquaponics-kana-proposal",
+      "white-paper-fund"
+    ],
+    "sourceUrls": [
+      "https://fabdao.world/projects/supporter/",
+      "https://fabdao.world/FIP-1.pdf",
+      "https://hackmd.io/@mashbean/SklFizJ4T",
+      "https://hackmd.io/@FABDAO/Sy8SGSHx3"
+    ],
     "curatorialInterpretation": true,
     "selection": {
       "artworkTheme": "commons",
       "featuredOnly": true,
       "sortBy": "curatorialOrder",
-      "principle": "並置共同體、交換、支持與參與相關作品；制度展板說明公共行動，不把持有餘額當成捐款或購買證據。"
+      "principle": "並置共同體、交換、支持與參與相關作品；制度展板說明公共行動，不把持有餘額當成捐款或購買證據。",
+      "groupAssignment": "explicit_reviewed_titles_only",
+      "artworkIds": [
+        "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_364159",
+        "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25336",
+        "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_530733",
+        "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25625",
+        "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_14581",
+        "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_14583",
+        "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_851264",
+        "tezos_KT1LEGtWuZ4xoYcpaSwDHM1GadLNG2DMdmHg_48"
+      ]
     },
     "room": {
       "character": "暖陶色展牆、深木座椅與中央閱讀桌，延續客廳的會聚感。",
       "lighting": "暖光留給建築與閱讀桌，作品另用中性光；文件可開啟高對比閱讀視窗。",
-      "arrangement": "從支持藝術家的小額行動，走向共同選擇與制度形成；作品和文件各有清楚標示。"
+      "arrangement": "以 a collection of collectors 與綠沙發的流通／停留對看開場，中央閱讀制度和三件資料尚未完整串接的收藏個案。"
     },
     "verificationStatus": "curatorial_text_grounded_in_public_sources",
-    "lastVerifiedAt": "2026-09-06"
+    "lastVerifiedAt": "2026-09-06",
+    "introduction": "收藏可能保存一個形狀，也可能改變作品原本想做的事。《a collection of collectors》鼓勵版本繼續交換，《你的第一個綠沙發》邀請人們加入討論；門票、紀念幣與社群作品則留下不同參與形式。藝術銀行文件讓這些提問接上提案、討論與決選的工作。藝術家、提案者、持有人和本館觀眾各有不同位置，本展不把他們合稱為已達成共識的「我們」。",
+    "question": "當作品希望繼續流動，美術館應該如何收藏它？",
+    "transition": "下一廳轉向作品對具體事件的回應。支持自由、反對戰爭、參與救援與保存歷史各有脈絡，需要分別閱讀。",
+    "curatorialVersion": "2026-09-06-round2",
+    "editorialLabel": "本館策展詮釋",
+    "groups": [
+      {
+        "id": "commons-circulation",
+        "title": "收藏與流通",
+        "description": "收藏與流通：先看作品，再讀本館導讀與作者原文。",
+        "artworkIds": [
+          "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_364159",
+          "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25336"
+        ]
+      },
+      {
+        "id": "commons-participation",
+        "title": "留下參與的形式",
+        "description": "留下參與的形式：先看作品，再讀本館導讀與作者原文。",
+        "artworkIds": [
+          "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_530733",
+          "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25625",
+          "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_14581",
+          "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_14583"
+        ]
+      },
+      {
+        "id": "commons-exchange",
+        "title": "交換與分享的提問",
+        "description": "交換與分享的提問：先看作品，再讀本館導讀與作者原文。",
+        "artworkIds": [
+          "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_851264",
+          "tezos_KT1LEGtWuZ4xoYcpaSwDHM1GadLNG2DMdmHg_48"
+        ]
+      }
+    ]
   },
   {
     "id": "memory",
@@ -88,23 +247,90 @@
     "name": "留白與記憶",
     "titleEn": "Silence, Memory, Persistence",
     "subtitle": "當聲音難以留下，收藏如何回應",
-    "description": "一張白紙能承載多少聲音？本廳從白紙基金出發，並置關於自由、故土、衝突與消逝的作品。收藏在此成為關注與記錄的行動；鏈上紀錄之外，圖像、文字與創作脈絡仍需要持續照顧。留白讓觀看放慢，也把問題留給觀眾：我們願意為哪些記憶保留位置？",
+    "description": "一張白紙可以成為入口，但不同事件不能只靠同一種沉靜氣氛串連。本廳分別閱讀白紙運動、烏克蘭戰爭、震災回應、臺灣歷史影像與文字實驗。",
     "color": "#786270",
-    "documentIds": ["white-paper-fund", "fab-museum-2024"],
-    "sourceUrls": ["https://fabdao.world/projects/whitepaper/", "https://fabdao.world/projects/fab-museum/"],
+    "documentIds": [
+      "white-paper-fund",
+      "fab-museum-2024"
+    ],
+    "sourceUrls": [
+      "https://fabdao.world/projects/whitepaper/",
+      "https://fabdao.world/projects/fab-museum/"
+    ],
     "curatorialInterpretation": true,
     "selection": {
       "artworkTheme": "memory",
       "featuredOnly": true,
       "sortBy": "curatorialOrder",
-      "principle": "以自由、記憶與社會事件相關實際持有作品為主；個別政治或歷史意涵依作者原說明呈現，策展推論另行標示。"
+      "principle": "以自由、記憶與社會事件相關實際持有作品為主；個別政治或歷史意涵依作者原說明呈現，策展推論另行標示。",
+      "groupAssignment": "explicit_reviewed_titles_only",
+      "artworkIds": [
+        "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1369187",
+        "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1370072",
+        "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1585350",
+        "tezos_KT1XE84DKaJqhZ1EvJJCieDUE8GEpSge92Lp_1",
+        "tezos_KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW_31276",
+        "ethereum_0x15abc6361bc161073324634ef2a1e3b4b9508bbc_19",
+        "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_121",
+        "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1036686"
+      ]
     },
     "room": {
       "character": "柔灰紫牆面、較疏的掛畫間距與獨立座椅，終點回望中央大廳。",
       "lighting": "低對比環境光與溫和牆面照明，避免以戲劇效果替作品預設情緒。",
-      "arrangement": "白紙作品成為入口，逐步走向故土、文字與保存；出口連接本館建館歷史文件。"
+      "arrangement": "入口左右對看 Shape of Freedom 與 21/29.7；第一頁接烏克蘭組與震災回應，第二頁獨立閱讀臺灣歷史影像和文字實驗。每頁最多六件，讓段落保有停頓。"
     },
     "verificationStatus": "curatorial_text_grounded_in_public_sources",
-    "lastVerifiedAt": "2026-09-06"
+    "lastVerifiedAt": "2026-09-06",
+    "introduction": "入口兩件作品回應 2022 年白紙運動；接著是烏克蘭藝術家的離散自述、抗議圖像與支持行動。震災影片另保留 2023 年土耳其與敘利亞的時間、地點，再轉往臺灣歷史影像的切片，最後以文字消解的實驗收束。這些作品並置，是為了比較藝術如何回應、記錄或改變意義，不預設它們共享同一種創傷或政治立場。展牆分頁留出停頓，每段都保留自己的來源。",
+    "question": "當作品留下聲音、空白或片段，我們需要補上哪些脈絡，才能讓記憶持續被理解？",
+    "transition": "回到大廳的建館時間線，從早期藝術支持、百岳與藝術銀行，到 2024 年 FAB 道館競賽，思考下一個展示空間應如何照顧作品。",
+    "curatorialVersion": "2026-09-06-round2",
+    "editorialLabel": "本館策展詮釋",
+    "groups": [
+      {
+        "id": "memory-whitepaper",
+        "title": "2022 白紙運動的回應",
+        "description": "入口左右兩件對看，先讀白紙基金文獻。",
+        "artworkIds": [
+          "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1369187",
+          "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1370072"
+        ]
+      },
+      {
+        "id": "memory-ukraine",
+        "title": "烏克蘭：離散、抗議與支持",
+        "description": "三種不同的回應：被迫離家、公開抗議、讓受贈者自行運用作品。",
+        "artworkIds": [
+          "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1585350",
+          "tezos_KT1XE84DKaJqhZ1EvJJCieDUE8GEpSge92Lp_1",
+          "tezos_KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW_31276"
+        ]
+      },
+      {
+        "id": "memory-earthquake",
+        "title": "2023 土耳其與敘利亞震災",
+        "description": "一分鐘循環影片；作品完成與救援聲明有先後之別。",
+        "artworkIds": [
+          "ethereum_0x15abc6361bc161073324634ef2a1e3b4b9508bbc_19"
+        ]
+      },
+      {
+        "id": "memory-taiwan",
+        "title": "臺灣歷史影像的切片",
+        "description": "獨立呈現臺灣歷史影像的切片，不當作完整動態作品。",
+        "artworkIds": [
+          "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_121"
+        ]
+      },
+      {
+        "id": "memory-language",
+        "title": "文字的未來與消解",
+        "description": "以視覺詩的閱讀問題收束，不把文字實驗等同政治審查紀錄。",
+        "artworkIds": [
+          "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1036686"
+        ]
+      }
+    ]
   }
 ]

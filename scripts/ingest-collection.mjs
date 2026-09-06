@@ -84,6 +84,11 @@ function finish(artwork) {
   artwork.featured = artwork.curatorialOrder >= 0;
   artwork.themeStatus = artwork.featured ? 'curated' : override.themeStatus || 'provisional_rule_based';
   artwork.curatorialOrder = artwork.featured ? artwork.curatorialOrder : 100;
+  // Editorial text lives in collection-curation.json and is replayed on every ingest.
+  // A broad search theme must never silently admit an unreviewed holding to a wall group.
+  artwork.selectedGroup = artwork.featured ? override.selectedGroup || null : null;
+  artwork.selectedGroupLabel = artwork.featured ? override.selectedGroupLabel || null : null;
+  artwork.curatorialVersion = artwork.featured ? curation.curatorialVersion || null : null;
   artwork.sourceUrls = [...new Set(artwork.sourceUrls.filter(Boolean))];
   items.push(artwork);
 }
@@ -158,11 +163,18 @@ for (const artwork of items) {
   }
 }
 items.sort((a, b) => a.curatorialOrder - b.curatorialOrder || a.title.localeCompare(b.title));
+for (const [theme, titles] of Object.entries(curation.featured)) {
+  for (const title of titles) {
+    const matching = items.filter(artwork => artwork.title === title && artwork.theme === theme && artwork.featured);
+    if (matching.length !== 1) throw new Error(`Curated selection must resolve to exactly one holding: ${theme} / ${title}`);
+  }
+}
 const output = {
   verifiedAt: snapshot.fetchedAt,
   verificationMethod: 'Public indexer balance snapshots: TzKT / Blockscout; Objkt enriches metadata and artist profile aliases.',
   scope: 'Current positive balances in the two listed art-bank wallets, Ethereum mainnet and Tezos. No Base or treasury-wallet inventory is implied.',
-  notes: ['持有不等同購買、評選通過或作者授權；本版未核對逐筆購藏交易。', '主題與首展選件是本館策展層，不是原始 token metadata。', '圖片是原 metadata 預覽；生成、影音、3D 與 PDF 原作請開啟作品來源。', '部分 Ethereum indexer metadata 仍為待簽署／預覽占位，保留館藏記錄並暫不布展。', '提案與 Project % 全系列未併入持有清單；公庫、基金與藝術銀行錢包分開。'],
+  curatorialVersion: curation.curatorialVersion || null,
+  notes: ['持有不等同購買、評選通過或作者授權；本版未核對逐筆購藏交易。', '中文觀看提示、並置關係與首展分組是本館策展層；作者原文、歷史提案與持有事實各自保留來源。', '首展分組逐件指定；非首展主題僅供初步搜尋，不自動加入展牆。', '圖片可能是靜態預覽；即時生成、影音、3D 與 PDF 另依個別作品提供觀看入口。', '部分 Ethereum indexer metadata 仍為待簽署／預覽占位，保留館藏記錄並暫不布展。', '提案與 Project % 全系列未併入持有清單；公庫、基金與藝術銀行錢包分開。'],
   wallets: [
     { chain: 'ethereum', address: ethWallet, label: 'FABDAO-Art-Bank', role: 'art_bank_collection', addressSource: 'user_supplied', holdingsSource: ethUrl },
     { chain: 'tezos', address: xtzWallet, label: 'fabcollect.tez', role: 'art_bank_collection', addressSource: 'https://hackmd.io/@mashbean/SklFizJ4T', holdingsSource: tzktUrl },
