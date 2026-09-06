@@ -94,18 +94,39 @@ test('every wall work has an unobstructed frontal viewing position at visitor ey
 });
 
 test('frames preserve portrait, square and landscape aspect ratios within viewing scale', () => {
-  for (const [width, height] of [[1200, 853], [1020, 1200], [1200, 1200], [2400, 600], [500, 1800]]) {
-    const dimensions = artworkDimensions(width, height);
+  for (let room = 0; room < 4; room++) for (const [width, height] of [[1200, 853], [1020, 1200], [1200, 1200], [2400, 600], [500, 1800]]) {
+    const dimensions = artworkDimensions(width, height, room);
     closeTo(dimensions.width / dimensions.height, width / height);
-    assert.ok(dimensions.width <= 2.65 && dimensions.height <= 1.95 + 1e-10);
+    assert.ok(dimensions.width <= 2.35 && dimensions.height <= 1.95 + 1e-10);
   }
 });
 
-test('a six-work memory gallery gives adjacent works more breathing room than an eight-work gallery', () => {
-  assert.equal(roomCapacity(3), 6);
+test('a ten-work memory gallery gives adjacent works more breathing room than a twelve-work gallery', () => {
+  assert.deepEqual([0, 1, 2, 3].map(roomCapacity), [12, 12, 12, 10]);
   assert.ok(Math.abs(artworkSlot(3, 0).z - artworkSlot(3, 2).z) > Math.abs(artworkSlot(0, 0).z - artworkSlot(0, 2).z));
-  assert.equal(artworkSlot(0, 0).side, -1);
-  assert.equal(artworkSlot(0, 1).side, 1);
+  for (let room = 0; room < 4; room++) {
+    assert.equal(artworkSlot(room, 0).side, -1);
+    assert.equal(artworkSlot(room, 1).side, 1);
+    closeTo(artworkSlot(room, 0).z, -room * 22 + 7.3);
+    closeTo(artworkSlot(room, roomCapacity(room) - 1).z, -room * 22 - 7.3);
+  }
+});
+
+test('full galleries leave visible gaps between neighbouring frames and labels at eye level', () => {
+  for (let room = 0; room < 4; room++) {
+    const frameWidth = artworkDimensions(4000, 500, room).width + .2;
+    for (let index = 0; index < roomCapacity(room); index++) {
+      const slot = artworkSlot(room, index);
+      closeTo(slot.y, 2.02);
+      if (index < 2) continue;
+      const previous = artworkSlot(room, index - 2);
+      const spacing = previous.z - slot.z;
+      assert.equal(slot.side, previous.side);
+      assert.ok(spacing >= 2.7, `gallery ${room} wall is too crowded`);
+      assert.ok(spacing - frameWidth >= .3, `gallery ${room} frames overlap`);
+      assert.ok(spacing - 2.45 >= .25, `gallery ${room} labels overlap`);
+    }
+  }
 });
 
 test('invalid coordinates are not accepted as safe visitor positions', () => {
@@ -256,4 +277,34 @@ test('late loader callbacks settle and dispose resources after the museum closes
     assert.equal((await image).name, 'AbortError');assert.equal(await model, null);
     assert.equal(imageDisposals, 1);assert.equal(modelDisposals, 1);
   } finally { globalThis.window = previousWindow; }
+});
+
+test('a full twelve-work gallery batches frame hardware and uses one wall label per artwork', async () => {
+  const museum=testMuseum();
+  await museum.displayRoom(0,Array.from({length:12},(_,i)=>sampleArtwork(`work-${i}`)),[]);
+  let meshes=0;museum.galleries[0].traverse(object=>{if(object instanceof THREE.Mesh)meshes++;});
+  // Twelve artwork planes + twelve labels + three shared frame materials.
+  assert.ok(meshes<=27, `${meshes} unbatched draw objects remain`);
+  assert.equal(museum.currentTargets().length,12);
+  assert.deepEqual(museum.galleries.map(group=>group.visible),[true,true,false,false]);
+});
+
+test('actual render control stops submitting frames when idle or paused and reuses unchanged shadows', () => {
+  const previousWindow=globalThis.window,previousDocument=globalThis.document;
+  globalThis.window={requestAnimationFrame:()=>1,cancelAnimationFrame:()=>{}};globalThis.document={hidden:false};
+  try {
+    const museum=testMuseum();let gpuDraws=0;
+    Object.assign(museum,{last:0,elapsed:0,frameCount:0,animationFrame:0,needsRender:true,needsShadow:true,hoverDirty:false,lastShadowZ:NaN,
+      renderStats:{frames:0,skippedFrames:0,shadowUpdates:0,raycasts:0},onStats:()=>{},
+      renderer:{shadowMap:{enabled:true,needsUpdate:false},info:{render:{calls:0,triangles:0},reset(){}},render(){gpuDraws++;}}});
+    museum.render(16);assert.equal(gpuDraws,1);assert.equal(museum.renderStats.shadowUpdates,1);
+    museum.render(32);assert.equal(gpuDraws,1,'idle resubmitted the scene');
+    museum.setPaused(true);museum.render(48);assert.equal(gpuDraws,1,'paused resubmitted the scene');
+    museum.yaw+=.1;museum.look();museum.render(64);
+    assert.equal(gpuDraws,2);assert.equal(museum.renderStats.shadowUpdates,1,'turning rebuilt the shadow map');
+    museum.camera.position.z=.8;museum.look();museum.render(80);
+    assert.equal(gpuDraws,3);assert.equal(museum.renderStats.shadowUpdates,2);
+    globalThis.document.hidden=true;museum.needsRender=true;museum.render(96);
+    assert.equal(gpuDraws,3,'hidden tab submitted a frame');
+  } finally {globalThis.window=previousWindow;globalThis.document=previousDocument;}
 });

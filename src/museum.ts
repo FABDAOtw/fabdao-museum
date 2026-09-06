@@ -8,6 +8,8 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { moveWithCollision, roomAt, roomCapacity, artworkSlot, artworkDimensions, roomFurniture, safeViewpoint, EYE_HEIGHT } from './navigation.js';
+import { pointerLookDelta, clampSensitivity } from './controls.js';
+import { qualityProfile, adjacentRooms, shouldRefreshShadow, shouldDrawFrame } from './performance.js';
 import type { Artwork, Exhibition, DocumentItem } from './types';
 
 const cream = 0xd2c4a8, gold = 0xa88345;
@@ -30,8 +32,8 @@ export class Museum {
   scene = new THREE.Scene();
   camera = new THREE.PerspectiveCamera(62, 1, .08, 120);
   renderer: THREE.WebGLRenderer;
-  private composer: EffectComposer;
-  private ao: SSAOPass;
+  private composer: EffectComposer | null = null;
+  private ao: SSAOPass | null = null;
   keys = new Set<string>();
   active = false;
   paused = false;
@@ -40,6 +42,19 @@ export class Museum {
   room = 0;
   quality = 'balanced';
   private last = 0;
+  private animationFrame = 0;
+  private contextLost = false;
+  private needsRender = true;
+  private needsShadow = true;
+  private hoverDirty = true;
+  private lastRaycast = 0;
+  private lastShadowZ = NaN;
+  private controls = { sensitivity: 1, invertY: false };
+  private pointerPosition: { x: number; y: number; id: number } | null = null;
+  private dragDistance = 0;
+  private architecture: THREE.Group[] = [];
+  private roomTargets: THREE.Mesh[][] = [[],[],[],[]];
+  private renderStats = { frames: 0, skippedFrames: 0, drawCalls: 0, triangles: 0, frameCpuMs: 0, fps: 0, raycasts: 0, shadowUpdates: 0, sceneTriangles: 0 };
   private elapsed = 0;
   private frameCount = 0;
   private hovered: Artwork | DocumentItem | null = null;
@@ -68,10 +83,13 @@ export class Museum {
   private brass: THREE.MeshStandardMaterial;
 
   constructor(private container: HTMLElement, private exhibitions: Exhibition[]) {
+    this.render=this.render.bind(this);
     this.renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
-    this.renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+    this.renderer.setPixelRatio(qualityProfile('balanced', devicePixelRatio).pixelRatio);
+    this.renderer.info.autoReset = false;
     this.renderer.shadowMap.enabled = true;
-    this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    this.renderer.shadowMap.autoUpdate = false;
+    this.renderer.shadowMap.type = THREE.PCFShadowMap;
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
     this.renderer.toneMappingExposure = 1.13;
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -79,7 +97,7 @@ export class Museum {
     this.renderer.domElement.setAttribute('aria-label', '可移動的三維美術館。可使用展間地圖與館藏目錄瀏覽。');
     container.append(this.renderer.domElement);
     this.scene.background = new THREE.Color(0xddd4bf);
-    this.scene.fog = new THREE.Fog(0xd2c7b3, 38, 95);
+    this.scene.fog = new THREE.Fog(0xd2c7b3, 28, 52);
     const pmrem = new THREE.PMREMGenerator(this.renderer);
     const envScene = new RoomEnvironment();
     this.environmentTarget = pmrem.fromScene(envScene, .04);
@@ -89,7 +107,7 @@ export class Museum {
     this.scene.add(new THREE.HemisphereLight(0xe6edee, 0x77654d, 1.15));
     this.sun = new THREE.DirectionalLight(0xffecd0, 2.8);
     this.sun.position.set(-7, 13, 5); this.sun.target.position.set(3, 0, -5);
-    this.sun.castShadow = true; this.sun.shadow.mapSize.set(2048, 2048);
+    this.sun.castShadow = true; this.sun.shadow.mapSize.set(1024, 1024);
     this.sun.shadow.camera.left = -16; this.sun.shadow.camera.right = 16;
     this.sun.shadow.camera.top = 16; this.sun.shadow.camera.bottom = -16;
     this.sun.shadow.camera.near = .5; this.sun.shadow.camera.far = 48;
@@ -102,15 +120,29 @@ export class Museum {
     this.camera.position.set(3.4, 2.15, 8.2);
     this.camera.rotation.order = 'YXZ';
     this.look();
+    this.scene.updateMatrixWorld(true);
+    this.scene.matrixWorldAutoUpdate=false;
+    this.updateVisibility();this.countSceneTriangles();
+    this.bind();this.resize();
+  }
+  private ensureComposer(){
+    if(this.composer)return;
     this.composer=new EffectComposer(this.renderer);
-    this.composer.renderTarget1.samples=4;this.composer.renderTarget2.samples=4;
+    this.composer.renderTarget1.samples=2;this.composer.renderTarget2.samples=2;
     this.composer.addPass(new RenderPass(this.scene,this.camera));
-    this.ao=new SSAOPass(this.scene,this.camera,container.clientWidth,container.clientHeight,16);
+    this.ao=new SSAOPass(this.scene,this.camera,1,1,8);
     this.ao.kernelRadius=.24;this.ao.minDistance=.002;this.ao.maxDistance=.065;
     this.composer.addPass(this.ao);this.composer.addPass(new OutputPass());
-    this.bind(); this.resize();
-    this.renderer.setAnimationLoop(this.render);
   }
+  private disposeComposer(){
+    if(!this.composer)return;
+    for(const pass of this.composer.passes)pass.dispose();this.composer.dispose();this.composer=null;this.ao=null;
+  }
+  private requestFrame(){
+    if(this.animationFrame||this.disposed||this.contextLost||typeof document==='undefined'||document.hidden||typeof window.requestAnimationFrame!=='function')return;
+    this.animationFrame=window.requestAnimationFrame(this.render);
+  }
+  private invalidate(shadow=false){this.needsRender=true;this.needsShadow=this.needsShadow||shadow;this.requestFrame();}
   private marbleTexture() {
     const c = document.createElement('canvas'); c.width=c.height=512;
     const ctx=c.getContext('2d')!; ctx.fillStyle='#ede9df'; ctx.fillRect(0,0,512,512);
@@ -126,10 +158,10 @@ export class Museum {
     const list=this.batch.get(m)||[];list.push(g);this.batch.set(m,list);
   }
   private box(w:number,h:number,d:number,x:number,y:number,z:number,m:THREE.Material=this.trim,ry=0) {this.mesh(new THREE.BoxGeometry(w,h,d),m,x,y,z,ry);}
-  private flush() {
+  private flush(parent:THREE.Object3D=this.scene) {
     for(const [material,geometries] of this.batch) {
       const geometry=mergeGeometries(geometries); if(!geometry)continue;
-      const mesh=new THREE.Mesh(geometry,material);mesh.castShadow=!(material instanceof THREE.MeshBasicMaterial);mesh.receiveShadow=true;this.scene.add(mesh);
+      const mesh=new THREE.Mesh(geometry,material);mesh.castShadow=!(material instanceof THREE.MeshBasicMaterial);mesh.receiveShadow=true;mesh.matrixAutoUpdate=false;parent.add(mesh);
       geometries.forEach(g=>g.dispose());
     } this.batch.clear();
   }
@@ -166,6 +198,8 @@ export class Museum {
     const glow=new THREE.MeshBasicMaterial({color:0xfff3d7});
     for(let r=0;r<4;r++) {
       const z=-22*r;
+      const roomArchitecture=new THREE.Group();roomArchitecture.name=`architecture-${r}`;
+      this.architecture.push(roomArchitecture);this.scene.add(roomArchitecture);
       const wall=new THREE.MeshStandardMaterial({color: [0x6f7b77,0x7b8a7c,0x947e69,0x8a8790][r],roughness:.88});
       this.box(18,.2,22,0,-.14,z,this.stone);
       for(let x=0;x<12;x++) for(let zz=0;zz<14;zz++) this.box(1.47,.025,1.54,-8.25+x*1.5,0,z-10.04+zz*1.55,(x+zz)%2?darkTile:lightTile);
@@ -200,28 +234,31 @@ export class Museum {
         this.mesh(new RoundedBoxGeometry(furniture.width,.14,furniture.depth,2,.045),table?darkWood:leather,furniture.x,height,furniture.z);
         for(const dx of [-furniture.width/2+.18,furniture.width/2-.18])for(const dz of [-furniture.depth/2+.16,furniture.depth/2-.16])
           this.box(.12,height-.06,.12,furniture.x+dx,(height-.06)/2,furniture.z+dz,darkWood);
-        this.contactShadow(furniture.x,furniture.z,furniture.width+.35,furniture.depth+.4,this.scene);
-        if(table) this.label(r===1?'群島閱讀桌  ·  文獻與出版':'共同閱讀桌  ·  從文件理解收藏',furniture.x,.72,furniture.z+furniture.depth/2+.015,0,furniture.width-.3,.15,'#d7c6a3','#4f3b2d',this.scene);
+        this.contactShadow(furniture.x,furniture.z,furniture.width+.35,furniture.depth+.4,roomArchitecture);
+        if(table) this.label(r===1?'群島閱讀桌  ·  文獻與出版':'共同閱讀桌  ·  從文件理解收藏',furniture.x,.72,furniture.z+furniture.depth/2+.015,0,furniture.width-.3,.15,'#d7c6a3','#4f3b2d',roomArchitecture);
       }
-      const fill=new THREE.PointLight(0xffe8c4,34,24,2);fill.position.set(0,5.9,z);this.scene.add(fill);
+      const fill=new THREE.PointLight(0xffe8c4,34,24,2);fill.position.set(0,5.9,z);roomArchitecture.add(fill);
       for(const side of [-1,1])for(const az of [-4.6,4.6]) {
         this.box(.2,.42,.18,side*8.45,3.45,z+az,this.brass);
         this.box(.44,.06,.15,side*8.23,3.68,z+az,this.brass);
         this.mesh(new THREE.SphereGeometry(.12,12,8),glow,side*8.12,3.95,z+az);
       }
       this.galleries.push(new THREE.Group());this.scene.add(this.galleries[r]);
-      this.label(this.exhibitions[r]?.titleEn.toUpperCase()||'FAB DAO',0,6.72,z-10.65,0,4,.23,'#584b36','transparent',this.scene);
+      this.label(this.exhibitions[r]?.titleEn.toUpperCase()||'FAB DAO',0,6.72,z-10.65,0,4,.23,'#584b36','transparent',roomArchitecture);
       if(r<3)this.arch(z-11);
+      this.flush(roomArchitecture);
     }
-    this.box(18,7,.4,0,3.5,10.8,this.stone);this.box(18,7,.4,0,3.5,-77,this.stone);
-    this.label('F A B   D A O',0,4.3,-76.73,0,6,1.2,'#5c4b31','#d5cbb7',this.scene);
+    this.box(18,7,.4,0,3.5,10.8,this.stone);this.flush(this.architecture[0]);
+    this.box(18,7,.4,0,3.5,-77,this.stone);this.flush(this.architecture[3]);
+    this.label('F A B   D A O',0,4.3,-76.73,0,6,1.2,'#5c4b31','#d5cbb7',this.architecture[3]);
   }
   private label(text:string,x:number,y:number,z:number,ry:number,w:number,h:number,color:string,bg:string,parent:THREE.Object3D) {
     const c=document.createElement('canvas');c.width=1024;c.height=Math.max(64,Math.round(1024*h/w));
     const ctx=c.getContext('2d')!;
     if(bg!=='transparent'){ctx.fillStyle=bg;ctx.fillRect(0,0,c.width,c.height);}
-    ctx.fillStyle=color;ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=`${Math.min(64,c.height*.48)}px Georgia, "Noto Serif TC", serif`;
-    ctx.fillText(text,512,c.height/2,970);
+    ctx.fillStyle=color;ctx.textAlign='center';ctx.textBaseline='middle';const lines=text.split('\n'),lineHeight=c.height/lines.length;
+    ctx.font=`${Math.min(64,lineHeight*.52)}px Georgia, "Noto Serif TC", serif`;
+    lines.forEach((line,index)=>ctx.fillText(line,512,lineHeight*(index+.5),970));
     const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;
     const material=new THREE.MeshBasicMaterial({map:texture,transparent:true,side:THREE.DoubleSide,toneMapped:false});
     const mesh=new THREE.Mesh(new THREE.PlaneGeometry(w,h),material);mesh.position.set(x,y,z);mesh.rotation.y=ry;parent.add(mesh);return mesh;
@@ -243,7 +280,15 @@ export class Museum {
         finished=true;clearTimeout(timer);
         if(this.disposed){texture.dispose();reject(new DOMException('展館已關閉','AbortError'));return;}
         texture.colorSpace=THREE.SRGBColorSpace;
-        texture.anisotropy=Math.min(4,this.renderer.capabilities.getMaxAnisotropy());resolve(texture);
+        const original=texture.image as HTMLImageElement;
+        texture.userData.sourceWidth=original.width;texture.userData.sourceHeight=original.height;
+        // The reading panel uses the full original preview. A wall texture needs fewer texels.
+        const largest=Math.max(original.width,original.height);
+        if(largest>768){
+          const canvas=document.createElement('canvas');canvas.width=Math.round(original.width*768/largest);canvas.height=Math.round(original.height*768/largest);
+          const context=canvas.getContext('2d');if(context){context.drawImage(original,0,0,canvas.width,canvas.height);(texture as THREE.Texture<TexImageSource>).image=canvas;texture.needsUpdate=true;}
+        }
+        texture.anisotropy=Math.min(2,this.renderer.capabilities.getMaxAnisotropy());resolve(texture);
       },undefined,()=>{if(!finished){finished=true;clearTimeout(timer);reject(new Error('作品預覽暫時無法載入'));}});
     });
   }
@@ -258,6 +303,38 @@ export class Museum {
         resolve(gltf.scene);
       },undefined,()=>{if(!finished){finished=true;clearTimeout(timer);resolve(null);}});
     });
+  }
+  private batchGalleryFrames(group:THREE.Group){
+    group.updateMatrixWorld(true);
+    const batches=new Map<string,{material:THREE.MeshStandardMaterial;meshes:THREE.Mesh[]}>();
+    group.traverse(object=>{
+      if(!(object instanceof THREE.Mesh)||object.userData.item||!(object.material instanceof THREE.MeshStandardMaterial)||object.material.map)return;
+      const material=object.material;
+      const key=[material.color.getHex(),material.roughness,material.metalness,object.castShadow,object.receiveShadow].join(':');
+      const batch=batches.get(key)||{material,meshes:[]};batch.meshes.push(object);batches.set(key,batch);
+    });
+    for(const {material,meshes} of batches.values()){
+      if(meshes.length<2)continue;
+      const geometries=meshes.map(mesh=>{
+        let geometry=mesh.geometry.clone();if(geometry.index){const original=geometry;geometry=geometry.toNonIndexed();original.dispose();}
+        return geometry.applyMatrix4(mesh.matrixWorld);
+      });
+      const merged=mergeGeometries(geometries);geometries.forEach(geometry=>geometry.dispose());if(!merged)continue;
+      const frameMesh=new THREE.Mesh(merged,material);frameMesh.castShadow=meshes[0].castShadow;frameMesh.receiveShadow=meshes[0].receiveShadow;frameMesh.matrixAutoUpdate=false;group.add(frameMesh);
+      const obsoleteMaterials=new Set<THREE.Material>();
+      for(const mesh of meshes){if(mesh.material!==material)obsoleteMaterials.add(mesh.material as THREE.Material);mesh.removeFromParent();mesh.geometry.dispose();}
+      obsoleteMaterials.forEach(unused=>unused.dispose());
+    }
+  }
+  private updateVisibility(){
+    const visible=adjacentRooms(this.room);
+    this.galleries.forEach((gallery,index)=>gallery.visible=visible.includes(index));
+    this.architecture?.forEach((architecture,index)=>architecture.visible=visible.includes(index));
+    this.needsShadow=true;
+  }
+  private countSceneTriangles(){
+    let count=0;this.scene.traverse(object=>{if(object instanceof THREE.Mesh)count+=(object.geometry.index?.count??object.geometry.getAttribute('position').count)/3;});
+    if(this.renderStats)this.renderStats.sceneTriangles=count;
   }
   async displayRoom(index:number,artworks:Artwork[],documents:DocumentItem[]):Promise<void> {
     if(this.disposed||!this.galleries[index])throw new Error('展廳不存在');
@@ -276,7 +353,7 @@ export class Museum {
       for(let i=0;i<pieces.length;i++) {
         const item=pieces[i],result=textures[i],texture=result.status==='fulfilled'?result.value:null;
         const image=texture?.image as {width:number;height:number}|undefined;
-        const {width:w,height:h}=artworkDimensions(image?.width??1,image?.height??1);
+        const {width:w,height:h}=artworkDimensions(Number(texture?.userData.sourceWidth??image?.width??1),Number(texture?.userData.sourceHeight??image?.height??1),index);
         const slot=artworkSlot(index,i),frame=new THREE.Group();
         frame.position.set(slot.x,slot.y,slot.z);frame.rotation.y=slot.rotation;next.add(frame);
         const backing=new THREE.Mesh(new RoundedBoxGeometry(w+.18,h+.18,.105,2,.012),new THREE.MeshStandardMaterial({color:0x3d3122,roughness:.82}));frame.add(backing);
@@ -294,10 +371,9 @@ export class Museum {
         plane.userData.item=item;nextTargets.push(plane);
         frame.traverse(child=>{if(child instanceof THREE.Mesh){child.castShadow=child!==plane;child.receiveShadow=child!==plane;}});
         if(!texture)this.label('預覽待補  ·  點擊閱讀來源',0,0,.125,0,w,Math.min(h,.4),'#665944','#e6dfce',frame);
-        this.label(item.title,0,-h/2-.19,.13,0,Math.max(w,2.45),.16,'#343a34','#dfd7c7',frame);
-        this.label(`${item.artist}${typeof item.mediumLabel==='string'?`  ·  ${item.mediumLabel}`:''}`,0,-h/2-.34,.13,0,Math.max(w,2.45),.12,'#666052','#dfd7c7',frame);
         const hint=typeof item.wallNote==='string'?item.wallNote:'';
-        if(hint)this.label(hint,0,-h/2-.49,.13,0,Math.max(w,2.45),.11,'#666052','#dfd7c7',frame);
+        const credit=`${item.artist}${typeof item.mediumLabel==='string'?`  ·  ${item.mediumLabel}`:''}`;
+        this.label([item.title,credit,...(hint?[hint]:[])].join('\n'),0,-h/2-(hint ? .31 : .245),.13,0,Math.max(w,2.45),hint ? .45 : .30,'#343a34','#dfd7c7',frame);
         nextPoints.set(`${index}:${item.id}`,{item,room:index,target:new THREE.Vector3(slot.x-slot.side*.115,slot.y,slot.z),normal:new THREE.Vector3(-slot.side,0,0),distance:Math.max(2.7,w*1.25)});
       }
       // Documents are exactly the supplied curatorial selection, including cross-room references.
@@ -318,9 +394,7 @@ export class Museum {
           panel.position.set(side*5.2,1.73+row*1.03,rz-10.48);normal=new THREE.Vector3(0,0,1);distance=2.8;
         }
         const base=new THREE.Mesh(new RoundedBoxGeometry(panelWidth,panelHeight,.055,2,.015),new THREE.MeshStandardMaterial({color:0xddd3bd,roughness:.88}));panel.add(base);
-        this.label(doc.title,0,.16,.039,0,panelWidth-.1,.21,'#35493b','#e8e0d0',panel);
-        this.label('文獻  /  點擊閱讀',0,-.08,.04,0,panelWidth-.1,.14,'#786749','#e8e0d0',panel);
-        this.label(doc.date||'FAB DAO · 公開檔案',0,-.25,.04,0,panelWidth-.1,.12,'#786749','#e8e0d0',panel);
+        this.label([doc.title,'文獻  /  點擊閱讀',doc.date||'FAB DAO · 公開檔案'].join('\n'),0,0,.04,0,panelWidth-.1,.65,'#35493b','#e8e0d0',panel);
         const hit=new THREE.Mesh(new THREE.PlaneGeometry(panelWidth,panelHeight),new THREE.MeshBasicMaterial({transparent:true,opacity:0,depthWrite:false}));hit.position.z=.055;hit.userData.item=doc;panel.add(hit);nextTargets.push(hit);
         nextPoints.set(`${index}:${doc.id}`,{item:doc,room:index,target:panel.position.clone(),normal,distance});
       });
@@ -344,13 +418,14 @@ export class Museum {
         }
       }
       if(this.disposed||version!==this.roomVersions[index])throw new DOMException('較新的換展已取代本次請求','AbortError');
-      next.updateMatrixWorld(true);
+      this.batchGalleryFrames(next);next.updateMatrixWorld(true);
       const previous=this.galleries[index];this.scene.add(next);this.galleries[index]=next;
       this.targets=this.targets.filter(target=>!this.belongsTo(target,previous)).concat(nextTargets);
+      this.roomTargets??=[[],[],[],[]];this.roomTargets[index]=nextTargets;
       for(const [id,point] of this.viewPoints)if(point.room===index)this.viewPoints.delete(id);
       for(const [id,point] of nextPoints)this.viewPoints.set(id,point);
       previous.removeFromParent();disposeObject(previous);
-      this.hovered=null;this.onHover(null);
+      this.hovered=null;this.onHover(null);this.hoverDirty=true;this.updateVisibility();this.countSceneTriangles();this.invalidate(true);
     } catch(error) {const disposedTextures=disposeObject(next);loaded.filter(texture=>!disposedTextures.has(texture)).forEach(texture=>texture.dispose());throw error;}
   }
   private belongsTo(object:THREE.Object3D,parent:THREE.Object3D) {let current:THREE.Object3D|null=object;while(current){if(current===parent)return true;current=current.parent;}return false;}
@@ -360,41 +435,64 @@ export class Museum {
     this.keys.clear();this.camera.position.set(position.x,position.y,position.z);
     const direction=point.target.clone().sub(this.camera.position);
     this.yaw=Math.atan2(-direction.x,-direction.z);this.pitch=Math.atan2(direction.y,Math.hypot(direction.x,direction.z));
-    this.look();this.setRoom(point.room);this.hovered=point.item;this.onHover(point.item);this.onMove();return true;
+    this.look();this.setRoom(point.room);this.hovered=point.item;this.onHover(point.item);this.onMove();this.invalidate(true);return true;
   }
   focusArtwork(id:string){return this.focusItem(id,true);}
   focusDocument(id:string){return this.focusItem(id,false);}
   getState(){
-    const points=Array.from(this.viewPoints.values());
+    const points=Array.from(this.viewPoints.values()),profile=qualityProfile(this.quality,typeof devicePixelRatio==='number'?devicePixelRatio:1);
+    const width=this.renderer?.domElement.width??0,height=this.renderer?.domElement.height??0;
     return Object.freeze({room:this.room,position:Object.freeze({x:this.camera.position.x,y:this.camera.position.y,z:this.camera.position.z}),yaw:this.yaw,pitch:this.pitch,active:this.active,paused:this.paused,quality:this.quality,
+      controls:Object.freeze({...this.controls}),
       displayedArtworkIds:Object.freeze(points.filter(point=>'artist' in point.item).map(point=>point.item.id)),displayedDocumentIds:Object.freeze(points.filter(point=>!('artist' in point.item)).map(point=>point.item.id)),
-      sunTargetZ:this.sun.target.position.z,renderedTargets:this.targets.length});
+      sunTargetZ:this.sun.target.position.z,renderedTargets:this.targets.length,
+      renderStats:Object.freeze({...this.renderStats,visibleRooms:Object.freeze(adjacentRooms(this.room)),renderMode:profile.renderMode,dpr:this.renderer?.getPixelRatio?.()??profile.pixelRatio,
+        aoWidth:this.ao?Math.max(1,Math.floor(width*.5)):0,aoHeight:this.ao?Math.max(1,Math.floor(height*.5)):0,shadowSize:profile.shadows?profile.shadowSize:0,
+        drawWidth:width,drawHeight:height,geometries:this.renderer?.info.memory.geometries??0,textures:this.renderer?.info.memory.textures??0,wallTextureLimit:768,idle:!this.animationFrame&&!this.needsRender})});
+  }
+  setControlSettings(settings:Partial<{sensitivity:number;invertY:boolean}>){
+    if(settings.sensitivity!==undefined)this.controls.sensitivity=clampSensitivity(settings.sensitivity);
+    if(settings.invertY!==undefined)this.controls.invertY=!!settings.invertY;
   }
   private bind() {
     const options={signal:this.abort.signal};
     window.addEventListener('resize',()=>this.resize(),options);
-    window.addEventListener('blur',()=>{this.keys.clear();this.drag=false;},options);
-    document.addEventListener('visibilitychange',()=>{if(document.hidden){this.keys.clear();this.drag=false;}},options);
-    document.addEventListener('pointerlockchange',()=>this.keys.clear(),options);
+    window.addEventListener('blur',()=>{this.keys.clear();this.drag=false;this.pointerPosition=null;},options);
+    document.addEventListener('visibilitychange',()=>{
+      if(document.hidden){this.keys.clear();this.drag=false;this.pointerPosition=null;window.cancelAnimationFrame(this.animationFrame);this.animationFrame=0;}
+      else this.invalidate();
+    },options);
+    document.addEventListener('pointerlockchange',()=>{this.keys.clear();this.drag=false;this.dragged=false;this.pointerPosition=null;},options);
     window.addEventListener('keydown',event=> {
       if(!this.active||this.paused||(event.target instanceof Element&&event.target.closest('input,select,textarea,[contenteditable="true"]')))return;
-      if(['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','KeyQ','KeyE','PageUp','PageDown','ShiftLeft','ShiftRight'].includes(event.code)){event.preventDefault();this.keys.add(event.code);}
+      if(['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','KeyQ','KeyE','PageUp','PageDown','ShiftLeft','ShiftRight'].includes(event.code)){event.preventDefault();this.keys.add(event.code);this.requestFrame();}
       if(event.code==='Enter'&&this.hovered&&!(event.target instanceof Element&&event.target.closest('button,a'))){event.preventDefault();this.onInspect(this.hovered);}
     },options);
     window.addEventListener('keyup',event=>this.keys.delete(event.code),options);
+    this.renderer.domElement.style.touchAction='none';
     this.renderer.domElement.addEventListener('pointerdown',event=>{
       if(!this.active||this.paused||event.button!==0)return;
-      this.drag=true;this.dragged=false;this.renderer.domElement.setPointerCapture(event.pointerId);
+      this.dragged=false;this.dragDistance=0;
+      if(document.pointerLockElement===this.renderer.domElement)return;
+      this.drag=true;this.pointerPosition={x:event.clientX,y:event.clientY,id:event.pointerId};this.renderer.domElement.setPointerCapture(event.pointerId);
     },options);
-    window.addEventListener('pointerup',()=>{this.drag=false;},options);
-    this.renderer.domElement.addEventListener('pointercancel',()=>{this.drag=false;},options);
-    window.addEventListener('mousemove',event=> {
+    window.addEventListener('pointerup',()=>{this.drag=false;this.pointerPosition=null;},options);
+    this.renderer.domElement.addEventListener('pointercancel',()=>{this.drag=false;this.pointerPosition=null;},options);
+    window.addEventListener('pointermove',event=> {
       if(!this.active||this.paused)return;
-      if(document.pointerLockElement===this.renderer.domElement||this.drag){
-        if(Math.abs(event.movementX)+Math.abs(event.movementY)>2)this.dragged=true;
-        this.yaw-=event.movementX*.002;this.pitch=THREE.MathUtils.clamp(this.pitch-event.movementY*.002,-1.05,1.05);this.look();
-        if(event.movementX||event.movementY)this.onMove();
-      }
+      const locked=document.pointerLockElement===this.renderer.domElement;
+      let dx=0,dy=0;
+      if(locked){
+        // Absolute coordinates are fixed under Pointer Lock. Relative motion is only used here.
+        dx=event.movementX;dy=event.movementY;
+      } else if(this.drag&&this.pointerPosition?.id===event.pointerId){
+        dx=event.clientX-this.pointerPosition.x;dy=event.clientY-this.pointerPosition.y;
+        this.pointerPosition={x:event.clientX,y:event.clientY,id:event.pointerId};
+        this.dragDistance+=Math.hypot(dx,dy);if(this.dragDistance>4)this.dragged=true;
+      } else return;
+      const delta=pointerLookDelta(dx,dy,{mode:locked?'locked':'drag',...this.controls});
+      if(!delta.yaw&&!delta.pitch)return;
+      this.yaw+=delta.yaw;this.pitch=THREE.MathUtils.clamp(this.pitch+delta.pitch,-1.05,1.05);this.look();this.onMove();
     },options);
     this.renderer.domElement.addEventListener('click',event=>{
       if(!this.active||this.paused||this.dragged)return;
@@ -403,50 +501,85 @@ export class Museum {
       this.raycaster.setFromCamera(new THREE.Vector2((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1),this.camera);
       const hit=this.raycaster.intersectObjects(this.currentTargets(),false)[0];if(hit&&hit.distance<14)this.onInspect(hit.object.userData.item);
     },options);
-    this.renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();this.renderer.setAnimationLoop(null);this.onContextLost();},options);
+    this.renderer.domElement.addEventListener('webglcontextlost',event=>{
+      event.preventDefault();this.contextLost=true;window.cancelAnimationFrame(this.animationFrame);this.animationFrame=0;this.onContextLost();
+    },options);
   }
-  start() {this.active=true;this.camera.position.set(2.7,EYE_HEIGHT,7.7);this.yaw=.18;this.pitch=0;this.look();}
-  setPaused(value:boolean){this.paused=value;this.keys.clear();if(value&&document.pointerLockElement)document.exitPointerLock();}
+  start() {this.active=true;this.paused=false;this.camera.position.set(2.7,EYE_HEIGHT,7.7);this.yaw=.18;this.pitch=0;this.look();this.invalidate(true);}
+  setPaused(value:boolean){
+    this.paused=value;this.keys.clear();this.drag=false;this.pointerPosition=null;
+    if(value&&document.pointerLockElement)void document.exitPointerLock();
+    if(!value){this.hoverDirty=true;this.requestFrame();}
+  }
   async lock(){try{await this.renderer.domElement.requestPointerLock();}catch{ /* Drag and keyboard remain available. */ }}
   setImmersive(value:boolean){if(value)void this.lock();else if(document.pointerLockElement===this.renderer.domElement)void document.exitPointerLock();}
-  teleport(index:number){if(!Number.isInteger(index)||index<0||index>3)return;this.keys.clear();this.camera.position.set(2.7,EYE_HEIGHT,7.7-index*22);this.yaw=.18;this.pitch=0;this.look();this.setRoom(index);}
-  setQuality(value:string){this.quality=value;this.renderer.setPixelRatio(Math.min(devicePixelRatio,value==='high'?2:value==='low'?1:1.5));this.renderer.shadowMap.enabled=value!=='low';this.ao.enabled=value!=='low';this.resize();}
-  private setRoom(index:number){if(index===this.room)return;this.room=index;this.hovered=null;this.onHover(null);this.onRoom(index);}
-  private look(){this.camera.rotation.set(this.pitch,this.yaw,0,'YXZ');this.camera.updateMatrixWorld(true);}
-  private currentTargets(){return this.targets.filter(target=>this.belongsTo(target,this.galleries[this.room]));}
-  private resize(){const w=Math.max(1,this.container.clientWidth),h=Math.max(1,this.container.clientHeight);this.camera.aspect=w/h;this.camera.updateProjectionMatrix();this.renderer.setSize(w,h);this.composer.setPixelRatio(this.renderer.getPixelRatio());this.composer.setSize(w,h);}
-  private render=(time:number)=>{
-    const realDt=(time-this.last)/1000||.016;const dt=Math.min(realDt,.05);this.last=time;
-    if(document.hidden)return;
+  teleport(index:number){if(!Number.isInteger(index)||index<0||index>3)return;this.keys.clear();this.camera.position.set(2.7,EYE_HEIGHT,7.7-index*22);this.yaw=.18;this.pitch=0;this.look();this.setRoom(index);this.invalidate(true);}
+  setQuality(value:string){
+    const profile=qualityProfile(value,devicePixelRatio);this.quality=profile.quality;
+    this.renderer.setPixelRatio(profile.pixelRatio);this.renderer.shadowMap.enabled=profile.shadows;
+    if(this.sun.shadow.mapSize.x!==profile.shadowSize){this.sun.shadow.map?.dispose();this.sun.shadow.map=null;this.sun.shadow.mapSize.set(profile.shadowSize,profile.shadowSize);}
+    if(profile.renderMode==='ssao')this.ensureComposer();else this.disposeComposer();
+    this.resize();this.invalidate(true);
+  }
+  private setRoom(index:number){if(index===this.room)return;this.room=index;this.hovered=null;this.onHover(null);this.updateVisibility();this.hoverDirty=true;this.invalidate(true);this.onRoom(index);}
+  private look(){this.camera.rotation.set(this.pitch,this.yaw,0,'YXZ');this.camera.updateMatrixWorld(true);this.hoverDirty=true;this.invalidate();}
+  private currentTargets(){return this.roomTargets?.[this.room]??this.targets.filter(target=>this.belongsTo(target,this.galleries[this.room]));}
+  private resize(){
+    const w=Math.max(1,this.container.clientWidth),h=Math.max(1,this.container.clientHeight),ratio=qualityProfile(this.quality,devicePixelRatio).pixelRatio;
+    this.renderer.setPixelRatio(ratio);
+    this.camera.aspect=w/h;this.camera.updateProjectionMatrix();this.renderer.setSize(w,h);
+    if(this.composer){this.composer.setPixelRatio(ratio);this.composer.setSize(w,h);this.ao?.setSize(Math.max(1,Math.floor(w*ratio*.5)),Math.max(1,Math.floor(h*ratio*.5)));}
+    this.invalidate();
+  }
+  private render(time:number){
+    this.animationFrame=0;
+    if(this.disposed||this.contextLost||document.hidden)return;
+    const gap=(time-this.last)/1000,dt=Math.min(gap||.016,.05);this.last=time;
+    let moving=false;
     if(this.active&&!this.paused){
       const forward=Number(this.keys.has('KeyW')||this.keys.has('ArrowUp'))-Number(this.keys.has('KeyS')||this.keys.has('ArrowDown'));
       const strafe=Number(this.keys.has('KeyD'))-Number(this.keys.has('KeyA'));
       const turn=Number(this.keys.has('ArrowLeft')||this.keys.has('KeyQ'))-Number(this.keys.has('ArrowRight')||this.keys.has('KeyE'));
       const tilt=Number(this.keys.has('PageUp'))-Number(this.keys.has('PageDown'));
-      this.yaw+=turn*dt*1.3;this.pitch=THREE.MathUtils.clamp(this.pitch+tilt*dt*.85,-1.05,1.05);
-      if(turn||tilt)this.onMove();
-      if(forward||strafe){const len=Math.hypot(forward,strafe),speed=((this.keys.has('ShiftLeft')||this.keys.has('ShiftRight'))?5:2.8)*dt;
-        const dx=(-Math.sin(this.yaw)*forward+Math.cos(this.yaw)*strafe)/len*speed;
-        const dz=(-Math.cos(this.yaw)*forward-Math.sin(this.yaw)*strafe)/len*speed;
-        const next=moveWithCollision(this.camera.position,dx,dz);if(next.x!==this.camera.position.x||next.z!==this.camera.position.z)this.onMove();this.camera.position.x=next.x;this.camera.position.z=next.z;this.setRoom(roomAt(next.z));
+      if(turn||tilt){this.yaw+=turn*dt*1.3;this.pitch=THREE.MathUtils.clamp(this.pitch+tilt*dt*.85,-1.05,1.05);moving=true;}
+      if(forward||strafe){
+        const len=Math.hypot(forward,strafe),speed=((this.keys.has('ShiftLeft')||this.keys.has('ShiftRight'))?5:2.8)*dt;
+        const dx=(-Math.sin(this.yaw)*forward+Math.cos(this.yaw)*strafe)/len*speed,dz=(-Math.cos(this.yaw)*forward-Math.sin(this.yaw)*strafe)/len*speed;
+        const next=moveWithCollision(this.camera.position,dx,dz);
+        if(next.x!==this.camera.position.x||next.z!==this.camera.position.z){moving=true;this.camera.position.x=next.x;this.camera.position.z=next.z;this.setRoom(roomAt(next.z));}
       }
-      this.look();
-      this.raycaster.setFromCamera(new THREE.Vector2(0,0),this.camera);
-      const hit=this.raycaster.intersectObjects(this.currentTargets(),false)[0];const item=hit&&hit.distance<10?hit.object.userData.item:null;
-      if(item!==this.hovered){this.hovered=item;this.onHover(item);}
+      if(moving){this.look();this.onMove();}
+      if(this.hoverDirty&&time-this.lastRaycast>=80){
+        this.lastRaycast=time;this.hoverDirty=false;this.renderStats.raycasts++;
+        this.raycaster.setFromCamera(new THREE.Vector2(0,0),this.camera);
+        const hit=this.raycaster.intersectObjects(this.currentTargets(),false)[0],item=hit&&hit.distance<10?hit.object.userData.item:null;
+        if(item!==this.hovered){this.hovered=item;this.onHover(item);}
+      }
     }
-    // Direction stays constant; only the shadow window follows the visitor continuously.
-    // Crossing an arch therefore never moves the sun by an entire gallery length.
-    const lightOffset=this.camera.position.z-7.7;
-    this.sun.position.z=5+lightOffset;this.sun.target.position.z=-5+lightOffset;
-    this.composer.render();
-    this.elapsed+=realDt;this.frameCount++;if(this.elapsed>2){this.onStats(Math.round(this.frameCount/this.elapsed));this.elapsed=0;this.frameCount=0;}
+    if(shouldDrawFrame({dirty:this.needsRender,hidden:document.hidden,disposed:this.disposed})){
+      if(this.renderer.shadowMap.enabled&&shouldRefreshShadow(this.camera.position.z,this.lastShadowZ,this.needsShadow)){
+        this.lastShadowZ=this.camera.position.z;this.needsShadow=false;
+        const offset=Math.round((this.camera.position.z-7.7)*32)/32;
+        this.sun.position.z=5+offset;this.sun.target.position.z=-5+offset;this.sun.updateMatrixWorld(true);this.sun.target.updateMatrixWorld(true);
+        this.renderer.shadowMap.needsUpdate=true;this.renderStats.shadowUpdates++;
+      }
+      this.renderer.info.reset();const started=performance.now();
+      if(this.composer&&this.quality==='high')this.composer.render();else this.renderer.render(this.scene,this.camera);
+      this.needsRender=false;this.renderStats.frames++;this.renderStats.frameCpuMs=Math.round((performance.now()-started)*100)/100;
+      this.renderStats.drawCalls=this.renderer.info.render.calls;this.renderStats.triangles=this.renderer.info.render.triangles;
+      // Only contiguous rendered periods contribute to the movement FPS reading.
+      if(gap>.25){this.elapsed=0;this.frameCount=0;}
+      else {this.elapsed+=gap;this.frameCount++;}
+      if(this.active&&!this.paused&&this.elapsed>=1){this.renderStats.fps=Math.round(this.frameCount/this.elapsed);this.onStats(this.renderStats.fps);this.elapsed=0;this.frameCount=0;}
+    } else this.renderStats.skippedFrames++;
+    const heldMovement=this.active&&!this.paused&&Array.from(this.keys).some(key=>!key.startsWith('Shift'));
+    if(heldMovement||(this.active&&!this.paused&&this.hoverDirty))this.requestFrame();
   };
   dispose(){
     if(this.disposed)return;this.disposed=true;this.roomVersions=this.roomVersions.map(version=>version+1);
-    this.abort.abort();this.keys.clear();this.renderer.setAnimationLoop(null);
+    this.abort.abort();this.keys.clear();window.cancelAnimationFrame(this.animationFrame);this.animationFrame=0;
     if(document.pointerLockElement===this.renderer.domElement)void document.exitPointerLock();
-    for(const pass of this.composer.passes)pass.dispose();this.composer.dispose();disposeObject(this.scene);this.environmentTarget.dispose();
+    this.disposeComposer();disposeObject(this.scene);this.environmentTarget.dispose();
     this.sun.shadow.dispose();this.renderer.dispose();this.renderer.domElement.remove();this.targets=[];this.viewPoints.clear();
   }
 

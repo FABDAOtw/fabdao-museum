@@ -2,18 +2,28 @@
 
 A desktop-first virtual museum and public-source collection catalogue for FAB DAO. Traditional Chinese interface; classical galleries; first-person navigation; no login or wallet connection.
 
-**Public website:** https://fabdao-museum.mashbean.net  
-**Planned future domain:** https://museum.fabdao.world (not configured yet)
+**Public website:** [fabdao-museum.mashbean.net](https://fabdao-museum.mashbean.net)
+
+**Planned future domain:** [museum.fabdao.world](https://museum.fabdao.world) (not configured yet; account authorization pending)
 
 ## What is implemented
 
 - Four connected galleries: 生成之間 / 群山成島 / 收藏作為行動 / 留白與記憶.
 - Procedural fluted columns, arch voussoirs, cornices and dentils, coffered skylights, brass picture frames and low-contrast tiled stone floors. Each room has distinct furniture and a clear circulation route; the commons gallery includes the original Green Sofa GLB.
-- Three.js WebGL2, PBR architecture, environment lighting, directional shadows, SSAO and ACES output. Art previews use sRGB; the HTML detail viewer preserves the image independently of the gallery lighting.
-- WASD movement, arrow keys and vertical keyboard look, drag-to-look, optional pointer lock, collision, pause, map teleportation, frontal artwork positioning, a 32-work guided route, quiet mode and three quality levels.
-- 32 fixed first-exhibition works (8 per gallery), with two six/two-work wall pages in the memory gallery. Shared documents follow the curatorial reference order on reading tables and accessible panels.
-- Searchable catalogue of 151 publicly indexed holdings, artwork attribution, source links, fit/100%/zoom/pan/fullscreen image viewing, contextual previous/next and return navigation, shareable artwork URLs, document summaries and a WebGL-unavailable fallback.
+- Three.js WebGL2, PBR architecture, environment lighting, directional shadows and ACES output. The gallery renders on demand and stops redrawing while idle. Balanced quality uses direct rendering; high quality adds SSAO at half resolution. Art previews use sRGB; the HTML detail viewer preserves the image independently of the gallery lighting.
+- WASD movement, arrow keys and vertical keyboard look, collision, pause, map teleportation, frontal artwork positioning, quiet mode and three quality levels. Dragging grabs the scene (drag right to move the scene right); pointer-locked free look follows first-person game directions. Mouse sensitivity and vertical inversion are adjustable and saved locally.
+- All 136 holdings with verified local previews can be displayed across 13 wall batches. Permanent previous/next-batch controls, room totals and catalogue access make the extended collection reachable. Galleries load as needed; each replacement is prepared before the current wall is removed, and failed initial loads have a retry control.
+- The 32 fixed first-exhibition selections (8 per gallery) retain their authored groups and guided route. Extended display does not turn provisional classifications into formal curatorial selections. Shared documents follow the curatorial reference order on reading tables and accessible panels.
+- Searchable catalogue of 151 publicly indexed holdings, including 15 records still without usable previews. It provides artwork attribution, source links, fit/100%/zoom/pan/fullscreen image viewing, contextual previous/next and return navigation, shareable artwork URLs, document summaries and a WebGL-unavailable fallback.
 - Relative asset paths and stable chain/contract/token identifiers for domain migration.
+
+| Gallery | Displayable works | Works per batch | Batches | Guided selections |
+| --- | ---: | ---: | ---: | ---: |
+| 生成之間 | 75 | 12 | 7 | 8 |
+| 群山成島 | 30 | 12 | 3 | 8 |
+| 收藏作為行動 | 12 | 12 | 1 | 8 |
+| 留白與記憶 | 19 | 10 | 2 | 8 |
+| Total | 136 | — | 13 | 32 |
 
 ## Stack and development
 
@@ -26,7 +36,11 @@ npm test
 npm run build
 ```
 
-Round-two validation includes data and navigation tests, asynchronous scene replacement/disposal tests, and native-media activation/disposal tests. These do not replace browser visual or playback acceptance. `tests/browser-qa.mjs` records the original round-one automated flow and is now historical: its selectors and rotation assumptions need updating before reuse. In Codex desktop, use the approved CUA browser tools for UI checks. Round-two browser acceptance was blocked by the locked Mac at delivery; do not treat round-one screenshots as evidence of this revision.
+Round-three validation passed all 45 tests and `npm run build`. Coverage includes collection counts and source boundaries, all 136 displayable records and page positions, the separate 32-work route, navigation, asynchronous replacement/disposal, and native-media activation/disposal. Automated tests do not establish successful external artwork playback.
+
+Round-three browser acceptance used the approved CUA tools at 1280 px and 1440 px desktop widths, plus a 390 px mobile viewport. Catalogue cards showed no overlap or horizontal overflow at those sizes. Checks also covered all four room transitions, the second batch of the fourth gallery, and dragging right moving the scene right. The mobile viewport check is a layout check, not acceptance on a physical phone or a low-power device.
+
+`tests/browser-qa.mjs` records the original round-one automated flow and is historical: its selectors and rotation assumptions need updating before reuse.
 
 ```sh
 npm run build
@@ -48,19 +62,19 @@ npm test
 npm run build
 ```
 
-Inspect new tokens and media before deploying a refreshed snapshot. Positive balances establish indexed holdings, not purchases, selection votes, copyright ownership or a complete historic archive. Metadata pending in the upstream indexer remains visible as a holding with no invented title/image. Classification outside the 32 reviewed first-exhibition pieces uses explicit editorial rules and may need further curatorial review.
+Inspect new tokens and media before deploying a refreshed snapshot. Positive balances establish indexed holdings, not purchases, selection votes, copyright ownership or a complete historic archive. Metadata pending in the upstream indexer remains visible as a holding with no invented title/image. Some extended works have metadata-reviewed themes; others retain provisional rule-based classifications. Their display status does not alter `featured`, `selectedGroup` or `themeStatus`. Only verified local previews enter the walls; the other 15 records remain accessible through the catalogue and source links.
 
 ## Media, rights and current scope
 
-The first exhibition uses cached resized previews from real token metadata (one explicitly documented artist-CDN alternative). Rain Blooms and Directrix have explicit-activation original HTML viewers in opaque sandboxed iframes. Your First Green Sofa has a verified self-contained original GLB in the gallery and an on-demand rotatable viewer. All other native media retain source links. Closing or changing a work disposes its viewer. External availability remains dependent on its publisher/IPFS gateway; iframe load alone is not successful artwork playback. Per-token licences are preserved where metadata supplies them. Rights remain with their respective authors.
+The display programme uses cached resized previews from real token metadata (one explicitly documented artist-CDN alternative). Rain Blooms and Directrix have explicit-activation original HTML viewers in opaque sandboxed iframes. Your First Green Sofa has a verified self-contained original GLB in the gallery and an on-demand rotatable viewer. All other native media retain source links. Closing or changing a work disposes its viewer; gallery idle rendering does not stop an original the visitor has chosen to run. External availability remains dependent on its publisher/IPFS gateway; iframe load alone is not successful artwork playback. Per-token licences are preserved where metadata supplies them. Rights remain with their respective authors.
 
-This initial museum is a procedural architectural implementation. It does not yet contain artist-modelled architectural sculptures, offline baked global illumination, multiplayer, an avatar camera, VR, full acquisition/transfer history, Base holdings or proposal-decision reconciliation. Round-one Chrome and narrow-screen checks were completed before this revision. Round two still requires visual/playback acceptance after unlocking the Mac, plus Safari/Firefox and a representative low-power device.
+This museum is a procedural architectural implementation. It does not yet contain artist-modelled architectural sculptures, offline baked global illumination, multiplayer, an avatar camera, VR, full acquisition/transfer history, Base holdings or proposal-decision reconciliation. Fifteen holdings still lack usable previews. Safari/Firefox, complete native-media playback and a representative low-power device remain acceptance gaps. The performance changes still need controlled benchmarking; the current checks establish neither an FPS improvement multiplier nor acceptance on real low-end hardware.
 
 ## Moving to museum.fabdao.world
 
-1. Confirm management of the `fabdao.world` zone and configure the new Worker custom domain.
+1. Obtain authorization to manage the `fabdao.world` zone in the separate Gimmy Cloudflare account, then configure the new Worker custom domain.
 2. Add the new binding to `wrangler.jsonc`; verify HTTPS and all relative artwork/data paths.
 3. Update the advertised website URL and any later canonical/social metadata.
 4. Once the new site is accepted, configure the old hostname to redirect each path to the new one.
 
-The current task does not change DNS for `museum.fabdao.world`.
+`museum.fabdao.world` is not configured yet. Automatic approval review blocked the cross-account domain change; migration remains pending the user's authorization for the separate Gimmy account. The current public museum remains at `fabdao-museum.mashbean.net`.

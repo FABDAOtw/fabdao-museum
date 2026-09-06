@@ -2,7 +2,9 @@ export const ROOM_LENGTH = 22;
 export const ROOM_COUNT = 4;
 export const EYE_HEIGHT = 1.72;
 export const ARTWORK_CENTER = 2.02;
-export const roomCapacity = index => index === 3 ? 6 : 8;
+export const roomCapacity = index => index === 3 ? 10 : 12;
+const ARTWORK_WALL_SPAN = 14.6;
+const artworkSpacing = room => ARTWORK_WALL_SPAN / (roomCapacity(room) / 2 - 1);
 export function roomAt(z) { return Math.max(0, Math.min(3, Math.floor((11 - z) / ROOM_LENGTH))); }
 
 // Shared by the architecture and collision model. These are museum furniture,
@@ -28,15 +30,16 @@ export function roomFurniture(room) {
 }
 
 export function artworkSlot(room, index) {
-  const capacity = roomCapacity(room), rows = capacity / 2;
   const side = index % 2 === 0 ? -1 : 1;
   const row = Math.floor(index / 2);
-  const z = -room * ROOM_LENGTH + (rows === 3 ? 6.8 - row * 6.8 : 7.1 - row * 4.7);
+  const z = -room * ROOM_LENGTH + ARTWORK_WALL_SPAN / 2 - row * artworkSpacing(room);
   return { x: side * 8.65, y: ARTWORK_CENTER, z, rotation: side < 0 ? Math.PI / 2 : -Math.PI / 2, side };
 }
-export function artworkDimensions(width, height) {
-  const ratio = Number.isFinite(width / height) && width > 0 && height > 0 ? width / height : 1;
-  const w = Math.min(2.65, 1.95 * ratio);
+export function artworkDimensions(width, height, room = 0) {
+  const candidateRatio = width / height;
+  const ratio = Number.isFinite(candidateRatio) && candidateRatio > 0 && width > 0 && height > 0 ? candidateRatio : 1;
+  // Reserve wall space for the frame's 0.2 m surround and a visible gap.
+  const w = Math.min(2.35, artworkSpacing(room) - .5, 1.95 * ratio);
   return { width: w, height: w / ratio };
 }
 export function canStand(x, z) {
