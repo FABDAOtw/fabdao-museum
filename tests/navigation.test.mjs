@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { canStand, moveWithCollision, roomAt, artworkSlot, artworkDimensions, roomCapacity, roomFurniture, safeViewpoint, EYE_HEIGHT } from '../src/navigation.js';
+import { canStand, moveWithCollision, roomAt, artworkSlot, artworkDimensions, roomCapacity, roomFurniture, safeViewpoint, EYE_HEIGHT, ARTWORK_CENTER } from '../src/navigation.js';
 
 const closeTo = (actual, expected) => assert.ok(Math.abs(actual - expected) < 1e-6, `${actual} should reach ${expected}`);
 
@@ -97,7 +97,7 @@ test('frames preserve portrait, square and landscape aspect ratios within viewin
   for (let room = 0; room < 4; room++) for (const [width, height] of [[1200, 853], [1020, 1200], [1200, 1200], [2400, 600], [500, 1800]]) {
     const dimensions = artworkDimensions(width, height, room);
     closeTo(dimensions.width / dimensions.height, width / height);
-    assert.ok(dimensions.width <= 2.35 && dimensions.height <= 1.95 + 1e-10);
+    assert.ok(dimensions.width <= 2.35 && dimensions.height <= 1.8 + 1e-10);
   }
 });
 
@@ -117,7 +117,7 @@ test('full galleries leave visible gaps between neighbouring frames and labels a
     const frameWidth = artworkDimensions(4000, 500, room).width + .2;
     for (let index = 0; index < roomCapacity(room); index++) {
       const slot = artworkSlot(room, index);
-      closeTo(slot.y, 2.02);
+      closeTo(slot.y, ARTWORK_CENTER);
       if (index < 2) continue;
       const previous = artworkSlot(room, index - 2);
       const spacing = previous.z - slot.z;
@@ -127,6 +127,12 @@ test('full galleries leave visible gaps between neighbouring frames and labels a
       assert.ok(spacing - 2.45 >= .25, `gallery ${room} labels overlap`);
     }
   }
+});
+
+test('the tallest wall plaque clears the lower wall plinth', () => {
+  const tallest = artworkDimensions(500, 1800, 0);
+  const plaqueBottom = ARTWORK_CENTER - tallest.height / 2 - .31 - .45 / 2;
+  assert.ok(plaqueBottom > .75, `plaque bottom ${plaqueBottom.toFixed(3)} intersects the .75m plinth`);
 });
 
 test('invalid coordinates are not accepted as safe visitor positions', () => {

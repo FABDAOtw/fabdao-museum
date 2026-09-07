@@ -254,7 +254,7 @@ export class Museum {
     this.box(18,7,.4,0,3.5,-77,this.stone);this.flush(this.architecture[3]);
     this.label('F A B   D A O',0,4.3,-76.73,0,6,1.2,'#5c4b31','#d5cbb7',this.architecture[3]);
   }
-  private label(text:string,x:number,y:number,z:number,ry:number,w:number,h:number,color:string,bg:string,parent:THREE.Object3D) {
+  private label(text:string,x:number,y:number,z:number,ry:number,w:number,h:number,color:string,bg:string,parent:THREE.Object3D,alwaysOnTop=false) {
     const c=document.createElement('canvas');c.width=1024;c.height=Math.max(64,Math.round(1024*h/w));
     const ctx=c.getContext('2d')!;
     if(bg!=='transparent'){ctx.fillStyle=bg;ctx.fillRect(0,0,c.width,c.height);}
@@ -262,8 +262,13 @@ export class Museum {
     ctx.font=`${Math.min(64,lineHeight*.52)}px Georgia, "Noto Serif TC", serif`;
     lines.forEach((line,index)=>ctx.fillText(line,512,lineHeight*(index+.5),970));
     const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;
-    const material=new THREE.MeshBasicMaterial({map:texture,transparent:true,side:THREE.DoubleSide,toneMapped:false});
-    const mesh=new THREE.Mesh(new THREE.PlaneGeometry(w,h),material);mesh.position.set(x,y,z);mesh.rotation.y=ry;parent.add(mesh);return mesh;
+    const material=new THREE.MeshBasicMaterial({map:texture,transparent:true,side:THREE.DoubleSide,toneMapped:false,depthTest:!alwaysOnTop,depthWrite:!alwaysOnTop});
+    const mesh=new THREE.Mesh(new THREE.PlaneGeometry(w,h),material);mesh.position.set(x,y,z);mesh.rotation.y=ry;
+    // Artwork plaques intersect the architectural base moulding at the lower edge
+    // of the wall. Keep the plaque readable while preserving the moulding everywhere
+    // else; this is intentionally limited to labels attached to displayed works.
+    if(alwaysOnTop)mesh.renderOrder=20;
+    parent.add(mesh);return mesh;
   }
   private contactShadow(x:number,z:number,width:number,depth:number,parent:THREE.Object3D) {
     const canvas=document.createElement('canvas');canvas.width=canvas.height=128;
@@ -372,10 +377,10 @@ export class Museum {
         const plane=new THREE.Mesh(new THREE.PlaneGeometry(w,h),artMat);plane.position.z=.115;frame.add(plane);
         plane.userData.item=item;nextTargets.push(plane);
         frame.traverse(child=>{if(child instanceof THREE.Mesh){child.castShadow=child!==plane;child.receiveShadow=child!==plane;}});
-        if(!texture)this.label(this.text('預覽待補  ·  點擊閱讀來源','Preview pending · Select to read the source'),0,0,.125,0,w,Math.min(h,.4),'#665944','#e6dfce',frame);
+        if(!texture)this.label(this.text('預覽待補  ·  點擊閱讀來源','Preview pending · Select to read the source'),0,0,.25,0,w,Math.min(h,.4),'#665944','#e6dfce',frame,true);
         const hint=typeof item.wallNote==='string'?item.wallNote:'';
         const credit=`${item.artist}${typeof item.mediumLabel==='string'?`  ·  ${item.mediumLabel}`:''}`;
-        this.label([item.title,credit,...(hint?[hint]:[])].join('\n'),0,-h/2-(hint ? .31 : .245),.13,0,Math.max(w,2.45),hint ? .45 : .30,'#343a34','#dfd7c7',frame);
+        this.label([item.title,credit,...(hint?[hint]:[])].join('\n'),0,-h/2-(hint ? .31 : .245),.25,0,Math.max(w,2.45),hint ? .45 : .30,'#343a34','#dfd7c7',frame,true);
         nextPoints.set(`${index}:${item.id}`,{item,room:index,target:new THREE.Vector3(slot.x-slot.side*.115,slot.y,slot.z),normal:new THREE.Vector3(-slot.side,0,0),distance:Math.max(2.7,w*1.25)});
       }
       // Documents are exactly the supplied curatorial selection, including cross-room references.
