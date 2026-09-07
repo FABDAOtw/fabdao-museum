@@ -6,7 +6,7 @@ import ts from 'typescript';
 
 const source = await readFile(new URL('../src/media.ts', import.meta.url), 'utf8');
 const compiled = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ES2022 } }).outputText;
-const { getMediaKind, getMediaSupport, mountMedia } = await import(`data:text/javascript;base64,${Buffer.from(compiled).toString('base64')}`);
+const { getMediaKind, getMediaSupport, mountMedia, nativePlaybackURL, nativePlaybackURLs } = await import(`data:text/javascript;base64,${Buffer.from(compiled).toString('base64')}`);
 const { artworks } = JSON.parse(await readFile(new URL('../public/data/collection.json', import.meta.url), 'utf8'));
 const rain = artworks.find(a => a.title === 'Rain Blooms #81');
 const directrix = artworks.find(a => a.title === 'Directrix #86');
@@ -48,6 +48,17 @@ test('native media requires the exact reviewed artwork source, including Directr
   changedSeed.searchParams.set('seed', '0');
   assert.equal(getMediaSupport({ ...directrix, artifactUrl: changedSeed.href }).supported, false);
   assert.equal(getMediaSupport({ ...rain, id: 'unreviewed' }).supported, false);
+});
+
+test('IPFS binary originals have gateway fallbacks while canonical URLs stay unchanged', () => {
+  const source = sofa.artifactUrl;
+  const candidates = nativePlaybackURLs(source);
+  assert.equal(nativePlaybackURL(source), candidates[0]);
+  assert.equal(candidates.at(-1), source);
+  assert.deepEqual(new Set(candidates).size, candidates.length);
+  assert.ok(candidates.some(url => url.startsWith('https://gateway.pinata.cloud/')));
+  assert.ok(candidates.some(url => url.startsWith('https://dweb.link/')));
+  assert.deepEqual(nativePlaybackURLs('https://example.com/model.glb'), ['https://example.com/model.glb']);
 });
 
 test('interactive originals create no iframe until user activation and use an opaque sandbox', () => {

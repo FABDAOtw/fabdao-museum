@@ -38,11 +38,25 @@ const originals:Record<string,Original>={
 const labels:Record<MediaKind,[string,string]>={interactive:['互動原作','Interactive original'],model:['3D 原作','Original 3D model'],video:['影片原作','Original video'],audio:['聲音原作','Original audio'],image:['原作影像','Original image'],unknown:['作品來源','Artwork source']};
 function safeRemote(value:unknown):string|undefined {try{const u=new URL(String(value));return u.protocol==='https:'&&!u.username&&!u.password?u.href:undefined;}catch{return undefined;}}
 export function nativePlaybackURL(source:string):string {
+  return nativePlaybackURLs(source)[0]||source;
+}
+/**
+ * Return same-content gateways for binary IPFS media. A browser extension,
+ * regional route, or a gateway rate limit can block one host even when the
+ * asset is available elsewhere. The source URL remains the last resort so
+ * this helper never changes the artwork's canonical record.
+ */
+export function nativePlaybackURLs(source:string):string[] {
   const url=new URL(source);
-  // CID and path remain unchanged. Pinata serves binary media while ipfs.io is
-  // phasing out its sponsored HTTP gateway. Executable HTML never uses this route.
-  if(['ipfs.io','ipfs.verse.works'].includes(url.hostname)&&/^\/ipfs\/[A-Za-z0-9]+(?:\/|$)/.test(url.pathname))return `https://gateway.pinata.cloud${url.pathname}${url.search}`;
-  return source;
+  if(!['ipfs.io','ipfs.verse.works'].includes(url.hostname)||!/^\/ipfs\/[A-Za-z0-9]+(?:\/|$)/.test(url.pathname))return [source];
+  const path=`${url.pathname}${url.search}`;
+  return [...new Set([
+    `https://gateway.pinata.cloud${path}`,
+    `https://ipfs.filebase.io${path}`,
+    `https://dweb.link${path}`,
+    `https://w3s.link${path}`,
+    source,
+  ])];
 }
 export function getMediaKind(artwork:Artwork):MediaKind {
   if(originals[artwork.id])return originals[artwork.id].kind;
@@ -90,7 +104,7 @@ export function mountMedia(container:HTMLElement,artwork:Artwork,options:MediaOp
       const image=element('img','native-media-preview');image.src=artwork.image;image.alt=`${artwork.title} · ${words.staticPreview}`;image.style.cssText='display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:contain;';stage.append(image);
     }
   };
-  const clearActive=()=>{cleanupActive();cleanupActive=()=>{};modelControls.replaceChildren();blankButton.hidden=true;};
+  const clearActive=()=>{cleanupActive();cleanupActive=()=>{};modelControls.replaceChildren();stage.querySelector?.('.native-media-loading')?.remove();blankButton.hidden=true;};
   const restore=(next:'idle'|'error',message:string)=>{generation++;clearActive();preview();startButton.hidden=!support.supported;startButton.disabled=false;startButton.textContent=next==='error'?words.retry:support.kind==='model'?words.startModel:words.start;stopButton.hidden=true;update(next,message);};
   const stop=()=>{if(state!=='disposed')restore('idle',support.supported?words.stopped:support.reason||'');};
   const activate=()=>{
@@ -101,7 +115,12 @@ export function mountMedia(container:HTMLElement,artwork:Artwork,options:MediaOp
     cleanupActive=()=>{window.clearTimeout(timer);abort.abort();release();};
     const fail=(message=words.unavailable)=>{if(isCurrent())restore('error',message);};
     const ready=(next:MediaState,message:string)=>{if(isCurrent()){window.clearTimeout(timer);update(next,message);}};
-    stage.replaceChildren();startButton.hidden=true;stopButton.hidden=false;update('loading',words.loading);
+    // Keep the verified still preview visible while a remote original is being
+    // fetched. Large GLBs can take several seconds through a public gateway;
+    // clearing the stage first made a perfectly healthy load look like a blank
+    // or broken 3D viewer.
+    if(support.kind!=='model')stage.replaceChildren();
+    startButton.hidden=true;stopButton.hidden=false;update('loading',words.loading);
     if(support.kind==='interactive'){
       // The reviewed sources are explicitly iframe-able. Do not fetch their HTML
       // first: a CORS preflight would reject a valid cross-origin iframe when the
@@ -114,8 +133,10 @@ export function mountMedia(container:HTMLElement,artwork:Artwork,options:MediaOp
       release=()=>{frame.onload=null;frame.onerror=null;frame.remove();frame.removeAttribute('src');};
       frame.src=support.playbackUrl!;stage.append(frame);
     } else if(support.kind==='model'){
-      void createModelViewer(stage,modelControls,support.playbackUrl,artwork.title,locale,abort.signal,isCurrent,()=>fail(words.contextLost)).then(dispose=>{
-        if(!isCurrent()){dispose();return;}release=dispose;ready('open',words.modelReady);
+      if(!stage.querySelector('.native-media-preview'))preview();
+      const loading=element('span','native-media-loading',words.loading);loading.setAttribute('role','status');loading.setAttribute('aria-live','polite');stage.append(loading);
+      void createModelViewer(stage,modelControls,support.playbackUrl, support.sourceUrl, artwork.title,locale,abort.signal,isCurrent,()=>fail(words.contextLost)).then(dispose=>{
+        if(!isCurrent()){dispose();return;}stage.querySelector('.native-media-preview')?.remove();stage.querySelector('.native-media-loading')?.remove();release=dispose;ready('open',words.modelReady);
       }).catch(error=>fail(error instanceof UnsupportedModelError?words.modelUnsupported:words.unavailable));
     } else if(support.kind==='image'){
       const image=element('img','native-media-image');image.alt=artwork.title;image.style.cssText='display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:contain;';
@@ -135,22 +156,58 @@ export function mountMedia(container:HTMLElement,artwork:Artwork,options:MediaOp
   return {stop,getState:()=>state,dispose(){if(state==='disposed')return;generation++;clearActive();root.remove();state='disposed';}};
 }
 class UnsupportedModelError extends Error {}
-async function createModelViewer(stage: HTMLElement, buttons: HTMLElement, modelUrl:string, title:string, locale:MediaLocale, signal: AbortSignal, isCurrent: () => boolean, onContextLost:()=>void): Promise<() => void> {
+type ModelAsset={bytes:ArrayBuffer;metadata:Record<string,any>};
+const MODEL_GATEWAY_TIMEOUT=8000;
+function inspectGLB(candidate:ArrayBuffer):ModelAsset {
+  const view=new DataView(candidate);
+  if(candidate.byteLength>25000000||candidate.byteLength<20||view.getUint32(0,true)!==0x46546c67||view.getUint32(4,true)!==2||view.getUint32(8,true)!==candidate.byteLength)throw new UnsupportedModelError('Invalid original GLB.');
+  const jsonLength=view.getUint32(12,true);
+  if(jsonLength+20>candidate.byteLength)throw new UnsupportedModelError('Invalid GLB structure.');
+  let metadata:Record<string,any>;
+  try{metadata=JSON.parse(new TextDecoder().decode(candidate.slice(20,20+jsonLength))) as Record<string,any>;}catch{throw new UnsupportedModelError('Invalid GLB metadata.');}
+  if([...(metadata.buffers||[]),...(metadata.images||[])].some((item:{uri?:string})=>item.uri))throw new UnsupportedModelError('External resources are not supported.');
+  if((metadata.extensionsRequired||[]).some((extension:string)=>['KHR_draco_mesh_compression','EXT_meshopt_compression','KHR_texture_basisu'].includes(extension)))throw new UnsupportedModelError('Unsupported compression.');
+  return {bytes:candidate,metadata};
+}
+async function fetchModelAsset(url:string,signal:AbortSignal):Promise<ModelAsset>{
+  const attempt=new AbortController();
+  const abort=()=>attempt.abort();
+  signal.addEventListener('abort',abort,{once:true});
+  const timer=window.setTimeout(()=>attempt.abort(),MODEL_GATEWAY_TIMEOUT);
+  try{
+    const response=await fetch(url,{signal:attempt.signal,credentials:'omit',mode:'cors'});
+    if(!response.ok)throw new Error(`The original model returned HTTP ${response.status}.`);
+    if(Number(response.headers.get('content-length'))>25000000)throw new UnsupportedModelError('The original is too large.');
+    return inspectGLB(await response.arrayBuffer());
+  }finally{
+    window.clearTimeout(timer);signal.removeEventListener('abort',abort);
+  }
+}
+async function fetchFirstModelAsset(urls:string[],signal:AbortSignal):Promise<ModelAsset>{
+  const controllers:AbortController[]=[];
+  const attempts=urls.map(url=>{
+    const controller=new AbortController();controllers.push(controller);
+    const relay=()=>controller.abort();
+    signal.addEventListener('abort',relay,{once:true});
+    return fetchModelAsset(url,controller.signal).finally(()=>signal.removeEventListener('abort',relay));
+  });
+  try{return await Promise.any(attempts);}
+  catch(error){
+    if(error instanceof AggregateError){
+      const unsupported=error.errors.find(reason=>reason instanceof UnsupportedModelError);
+      if(unsupported)throw unsupported;
+    }
+    throw error;
+  }finally{controllers.forEach(controller=>controller.abort());}
+}
+async function createModelViewer(stage: HTMLElement, buttons: HTMLElement, modelUrl:string, sourceUrl:string|undefined, title:string, locale:MediaLocale, signal: AbortSignal, isCurrent: () => boolean, onContextLost:()=>void): Promise<() => void> {
   const [THREE, { GLTFLoader }, { OrbitControls }] = await Promise.all([
     import('three'), import('three/addons/loaders/GLTFLoader.js'), import('three/addons/controls/OrbitControls.js'),
   ]);
   if (!isCurrent()) return () => {};
-  const response = await fetch(modelUrl, { signal, credentials: 'omit',mode:'cors' });
-  if (!response.ok) throw new Error('The original model could not be loaded.');
-  if(Number(response.headers.get('content-length'))>25000000)throw new UnsupportedModelError('The original is too large.');
-  const bytes = await response.arrayBuffer();
-  const view=new DataView(bytes);
-  if(bytes.byteLength>25000000||bytes.byteLength<20||view.getUint32(0,true)!==0x46546c67||view.getUint32(4,true)!==2||view.getUint32(8,true)!==bytes.byteLength)throw new UnsupportedModelError('Invalid original GLB.');
-  const jsonLength=view.getUint32(12,true);
-  if(jsonLength+20>bytes.byteLength)throw new UnsupportedModelError('Invalid GLB structure.');
-  const metadata=JSON.parse(new TextDecoder().decode(bytes.slice(20,20+jsonLength)));
-  if([...(metadata.buffers||[]),...(metadata.images||[])].some((item:{uri?:string})=>item.uri))throw new UnsupportedModelError('External resources are not supported.');
-  if((metadata.extensionsRequired||[]).some((extension:string)=>['KHR_draco_mesh_compression','EXT_meshopt_compression','KHR_texture_basisu'].includes(extension)))throw new UnsupportedModelError('Unsupported compression.');
+  const modelURLs=[modelUrl,...(sourceUrl?nativePlaybackURLs(sourceUrl):[])].filter((url,index,all)=>url&&all.indexOf(url)===index);
+  if(signal.aborted)throw new DOMException('The model load was cancelled.','AbortError');
+  const {bytes,metadata}=await fetchFirstModelAsset(modelURLs,signal);
   if (!isCurrent()) return () => {};
   const manager = new THREE.LoadingManager();
   // The verified GLB is self-contained. Never follow external resources in a model.
@@ -181,6 +238,14 @@ async function createModelViewer(stage: HTMLElement, buttons: HTMLElement, model
     for (const geometry of geometries) geometry.dispose();
   };
   if (!isCurrent()) { freeObject(); return () => {}; }
+  const box = new THREE.Box3().setFromObject(model);
+  const size = box.getSize(new THREE.Vector3());
+  const center = box.getCenter(new THREE.Vector3());
+  const largestDimension = Math.max(size.x, size.y, size.z);
+  if(!Number.isFinite(largestDimension)||largestDimension<=0||box.isEmpty()){
+    freeObject();
+    throw new UnsupportedModelError('The original model has no visible geometry.');
+  }
   let renderer: import('three').WebGLRenderer;
   try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false }); }
   catch (error) { freeObject(); throw error; }
@@ -189,10 +254,7 @@ async function createModelViewer(stage: HTMLElement, buttons: HTMLElement, model
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   const scene = new THREE.Scene();
   scene.background = new THREE.Color('#e6e4dd');
-  const box = new THREE.Box3().setFromObject(model);
-  const size = box.getSize(new THREE.Vector3());
-  const center = box.getCenter(new THREE.Vector3());
-  const scale = 2 / Math.max(size.x, size.y, size.z);
+  const scale = 2 / largestDimension;
   model.scale.multiplyScalar(scale);
   model.position.sub(center.multiplyScalar(scale));
   scene.add(model, new THREE.HemisphereLight(0xffffff, 0x747b6b, 2.5));
@@ -225,8 +287,9 @@ async function createModelViewer(stage: HTMLElement, buttons: HTMLElement, model
     renderer.render(scene, camera);
   };
   controls.addEventListener('change', render);
-  const resize = new ResizeObserver(render);
-  resize.observe(stage);
+  const resize = typeof ResizeObserver==='function' ? new ResizeObserver(render) : undefined;
+  resize?.observe(stage);
+  window.addEventListener('resize',render);
   const rotate = (direction: number) => {
     const offset = camera.position.clone().sub(controls.target);
     offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), direction * Math.PI / 8);
@@ -257,7 +320,8 @@ async function createModelViewer(stage: HTMLElement, buttons: HTMLElement, model
   return () => {
     if (released) return;
     released = true;
-    resize.disconnect();
+    resize?.disconnect();
+    window.removeEventListener('resize',render);
     controls.removeEventListener('change', render);
     controls.dispose();
     freeObject();
