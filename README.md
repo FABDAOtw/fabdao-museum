@@ -4,7 +4,7 @@ A desktop-first virtual museum and public-source collection catalogue for FAB DA
 
 **Public website:** [fabdao-museum.mashbean.net](https://fabdao-museum.mashbean.net)
 
-**Prepared future domain:** [museum.fabdao.world](https://museum.fabdao.world) (Cloudflare zone verified; custom-domain deployment pending platform usage reset)
+**Alias domain:** [museum.fabdao.world](https://museum.fabdao.world) (deployed 2026-09-07; forwards to the same content as the primary hostname above)
 
 ## What is implemented
 
@@ -72,11 +72,12 @@ The display programme uses cached resized previews from real token metadata (one
 
 This museum is a procedural architectural implementation. It does not yet contain artist-modelled architectural sculptures, offline baked global illumination, multiplayer, an avatar camera, VR, full acquisition/transfer history, Base holdings or proposal-decision reconciliation. Fifteen holdings still lack usable previews. Safari/Firefox, complete native-media playback and a representative low-power device remain acceptance gaps. The performance changes still need controlled benchmarking; the current checks establish neither an FPS improvement multiplier nor acceptance on real low-end hardware.
 
-## Moving to museum.fabdao.world
+## museum.fabdao.world alias
 
-1. Deploy [`domain-alias/wrangler.jsonc`](domain-alias/wrangler.jsonc) in the Cloudflare account **Gimmychang@pm.me's Account**. It targets zone `fabdao.world` (`dc8869a2c7438132c34b39280a5f00d3`) and account `b9e60d05860dfe2eaf2db7f9930875c0`.
-2. Verify HTTPS, the root page, the English query route, GLB range requests, and all relative artwork/data paths on the new hostname.
-3. Update the advertised website URL and any later canonical/social metadata.
-4. Once the new site is accepted, configure the old hostname to redirect each path to the new one.
+[`domain-alias/wrangler.jsonc`](domain-alias/wrangler.jsonc) is deployed to the Cloudflare account **Gimmychang@pm.me's Account** (`b9e60d05860dfe2eaf2db7f9930875c0`), which holds the `fabdao.world` zone (`dc8869a2c7438132c34b39280a5f00d3`). The Worker in [`domain-alias/worker.js`](domain-alias/worker.js) streams every request through to `fabdao-museum.mashbean.net`, so `museum.fabdao.world` serves the same content without a separate deployment of the museum itself.
 
-The new alias Worker and tests are prepared, but the actual Cloudflare write could not be completed in this run: the authorized Wrangler/MCP deployment path hit the platform usage limit and the dashboard currently resolves no `museum` DNS record (`museum.fabdao.world` returned `ERR_NAME_NOT_RESOLVED`). The current public museum remains at `fabdao-museum.mashbean.net`; retry deployment after the usage reset shown by Codex (2026-09-12 16:45).
+Deployed 2026-09-07 (`wrangler deploy` from `domain-alias/`, custom domain `museum.fabdao.world`, version `b79b8c1d-d828-4c79-ba1d-f463aded7af4`). Both `https://museum.fabdao.world/` and `https://fabdao-museum.mashbean.net/` return HTTP 200. Remaining follow-ups if the alias becomes the canonical URL:
+
+1. Verify the English query route, GLB range requests, and all relative artwork/data paths on the new hostname beyond the basic 200 check above.
+2. Update the advertised website URL and any later canonical/social metadata.
+3. Once the new site is accepted as canonical, configure the old hostname to redirect each path to the new one.
