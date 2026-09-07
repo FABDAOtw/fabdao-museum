@@ -1,8 +1,9 @@
 export const ROOM_LENGTH = 22;
 export const ROOM_COUNT = 4;
 export const EYE_HEIGHT = 1.72;
-// Keep tall works above the lower wall plinth, leaving room for the full
-// title, credit, and wall note plaque below each frame.
+// Bounded above by the visitor's comfortable upward gaze (see the
+// unobstructed-viewing-angle test) and below by the wall plinth at .9125m,
+// which the artwork height cap in artworkDimensions() is sized to clear.
 export const ARTWORK_CENTER = 2.2;
 export const roomCapacity = index => index === 3 ? 10 : 12;
 const ARTWORK_WALL_SPAN = 14.6;
@@ -41,7 +42,9 @@ export function artworkDimensions(width, height, room = 0) {
   const candidateRatio = width / height;
   const ratio = Number.isFinite(candidateRatio) && candidateRatio > 0 && width > 0 && height > 0 ? candidateRatio : 1;
   // Reserve wall space for the frame's 0.2 m surround and a visible gap.
-  const w = Math.min(2.35, artworkSpacing(room) - .5, 1.8 * ratio);
+  // The 1.6 height cap leaves room for the title/credit/note plaque below
+  // the frame without dropping into the wall plinth (see ARTWORK_CENTER).
+  const w = Math.min(2.35, artworkSpacing(room) - .5, 1.6 * ratio);
   return { width: w, height: w / ratio };
 }
 export function canStand(x, z) {

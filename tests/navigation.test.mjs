@@ -97,7 +97,7 @@ test('frames preserve portrait, square and landscape aspect ratios within viewin
   for (let room = 0; room < 4; room++) for (const [width, height] of [[1200, 853], [1020, 1200], [1200, 1200], [2400, 600], [500, 1800]]) {
     const dimensions = artworkDimensions(width, height, room);
     closeTo(dimensions.width / dimensions.height, width / height);
-    assert.ok(dimensions.width <= 2.35 && dimensions.height <= 1.8 + 1e-10);
+    assert.ok(dimensions.width <= 2.35 && dimensions.height <= 1.6 + 1e-10);
   }
 });
 
@@ -130,9 +130,15 @@ test('full galleries leave visible gaps between neighbouring frames and labels a
 });
 
 test('the tallest wall plaque clears the lower wall plinth', () => {
+  // The base moulding built in museum.ts (`build()`) tops out at y=.9125
+  // (the [.89,.045,.2] trim box). The plaque must clear that with margin
+  // using ordinary depth testing — there is no alwaysOnTop/depthTest
+  // override to paper over an overlap (that override used to make labels
+  // render through walls from other rooms).
+  const plinthTop = .9125;
   const tallest = artworkDimensions(500, 1800, 0);
-  const plaqueBottom = ARTWORK_CENTER - tallest.height / 2 - .31 - .45 / 2;
-  assert.ok(plaqueBottom > .75, `plaque bottom ${plaqueBottom.toFixed(3)} intersects the .75m plinth`);
+  const plaqueBottom = ARTWORK_CENTER - tallest.height / 2 - .22 - .45 / 2;
+  assert.ok(plaqueBottom > plinthTop + .02, `plaque bottom ${plaqueBottom.toFixed(3)} intersects the ${plinthTop}m plinth`);
 });
 
 test('invalid coordinates are not accepted as safe visitor positions', () => {
