@@ -4,7 +4,7 @@ A desktop-first virtual museum and public-source collection catalogue for FAB DA
 
 **Public website:** [fabdao-museum.mashbean.net](https://fabdao-museum.mashbean.net)
 
-**Planned future domain:** [museum.fabdao.world](https://museum.fabdao.world) (not configured yet; account authorization pending)
+**Prepared future domain:** [museum.fabdao.world](https://museum.fabdao.world) (Cloudflare zone verified; custom-domain deployment pending platform usage reset)
 
 ## What is implemented
 
@@ -15,6 +15,8 @@ A desktop-first virtual museum and public-source collection catalogue for FAB DA
 - All 136 holdings with verified local previews can be displayed across 13 wall batches. Permanent previous/next-batch controls, room totals and catalogue access make the extended collection reachable. Galleries load as needed; each replacement is prepared before the current wall is removed, and failed initial loads have a retry control.
 - The 32 fixed first-exhibition selections (8 per gallery) retain their authored groups and guided route. Extended display does not turn provisional classifications into formal curatorial selections. Shared documents follow the curatorial reference order on reading tables and accessible panels.
 - Searchable catalogue of 151 publicly indexed holdings, including 15 records still without usable previews. It provides artwork attribution, source links, fit/100%/zoom/pan/fullscreen image viewing, contextual previous/next and return navigation, shareable artwork URLs, document summaries and a WebGL-unavailable fallback.
+- Traditional Chinese and English interfaces are available through `?lang=zh-TW` and `?lang=en`. English editorial overlays translate museum-authored labels and interpretation while retaining original artist text, token identifiers, evidence URLs and display order.
+- Original-media handling is explicit and opt-in: reviewed interactive HTML works use an opaque sandbox with activation, timeout, retry and preview fallback, the Directrix viewer has a checked Filebase playback gateway while preserving its canonical IPFS source, the Green Sofa is a self-contained GLB, and unsupported external model resources return to the preview with a source link.
 - Relative asset paths and stable chain/contract/token identifiers for domain migration.
 
 | Gallery | Displayable works | Works per batch | Batches | Guided selections |
@@ -36,7 +38,7 @@ npm test
 npm run build
 ```
 
-Round-three validation passed all 45 tests and `npm run build`. Coverage includes collection counts and source boundaries, all 136 displayable records and page positions, the separate 32-work route, navigation, asynchronous replacement/disposal, and native-media activation/disposal. Automated tests do not establish successful external artwork playback.
+Round-three validation passed all 45 tests and `npm run build`. Round-four local validation passes all 59 tests, `npm run build`, and `git diff --check`. Coverage now includes bilingual overlays, language-visit restoration, the domain-alias Worker contract, media activation/fallback/disposal, and the previously reviewed source boundaries. Automated tests do not establish successful external artwork playback.
 
 Round-three browser acceptance used the approved CUA tools at 1280 px and 1440 px desktop widths, plus a 390 px mobile viewport. Catalogue cards showed no overlap or horizontal overflow at those sizes. Checks also covered all four room transitions, the second batch of the fourth gallery, and dragging right moving the scene right. The mobile viewport check is a layout check, not acceptance on a physical phone or a low-power device.
 
@@ -72,9 +74,9 @@ This museum is a procedural architectural implementation. It does not yet contai
 
 ## Moving to museum.fabdao.world
 
-1. Obtain authorization to manage the `fabdao.world` zone in the separate Gimmy Cloudflare account, then configure the new Worker custom domain.
-2. Add the new binding to `wrangler.jsonc`; verify HTTPS and all relative artwork/data paths.
+1. Deploy [`domain-alias/wrangler.jsonc`](domain-alias/wrangler.jsonc) in the Cloudflare account **Gimmychang@pm.me's Account**. It targets zone `fabdao.world` (`dc8869a2c7438132c34b39280a5f00d3`) and account `b9e60d05860dfe2eaf2db7f9930875c0`.
+2. Verify HTTPS, the root page, the English query route, GLB range requests, and all relative artwork/data paths on the new hostname.
 3. Update the advertised website URL and any later canonical/social metadata.
 4. Once the new site is accepted, configure the old hostname to redirect each path to the new one.
 
-`museum.fabdao.world` is not configured yet. Automatic approval review blocked the cross-account domain change; migration remains pending the user's authorization for the separate Gimmy account. The current public museum remains at `fabdao-museum.mashbean.net`.
+The new alias Worker and tests are prepared, but the actual Cloudflare write could not be completed in this run: the authorized Wrangler/MCP deployment path hit the platform usage limit and the dashboard currently resolves no `museum` DNS record (`museum.fabdao.world` returned `ERR_NAME_NOT_RESOLVED`). The current public museum remains at `fabdao-museum.mashbean.net`; retry deployment after the usage reset shown by Codex (2026-09-12 16:45).

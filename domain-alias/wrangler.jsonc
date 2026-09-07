@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "fabdao-museum-domain",
+  "main": "worker.js",
+  "account_id": "b9e60d05860dfe2eaf2db7f9930875c0",
+  "compatibility_date": "2026-09-07",
+  "observability": { "enabled": true, "head_sampling_rate": 0.1 },
+  "routes": [{ "pattern": "museum.fabdao.world", "custom_domain": true }]
+}

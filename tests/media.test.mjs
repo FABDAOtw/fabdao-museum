@@ -34,7 +34,6 @@ function fakeDOM() {
   globalThis.window = { setTimeout, clearTimeout };
   return new Element('div');
 }
-
 test('native media requires the exact reviewed artwork source, including Directrix seed', () => {
   assert.equal(getMediaKind(rain), 'interactive');
   assert.equal(getMediaKind(directrix), 'interactive');
@@ -59,13 +58,13 @@ test('interactive originals create no iframe until user activation and use an op
   const start = find(container, element => element.className === 'primary native-media-start');
   start.click();
   const frame = find(container, element => element.tagName === 'IFRAME');
-  assert.equal(frame.src, rain.artifactUrl);
+  assert.equal(frame.src, getMediaSupport(rain).playbackUrl);
   assert.equal(frame.attributes.sandbox, 'allow-scripts');
   assert.equal(frame.referrerPolicy, 'no-referrer');
   assert.equal(frame.attributes.allow, 'autoplay; fullscreen');
   assert.equal(handle.getState(), 'loading');
   frame.onload();
-  assert.equal(handle.getState(), 'open');
+  assert.equal(handle.getState(), 'embedded');
   handle.dispose();
   assert.equal(container.children.length, 0);
   assert.equal(frame.parent, undefined);
@@ -91,7 +90,7 @@ test('closing a pending original cancels it and stale load callbacks cannot reop
   start.click();
   const newFrame = find(container, element => element.tagName === 'IFRAME');
   assert.notEqual(newFrame, oldFrame);
-  assert.equal(newFrame.src, directrix.artifactUrl);
+  assert.equal(newFrame.src, getMediaSupport(directrix).playbackUrl);
   handle.dispose();
   start.click();
   assert.equal(handle.getState(), 'disposed');

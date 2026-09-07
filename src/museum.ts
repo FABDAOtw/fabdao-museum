@@ -7,7 +7,7 @@ import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
-import { moveWithCollision, roomAt, roomCapacity, artworkSlot, artworkDimensions, roomFurniture, safeViewpoint, EYE_HEIGHT } from './navigation.js';
+import { moveWithCollision, canStand, roomAt, roomCapacity, artworkSlot, artworkDimensions, roomFurniture, safeViewpoint, EYE_HEIGHT } from './navigation.js';
 import { pointerLookDelta, clampSensitivity } from './controls.js';
 import { qualityProfile, adjacentRooms, shouldRefreshShadow, shouldDrawFrame } from './performance.js';
 import type { Artwork, Exhibition, DocumentItem } from './types';
@@ -82,7 +82,9 @@ export class Museum {
   private trim: THREE.MeshStandardMaterial;
   private brass: THREE.MeshStandardMaterial;
 
-  constructor(private container: HTMLElement, private exhibitions: Exhibition[]) {
+  private text(zh:string,en:string){return this.locale==='en'?en:zh;}
+
+  constructor(private container: HTMLElement, private exhibitions: Exhibition[], private locale: 'zh-TW' | 'en' = 'zh-TW') {
     this.render=this.render.bind(this);
     this.renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
     this.renderer.setPixelRatio(qualityProfile('balanced', devicePixelRatio).pixelRatio);
@@ -94,7 +96,7 @@ export class Museum {
     this.renderer.toneMappingExposure = 1.13;
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.domElement.tabIndex=0;
-    this.renderer.domElement.setAttribute('aria-label', '可移動的三維美術館。可使用展間地圖與館藏目錄瀏覽。');
+    this.renderer.domElement.setAttribute('aria-label', this.text('可移動的三維美術館。可使用展間地圖與館藏目錄瀏覽。','Walkable 3D museum. You can also use the gallery map and collection catalogue.'));
     container.append(this.renderer.domElement);
     this.scene.background = new THREE.Color(0xddd4bf);
     this.scene.fog = new THREE.Fog(0xd2c7b3, 28, 52);
@@ -235,7 +237,7 @@ export class Museum {
         for(const dx of [-furniture.width/2+.18,furniture.width/2-.18])for(const dz of [-furniture.depth/2+.16,furniture.depth/2-.16])
           this.box(.12,height-.06,.12,furniture.x+dx,(height-.06)/2,furniture.z+dz,darkWood);
         this.contactShadow(furniture.x,furniture.z,furniture.width+.35,furniture.depth+.4,roomArchitecture);
-        if(table) this.label(r===1?'群島閱讀桌  ·  文獻與出版':'共同閱讀桌  ·  從文件理解收藏',furniture.x,.72,furniture.z+furniture.depth/2+.015,0,furniture.width-.3,.15,'#d7c6a3','#4f3b2d',roomArchitecture);
+        if(table) this.label(r===1?this.text('群島閱讀桌  ·  文獻與出版','Archipelago reading table · Documents and publications'):this.text('共同閱讀桌  ·  從文件理解收藏','Shared reading table · Understanding the collection'),furniture.x,.72,furniture.z+furniture.depth/2+.015,0,furniture.width-.3,.15,'#d7c6a3','#4f3b2d',roomArchitecture);
       }
       const fill=new THREE.PointLight(0xffe8c4,34,24,2);fill.position.set(0,5.9,z);roomArchitecture.add(fill);
       for(const side of [-1,1])for(const az of [-4.6,4.6]) {
@@ -370,7 +372,7 @@ export class Museum {
         const plane=new THREE.Mesh(new THREE.PlaneGeometry(w,h),artMat);plane.position.z=.115;frame.add(plane);
         plane.userData.item=item;nextTargets.push(plane);
         frame.traverse(child=>{if(child instanceof THREE.Mesh){child.castShadow=child!==plane;child.receiveShadow=child!==plane;}});
-        if(!texture)this.label('預覽待補  ·  點擊閱讀來源',0,0,.125,0,w,Math.min(h,.4),'#665944','#e6dfce',frame);
+        if(!texture)this.label(this.text('預覽待補  ·  點擊閱讀來源','Preview pending · Select to read the source'),0,0,.125,0,w,Math.min(h,.4),'#665944','#e6dfce',frame);
         const hint=typeof item.wallNote==='string'?item.wallNote:'';
         const credit=`${item.artist}${typeof item.mediumLabel==='string'?`  ·  ${item.mediumLabel}`:''}`;
         this.label([item.title,credit,...(hint?[hint]:[])].join('\n'),0,-h/2-(hint ? .31 : .245),.13,0,Math.max(w,2.45),hint ? .45 : .30,'#343a34','#dfd7c7',frame);
@@ -394,7 +396,7 @@ export class Museum {
           panel.position.set(side*5.2,1.73+row*1.03,rz-10.48);normal=new THREE.Vector3(0,0,1);distance=2.8;
         }
         const base=new THREE.Mesh(new RoundedBoxGeometry(panelWidth,panelHeight,.055,2,.015),new THREE.MeshStandardMaterial({color:0xddd3bd,roughness:.88}));panel.add(base);
-        this.label([doc.title,'文獻  /  點擊閱讀',doc.date||'FAB DAO · 公開檔案'].join('\n'),0,0,.04,0,panelWidth-.1,.65,'#35493b','#e8e0d0',panel);
+        this.label([doc.title,this.text('文獻  /  點擊閱讀','Document / Select to read'),doc.date||this.text('FAB DAO · 公開檔案','FAB DAO · Public archive')].join('\n'),0,0,.04,0,panelWidth-.1,.65,'#35493b','#e8e0d0',panel);
         const hit=new THREE.Mesh(new THREE.PlaneGeometry(panelWidth,panelHeight),new THREE.MeshBasicMaterial({transparent:true,opacity:0,depthWrite:false}));hit.position.z=.055;hit.userData.item=doc;panel.add(hit);nextTargets.push(hit);
         nextPoints.set(`${index}:${doc.id}`,{item:doc,room:index,target:panel.position.clone(),normal,distance});
       });
@@ -413,7 +415,7 @@ export class Museum {
           model.position.add(new THREE.Vector3(0,.04,rz+1));next.add(model);
           model.traverse(object=>{if(object instanceof THREE.Mesh){object.castShadow=true;object.receiveShadow=true;object.userData.item=sofa;nextTargets.push(object);}});
           this.contactShadow(0,rz+1,3.65,3.65,next);
-          this.label('你的第一個綠沙發  ·  原作 3D 模型',0,.21,rz+2.8,0,3.5,.16,'#444c3d','#dfd7c7',next);
+          this.label(this.text('你的第一個綠沙發  ·  原作 3D 模型','Your First Green Sofa · Original 3D model'),0,.21,rz+2.8,0,3.5,.16,'#444c3d','#dfd7c7',next);
           nextPoints.set(`${index}:${sofa.id}`,{item:sofa,room:index,target:new THREE.Vector3(0,.8,rz+1),normal:new THREE.Vector3(0,0,1),distance:3.4});
         }
       }
@@ -436,6 +438,11 @@ export class Museum {
     const direction=point.target.clone().sub(this.camera.position);
     this.yaw=Math.atan2(-direction.x,-direction.z);this.pitch=Math.atan2(direction.y,Math.hypot(direction.x,direction.z));
     this.look();this.setRoom(point.room);this.hovered=point.item;this.onHover(point.item);this.onMove();this.invalidate(true);return true;
+  }
+  restoreView(view:{position:{x:number;y?:number;z:number};yaw:number;pitch:number}):boolean{
+    if(!view?.position||![view.position.x,view.position.z,view.yaw,view.pitch].every(Number.isFinite)||!canStand(view.position.x,view.position.z))return false;
+    this.keys.clear();this.camera.position.set(view.position.x,EYE_HEIGHT,view.position.z);this.yaw=view.yaw;this.pitch=THREE.MathUtils.clamp(view.pitch,-1.05,1.05);
+    this.look();this.setRoom(roomAt(view.position.z));this.invalidate(true);return true;
   }
   focusArtwork(id:string){return this.focusItem(id,true);}
   focusDocument(id:string){return this.focusItem(id,false);}

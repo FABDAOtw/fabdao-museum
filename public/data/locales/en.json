@@ -1,0 +1,1244 @@
+{
+  "artworks": {
+    "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_364159": {
+      "viewingNote": "First look at how the structure remembers its previous collectors, then read the artist's invitation to pass it on. If each exchange lets the work keep growing, what does a long stay in one wallet preserve, and what does it put on hold?",
+      "makingNote": "The artist makes changes of collector a condition for the structure's growth and encourages continued circulation. The original work also states its dependence on the hicdex API.",
+      "curatorialNote": "This tension is the gallery's central question: collecting can preserve a work, but may also restrict what it can do. Facing Your First Green Sofa, it turns a question of ownership into one of participation.",
+      "wallNote": "See how the structure remembers previous collectors, then read the invitation to pass it on.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Collecting and Circulation",
+      "mediumLabel": "Interactive work shaped by collecting history",
+      "suggestedDuration": "2–3 minutes",
+      "acquisitionStory": {
+        "status": "artist_intent_and_holding_verified_decision_pending",
+        "title": "What does collecting mean when a work wants to circulate?",
+        "artistIntent": "The artist makes changes of collector a condition for the structure's growth and encourages continued circulation. The original work also states its dependence on the hicdex API.",
+        "exhibitionReason": "This tension is the gallery's central question: collecting can preserve a work, but may also restrict what it can do. Facing Your First Green Sofa, it turns a question of ownership into one of participation.",
+        "verifiedFacts": [
+          "The artist explicitly encourages continued exchange so that changes of collector reshape the work.",
+          "This work appears in the Art Bank wallet's positive-balance snapshot.",
+          "The original description states that the work depends on the hicdex API, so preserving it also involves an external service."
+        ],
+        "openQuestions": [
+          "Records of the DAO's original selection, continued holding or transfer discussions have not been obtained. The question of circulation is part of this exhibition's present curatorial inquiry.",
+          "Whether the original can still reconstruct the complete history of its collectors has not yet been verified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/364159",
+          "https://hackmd.io/@FABDAO/rJt8YQipi",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "ethereum_0x00000007cc35dcab4a396249aefa295a8b6e16ba_1000128": {
+      "viewingNote": "Step back to see a space that seems to extend inward, then move closer to find details resembling brushwork and handwriting. These marks are made by an algorithm. Look for repeated lines and circles within the apparently hand-drawn surface.",
+      "makingNote": "The artist uses vector primitives to form gestural marks, generating cursive-like writing and weathered textures through code.",
+      "curatorialNote": "Read this alongside Rain Blooms: this surface retains a generated result, while the next work lets change continue before your eyes.",
+      "wallNote": "Step back to see depth, then move closer to find marks like brushwork and handwriting.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Surfaces Shaped by Rules",
+      "mediumLabel": "Code-generated image",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist uses vector primitives to form gestural marks, generating cursive-like writing and weathered textures through code.",
+        "exhibitionReason": "Read this alongside Rain Blooms: this surface retains a generated result, while the next work lets change continue before your eyes.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x00000007cc35dcab4a396249aefa295a8b6e16ba/1000128",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      }
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1598728": {
+      "viewingNote": "First distinguish the layers of terrain, then look for living creatures within them. This is not a real island waiting to be located on a map. Imagine what life it could hold, and what a topographic map often leaves out.",
+      "makingNote": "daratan's terrain drawings meet anaglyphic's recursive generative method, with animals reminding viewers that terrain is also a habitat.",
+      "curatorialNote": "Compare it with lsland Of Mountains to distinguish invented terrain from a work addressing Taiwan's mountain forests. The accompanying proposal records historical reasons for considering the series.",
+      "wallNote": "Distinguish the layers of terrain, then look for living creatures within them.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Terrain and Ways of Seeing",
+      "mediumLabel": "Generative terrain image",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "proposal_and_holding_verified_decision_pending",
+        "title": "From a public proposal to a wallet holding",
+        "artistIntent": "daratan's terrain drawings meet anaglyphic's recursive generative method, with animals reminding viewers that terrain is also a habitat.",
+        "exhibitionReason": "Compare it with lsland Of Mountains to distinguish invented terrain from a work addressing Taiwan's mountain forests. The accompanying proposal records historical reasons for considering the series.",
+        "verifiedFacts": [
+          "The artists' description connects terrain with animal habitats.",
+          "水耕香菜's public proposal lists the pulau gen series, citing mountain forms, animal conservation and exchanges with artists.",
+          "Edition #399 appears in the Art Bank wallet's positive-balance snapshot; the proposal itself does not specify #399."
+        ],
+        "openQuestions": [
+          "The selection decision and acquisition transaction corresponding to #399 have not been located. A series-level proposal does not establish why this edition was obtained, its price or its acquisition date."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1598728",
+          "https://hackmd.io/@AquaponicsKana/BJspEPwJn",
+          "https://hackmd.io/@FABDAO/Sy8SGSHx3",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1369187": {
+      "viewingNote": "Begin with the shape of a sheet of paper and stay with its wordless surface. In the original work, move forward and backward through the generation steps. Notice how changes in shape affect your reading: how might a message be recognised when it is not written down?",
+      "makingNote": "林經堯 made the work with p5.js and glfx. The original description connects paper with freedom and states that proceeds support FAB DAO's human-rights activities.",
+      "curatorialNote": "Paired with 21/29.7 at the entrance, it forms the White Paper group. Fund documents explain the context of the 2022 White Paper Movement before the gallery moves to other historical events.",
+      "wallNote": "Begin with the shape of a sheet of paper and stay with its wordless surface.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Responses to the 2022 White Paper Movement",
+      "mediumLabel": "Interactive generative image",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "fund_context_and_holding_verified_acquisition_pending",
+        "title": "The White Paper Fund and a shape of freedom",
+        "artistIntent": "林經堯 made the work with p5.js and glfx. The original description connects paper with freedom and states that proceeds support FAB DAO's human-rights activities.",
+        "exhibitionReason": "Paired with 21/29.7 at the entrance, it forms the White Paper group. Fund documents explain the context of the 2022 White Paper Movement before the gallery moves to other historical events.",
+        "verifiedFacts": [
+          "The artist's original description states that the work's proceeds support FAB DAO's human-rights activities.",
+          "FAB DAO's website places this series among the artistic responses to the 2022 White Paper Movement and records the formation of a royalty-supported collection fund.",
+          "Edition #1188 appears in the Art Bank wallet's positive-balance snapshot."
+        ],
+        "openQuestions": [
+          "The fund's overall collecting narrative has not yet been connected item by item to #1188's incoming transfer, selection decision or acquisition cost."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1369187",
+          "https://fabdao.world/projects/whitepaper/",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1370072": {
+      "viewingNote": "Notice the image's proportions and blank space, then read the artist's brief text. The title recalls the dimensions of a sheet of paper. You can approach it through the White Paper Movement, or stay with the question of how something wordless can still communicate.",
+      "makingNote": "A generative work by 王新仁. The original description offers a brief invitation to understanding and a salute to freedom. FAB DAO's website places it in the White Paper Fund's context.",
+      "curatorialNote": "It faces Shape of Freedom, sharing the White Paper Movement context. Before moving on to the Ukrainian works, read the transition text to keep the different events distinct.",
+      "wallNote": "Notice the proportions and blank space, then read the artist's brief text.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Responses to the 2022 White Paper Movement",
+      "mediumLabel": "Generative image",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "A generative work by 王新仁. The original description offers a brief invitation to understanding and a salute to freedom. FAB DAO's website places it in the White Paper Fund's context.",
+        "exhibitionReason": "It faces Shape of Freedom, sharing the White Paper Movement context. Before moving on to the Ukrainian works, read the transition text to keep the different events distinct.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1370072",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr_65544": {
+      "viewingNote": "Follow the rise and fall of the mountain forms, then see how they gather into an island. The artist names Taiwan's mountain forests as a background to the work. Compare this way of seeing with a mountain path or landscape you remember.",
+      "makingNote": "The original program generates mountain imagery. The artist's description names the diversity of Taiwan's mountain forests and cloud forests as its background.",
+      "curatorialNote": "Compare invention and reference to place in pulau gen, then move to The Moonlit Sea of Taitung, extending the recognition of mountains toward an experience of the shore.",
+      "wallNote": "Follow the mountain forms and see how they gather into an island.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Terrain and Ways of Seeing",
+      "mediumLabel": "Generative image",
+      "suggestedDuration": "1 minute",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The original program generates mountain imagery. The artist's description names the diversity of Taiwan's mountain forests and cloud forests as its background.",
+        "exhibitionReason": "Compare invention and reference to place in pulau gen, then move to The Moonlit Sea of Taitung, extending the recognition of mountains toward an experience of the shore.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr/65544",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "ethereum_0x70270e65bc37832ef845fa330c2b71501970dab9_81": {
+      "viewingNote": "Watch a small area proliferate and dissolve, then return to the whole image. If you turn on sound, notice how it relates to the changing colours. There is no need to wait for a final version: change itself is what you are here to watch.",
+      "makingNote": "The artist designs the local rules of a cellular automaton. Image and sound arise from the same ongoing computational process.",
+      "curatorialNote": "It continues the questions of rules and surfaces in Amplitudes of Canvas. Compare it next with Voyager's accumulation of points to see different kinds of generative time.",
+      "wallNote": "Watch a small area proliferate and dissolve, then return to the whole image.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Surfaces Shaped by Rules",
+      "mediumLabel": "Real-time generative audiovisual work",
+      "suggestedDuration": "2–3 minutes; sound optional",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist designs the local rules of a cellular automaton. Image and sound arise from the same ongoing computational process.",
+        "exhibitionReason": "It continues the questions of rules and surfaces in Amplitudes of Canvas. Compare it next with Voyager's accumulation of points to see different kinds of generative time.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x70270e65bc37832ef845fa330c2b71501970dab9/81",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      }
+    },
+    "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25336": {
+      "title": "Your First Green Sofa",
+      "viewingNote": "Move around to the side and see how the sofa's three-dimensional form invites you to sit down. It also carries an invitation to join a discussion. Beyond admission, what company and space might help a viewer become a participant?",
+      "makingNote": "A GLB three-dimensional object. The original description introduces 綠沙發 / GreenPill Taiwan and invites people to join FAB DAO's discussion channels.",
+      "curatorialNote": "Facing a collection of collectors, it contrasts circulation with staying, making the gallery's centre a place for gathering and reading.",
+      "wallNote": "Look from the side and see how the sofa's shape invites you to sit down.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Collecting and Circulation",
+      "mediumLabel": "3D object (GLB)",
+      "suggestedDuration": "1–2 minutes; rotate to explore",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "A GLB three-dimensional object. The original description introduces 綠沙發 / GreenPill Taiwan and invites people to join FAB DAO's discussion channels.",
+        "exhibitionReason": "Facing a collection of collectors, it contrasts circulation with staying, making the gallery's centre a place for gathering and reading.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/25336",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_530733": {
+      "viewingNote": "Begin by treating it as a portrait, then read the title and the date marked by the artist. Decentralisation is still depicted through one person here. Whose image, whose memory, and what kind of platform history does the work leave behind?",
+      "makingNote": "The artist's description identifies the figure as Hic Et Nunc founder Rafael Lima and records a minting date of 11 November 2021.",
+      "curatorialNote": "Compare its presentation of a platform and community with Stirrings and Gatherings: one preserves a key figure in a portrait, while the other gathers many people's work in an interactive space.",
+      "wallNote": "Begin with the portrait, then read the title and the date marked by the artist.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Forms That Record Participation",
+      "mediumLabel": "Digital portrait",
+      "suggestedDuration": "1 minute",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist's description identifies the figure as Hic Et Nunc founder Rafael Lima and records a minting date of 11 November 2021.",
+        "exhibitionReason": "Compare its presentation of a platform and community with Stirrings and Gatherings: one preserves a key figure in a portrait, while the other gathers many people's work in an interactive space.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/530733",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1585350": {
+      "viewingNote": "See how the wheat fields extend, then read the artist's account of repeatedly seeing fields while evacuating. This landscape holds both a longing to return and the experience of forced displacement. View it within the specific context of the war in Ukraine.",
+      "makingNote": "Kitel87 made the work with p5.js. The original description recounts fleeing the war in 2022 and dedicates the work to people forced to leave home.",
+      "curatorialNote": "Together with Putin's Ashes and Sunflowers still, it forms the Ukraine group. A personal account of displacement, protest and ongoing support are set alongside one another without being reduced to a single emotion.",
+      "wallNote": "See how the wheat fields extend, then read the artist's account of evacuation.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Ukraine: Displacement, Protest and Support",
+      "mediumLabel": "Generative landscape image",
+      "suggestedDuration": "2–3 minutes; read the artist's account first",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "Kitel87 made the work with p5.js. The original description recounts fleeing the war in 2022 and dedicates the work to people forced to leave home.",
+        "exhibitionReason": "Together with Putin's Ashes and Sunflowers still, it forms the Ukraine group. A personal account of displacement, protest and ongoing support are set alongside one another without being reduced to a single emotion.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1585350",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1JhHWDfHRrwF5pNfWz1dbbjcKH6e3k4k7M_46": {
+      "title": "The Moonlit Sea of Taitung",
+      "viewingNote": "Pause where you can see the whole image, then observe the rhythm of moonlight and sea. The artist records an unforgettable experience of looking. You might recall a place through the image, or simply follow light and shade to sense time passing.",
+      "makingNote": "mido uses code to respond to a view of the Taitung coast in 2021. This version was made for the 2024 dialog() Asian generative art exhibition.",
+      "curatorialNote": "Read it alongside Mountains in Mind by the same artist, moving from a specific place and year toward mountains in a viewer's mind. Neither is a geographic survey.",
+      "wallNote": "Take in the whole image, then observe the rhythm of moonlight and sea.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Terrain and Ways of Seeing",
+      "mediumLabel": "Code-generated seascape",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "mido uses code to respond to a view of the Taitung coast in 2021. This version was made for the 2024 dialog() Asian generative art exhibition.",
+        "exhibitionReason": "Read it alongside Mountains in Mind by the same artist, moving from a specific place and year toward mountains in a viewer's mind. Neither is a geographic survey.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1JhHWDfHRrwF5pNfWz1dbbjcKH6e3k4k7M/46",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "ethereum_0x99a9b7c1116f9ceeb1652de04d5969cce509b069_434000268": {
+      "viewingNote": "First see an image of a distant planet, then zoom in to examine how tiny squares form light and shade. Brightness may also come from gaps left unmarked, letting your attention move between a cosmic scale and small decisions on the canvas.",
+      "makingNote": "The artist uses mathematical functions to decide whether to draw squares at random positions. The original work includes an interactive mode for exploring the same planetary system.",
+      "curatorialNote": "Compare it with Generativemasks: both accumulate shapes through rules, but one invites recognition of a celestial body and the other of a face.",
+      "wallNote": "See a distant planet, then zoom in to examine its tiny squares.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Surfaces Shaped by Rules",
+      "mediumLabel": "Generative image / interactive original",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist uses mathematical functions to decide whether to draw squares at random positions. The original work includes an interactive mode for exploring the same planetary system.",
+        "exhibitionReason": "Compare it with Generativemasks: both accumulate shapes through rules, but one invites recognition of a celestial body and the other of a face.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/434000268",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      }
+    },
+    "ethereum_0x80416304142fa37929f8a4eee83ee7d2dac12d7c_8623": {
+      "viewingNote": "Find the fewest clues you need to recognise a face, then look for differences within the bilateral symmetry. Set aside names for expressions and see how geometric patterns move between the familiar and unfamiliar, suggesting something alive.",
+      "makingNote": "The artist generates symmetrical geometry with p5.js. The original description cites visual inspiration from totem poles and Japanese yokai. This preview comes from the artist's official website.",
+      "curatorialNote": "After Voyager, the object of recognition shifts from a celestial body to a face. Directrix then turns looking into intervention through gesture.",
+      "wallNote": "Find the clues that make a face, then look for differences within the symmetry.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Surfaces Shaped by Rules",
+      "mediumLabel": "Generative image; official static preview",
+      "suggestedDuration": "1 minute",
+      "previewNote": "The original IPFS preview timed out through three gateways. This preview is the one displayed for work #2422 on the artist's official website; its colours may differ from each execution of the original.",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist generates symmetrical geometry with p5.js. The original description cites visual inspiration from totem poles and Japanese yokai. This preview comes from the artist's official website.",
+        "exhibitionReason": "After Voyager, the object of recognition shifts from a celestial body to a face. Directrix then turns looking into intervention through gesture.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x80416304142fa37929f8a4eee83ee7d2dac12d7c/8623",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      }
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1321661": {
+      "viewingNote": "Find outlines that suggest mountains, then notice the memories and distances you supply yourself. The artist's short poem connects looking at and climbing mountains with inner experience. You can also stay with the abstract fields of colour without identifying a particular peak.",
+      "makingNote": "The original work is a generative program. A short poem about looking at mountains and crossing inner obstacles offers a way into it.",
+      "curatorialNote": "It follows the personal memory of The Moonlit Sea of Taitung and leads toward Kowloon 1's redrawing of a city, letting different media reshape how a place is understood.",
+      "wallNote": "Find outlines that suggest mountains, then notice the memories you bring to them.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Terrain and Ways of Seeing",
+      "mediumLabel": "Generative image",
+      "suggestedDuration": "1 minute",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The original work is a generative program. A short poem about looking at mountains and crossing inner obstacles offers a way into it.",
+        "exhibitionReason": "It follows the personal memory of The Moonlit Sea of Taitung and leads toward Kowloon 1's redrawing of a city, letting different media reshape how a place is understood.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1321661",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1XE84DKaJqhZ1EvJJCieDUE8GEpSge92Lp_1": {
+      "viewingNote": "Look at how directly the image expresses protest, then read about the collaborators and intended support named by the artist. Compared with the preceding personal account of escape, this work speaks in the language of public mobilisation, raising questions about art and political action.",
+      "makingNote": "Shepard Fairey made the image for Pussy Riot's installation of the same name. The original description states that proceeds support Ukrainian frontline troops.",
+      "curatorialNote": "At the centre of the Ukraine group, it keeps military support, the artist's protest and the museum's holding distinct. Holding the work does not establish FAB DAO's acquisition decision or the path of any donation.",
+      "wallNote": "See how the image expresses protest, then read about its collaborators and intended support.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Ukraine: Displacement, Protest and Support",
+      "mediumLabel": "Digital protest image",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "Shepard Fairey made the image for Pussy Riot's installation of the same name. The original description states that proceeds support Ukrainian frontline troops.",
+        "exhibitionReason": "At the centre of the Ukraine group, it keeps military support, the artist's protest and the museum's holding distinct. Holding the work does not establish FAB DAO's acquisition decision or the path of any donation.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1XE84DKaJqhZ1EvJJCieDUE8GEpSge92Lp/1",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25625": {
+      "title": "Stirrings and Gatherings",
+      "viewingNote": "See which entrances this room brings together, then follow the original work's links to explore the creations of 心動家族. Collectors' names meet a community's output here, but you can begin with a single work or one person's expression.",
+      "makingNote": "This interactive NFT gathers 心動家族's Web3 output since August 2023. The original description includes an online museum and a plan for holder benefits.",
+      "curatorialNote": "Placed beside DECENTRALIZED's individual portrait and followed by the birthday party ticket, it asks how different groups leave readable forms of participation.",
+      "wallNote": "See which entrances the room gathers, then follow the original work's links.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Forms That Record Participation",
+      "mediumLabel": "Interactive web work",
+      "suggestedDuration": "2–3 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "This interactive NFT gathers 心動家族's Web3 output since August 2023. The original description includes an online museum and a plan for holder benefits.",
+        "exhibitionReason": "Placed beside DECENTRALIZED's individual portrait and followed by the birthday party ticket, it asks how different groups leave readable forms of participation.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/25625",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT19FqQ3V6gtkxNnFBhgXRqmMZ2zhiQz7zWa_86": {
+      "viewingNote": "Watch the bundles of lines move on their own, then open the original and drag to draw a path. Compare the curves before and after your intervention. How do geometric rules reorganise your gesture into motion that is not entirely under your control?",
+      "makingNote": "The artist combines a directrix with a focus moving along a gestural path, generating images from a parabolic model. Press H in the original work for controls.",
+      "curatorialNote": "Alongside Ir/rational Beauty, it makes bodily gesture and proportional rules two conditions of composition that you can observe for yourself.",
+      "wallNote": "Watch the lines move, then open the original and drag to draw a path.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Gesture, Proportion and Time",
+      "mediumLabel": "Interactive generative image",
+      "suggestedDuration": "2–3 minutes; drag to draw",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist combines a directrix with a focus moving along a gestural path, generating images from a parabolic model. Press H in the original work for controls.",
+        "exhibitionReason": "Alongside Ir/rational Beauty, it makes bodily gesture and proportional rules two conditions of composition that you can observe for yourself.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT19FqQ3V6gtkxNnFBhgXRqmMZ2zhiQz7zWa/86",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_14581": {
+      "title": "FAB DAO First Anniversary Party Ticket",
+      "viewingNote": "Look at the ticket as a three-dimensional object, then read when and where it once invited people to gather. The event has passed; its admission function leaves a trace of a meeting. Holding this keepsake and having attended remain different things.",
+      "makingNote": "A commemorative ticket NFT for the birthday party on 5 August 2023. The original metadata records the event's time, venue and admission function.",
+      "curatorialNote": "Pair it with the nearby Laughing Mouse Coin: the ticket carries an invitation, while the coin expresses thanks after participation, showing two moments of the same event.",
+      "wallNote": "Look at the ticket's three-dimensional form, then read its past time and venue.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Forms That Record Participation",
+      "mediumLabel": "3D event ticket (GLB)",
+      "suggestedDuration": "1 minute",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "A commemorative ticket NFT for the birthday party on 5 August 2023. The original metadata records the event's time, venue and admission function.",
+        "exhibitionReason": "Pair it with the nearby Laughing Mouse Coin: the ticket carries an invitation, while the coin expresses thanks after participation, showing two moments of the same event.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/14581",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_794532": {
+      "viewingNote": "Take in the density of the buildings, then choose a line and follow it through the city on paper. This is the artist's personal interpretation of Kowloon Walled City. Its vivid detail still differs from a historical record whose every element can be verified.",
+      "makingNote": "The original description records a drawing made with fineliner and marker on paper. The NFT preserves its digital image.",
+      "curatorialNote": "Compare it with Lock-in Vending Machine 095: one reimagines a city, while the other identifies a local filming position, letting representation and documentation question each other.",
+      "wallNote": "Take in the density, then follow one line through the city on paper.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Depicting and Recording Place",
+      "mediumLabel": "Digital image of a drawing on paper",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The original description records a drawing made with fineliner and marker on paper. The NFT preserves its digital image.",
+        "exhibitionReason": "Compare it with Lock-in Vending Machine 095: one reimagines a city, while the other identifies a local filming position, letting representation and documentation question each other.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/794532",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW_31276": {
+      "viewingNote": "Take in the sunflowers as a whole, then slowly distinguish their details. The word 'still' connects to the artist's response to an ongoing war. The image's beauty may invite you to stay, and to reread how the work was distributed.",
+      "makingNote": "zancan generates the image with JavaScript. The original description records gifts of editions to Ukrainian artists and collectors, leaving recipients free to sell, keep or give them away.",
+      "curatorialNote": "As the last work in the Ukraine group, it offers a different form of support from the preceding two. The next work addresses an earthquake; keep the affected places and times distinct.",
+      "wallNote": "Take in the sunflowers as a whole, then slowly distinguish their details.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Ukraine: Displacement, Protest and Support",
+      "mediumLabel": "JPEG output of a generative image",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "zancan generates the image with JavaScript. The original description records gifts of editions to Ukrainian artists and collectors, leaving recipients free to sell, keep or give them away.",
+        "exhibitionReason": "As the last work in the Ukraine group, it offers a different form of support from the preceding two. The next work addresses an earthquake; keep the affected places and times distinct.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW/31276",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_14583": {
+      "title": "FAB DAO First Anniversary Laughing Mouse Coin",
+      "viewingNote": "Look from the front and the side to see how a commemorative coin turns a brief gathering into a form that can be kept. The artist calls it a souvenir of participation in the birthday party. How might a small object continue to recall relationships after an event ends?",
+      "makingNote": "The original description identifies the GLB three-dimensional gold coin as a POAP for FAB DAO's first anniversary party, thanking participants.",
+      "curatorialNote": "Paired with the ticket, it brings a pre-event invitation together with a post-event keepsake, before turning to how exchange can sustain connections between artists and collectors.",
+      "wallNote": "Look from the front and side at how a coin preserves the shape of a brief gathering.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Forms That Record Participation",
+      "mediumLabel": "3D participation keepsake (GLB)",
+      "suggestedDuration": "1 minute",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The original description identifies the GLB three-dimensional gold coin as a POAP for FAB DAO's first anniversary party, thanking participants.",
+        "exhibitionReason": "Paired with the ticket, it brings a pre-event invitation together with a post-event keepsake, before turning to how exchange can sustain connections between artists and collectors.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/14583",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1208115": {
+      "viewingNote": "Compare the proportions of the large rectangle and its smaller divisions, then follow recurring blocks of colour. In the original, wait or recompose the image to see how the same proportions change its rhythm. Notice whether your own preferences change too.",
+      "makingNote": "The artist uses proportions to control rectangular divisions, canvas dimensions and colours, responding to Herbert W. Franke's questions about aesthetic ratios. The original recomposes roughly once a minute.",
+      "curatorialNote": "Like METAFRANKE, it pays tribute to Franke. Here the emphasis is on comparing combinations; the next work lets time accumulate frame by frame.",
+      "wallNote": "Compare the rectangles' proportions, then follow recurring blocks of colour.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Gesture, Proportion and Time",
+      "mediumLabel": "Recomposable generative image",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist uses proportions to control rectangular divisions, canvas dimensions and colours, responding to Herbert W. Franke's questions about aesthetic ratios. The original recomposes roughly once a minute.",
+        "exhibitionReason": "Like METAFRANKE, it pays tribute to Franke. Here the emphasis is on comparing combinations; the next work lets time accumulate frame by frame.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1208115",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_633830": {
+      "viewingNote": "See where the claw machine sits in its surroundings, then notice how an everyday commercial object changes your image of the coast. The artist marks a filming location beside a Changhua coastal defence post, reminding us that place also inhabits corners rarely treated as scenery.",
+      "makingNote": "This video belongs to the artist's project documenting claw machines in Taiwan. Its metadata records the filming location on the Changhua coast and an edition number.",
+      "curatorialNote": "Move from Kowloon 1's imagined city into everyday documentation, then toward Nusantara Archive, extending attention to place through interviews, publishing and research.",
+      "wallNote": "Locate the claw machine in its surroundings and reconsider your image of the coast.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Depicting and Recording Place",
+      "mediumLabel": "Documentary video",
+      "suggestedDuration": "1–2 minutes",
+      "curatorialBasis": "The work belongs to a project documenting claw machines in Taiwan. Its metadata identifies a location beside a Changhua coastal defence post.",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "This video belongs to the artist's project documenting claw machines in Taiwan. Its metadata records the filming location on the Changhua coast and an edition number.",
+        "exhibitionReason": "Move from Kowloon 1's imagined city into everyday documentation, then toward Nusantara Archive, extending attention to place through interviews, publishing and research.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/633830",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "ethereum_0x15abc6361bc161073324634ef2a1e3b4b9508bbc_19": {
+      "viewingNote": "Watch a complete one-minute loop, then imagine mountains as slow waves. After finishing the work, the artist experienced an earthquake in his homeland and then wrote a relief-donation statement. The work's formation and the later response happened at different times.",
+      "makingNote": "Memo Akten uses several AI techniques to make a one-minute looping video. The original description responds to the earthquakes in Turkey and Syria on 6 February 2023.",
+      "curatorialNote": "A separate section retains the earthquake relief context instead of merging it with the war in Ukraine. The next section turns to repetition and deletion in Taiwan's historical images.",
+      "wallNote": "Watch a complete one-minute loop, then imagine mountains as slow waves.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "The 2023 Earthquakes in Turkey and Syria",
+      "mediumLabel": "AI-made looping video",
+      "suggestedDuration": "1 minute; watch a complete loop",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "Memo Akten uses several AI techniques to make a one-minute looping video. The original description responds to the earthquakes in Turkey and Syria on 6 February 2023.",
+        "exhibitionReason": "A separate section retains the earthquake relief context instead of merging it with the war in Ukraine. The next section turns to repetition and deletion in Taiwan's historical images.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://opensea.io/assets/ethereum/0x15abc6361bc161073324634ef2a1e3b4b9508bbc/19",
+          "https://eth.blockscout.com/api/v2/addresses/0x992f0201ff7ee158a8baf638549d0ad1cbcc27ef/nft?type=ERC-721%2CERC-1155%2CERC-404"
+        ]
+      }
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1223226": {
+      "viewingNote": "Remember the arrangement in a small patch of colour, stay a while, then compare the same spot. Change may be slower than expected. The image is allowed to keep growing; the brief wall preview captures only one moment.",
+      "makingNote": "REAS pays tribute to Franke's MONDRIAN software. The program adds one pixel per frame, in what the artist calls a continuously changing animation.",
+      "curatorialNote": "It continues the computer-art history behind Ir/rational Beauty, then invites comparison between accumulating colour blocks and the density of patterns in Exotic Quarpets.",
+      "wallNote": "Remember a small patch of colour, then return to the same spot after a while.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Gesture, Proportion and Time",
+      "mediumLabel": "Continuously generative animation",
+      "suggestedDuration": "At least 1 minute; return later to compare",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "REAS pays tribute to Franke's MONDRIAN software. The program adds one pixel per frame, in what the artist calls a continuously changing animation.",
+        "exhibitionReason": "It continues the computer-art history behind Ir/rational Beauty, then invites comparison between accumulating colour blocks and the density of patterns in Exotic Quarpets.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1223226",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_851264": {
+      "viewingNote": "Watch pencil marks move in the animation, then read the artist's thanks for a secondary-market sale. Does the artist's relationship with a work end when it leaves its first buyer? This expression of gratitude offers another way to look at exchange.",
+      "makingNote": "The artist makes an animation with pencil drawings and Blender, responding to the pleasure of seeing a work sold again on the secondary market.",
+      "curatorialNote": "Placed with I have an NFT and am willing to share the proceeds, it moves from an artist's gratitude toward an invitation to collaborate, then back to the entrance question of circulation.",
+      "wallNote": "Watch pencil marks move, then read the artist's thanks for a secondary-market sale.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Questions of Exchange and Sharing",
+      "mediumLabel": "Pencil-drawing animation / digital video",
+      "suggestedDuration": "1 minute",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist makes an animation with pencil drawings and Blender, responding to the pleasure of seeing a work sold again on the secondary market.",
+        "exhibitionReason": "Placed with I have an NFT and am willing to share the proceeds, it moves from an artist's gratitude toward an invitation to collaborate, then back to the entrance question of circulation.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton/851264",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_121": {
+      "title": "Everyone Has a Deleted Passage Within — President Chiang Kai-shek Memorial Slice 03",
+      "viewingNote": "Notice what has been cut out, retained or repeated, then read how the title points toward Taiwan's language of political commemoration. Does replaying an image make a moment easier to accept as truth? Also note that the object held here is a static fragment.",
+      "makingNote": "The artist's original description discusses automatic loops, repeated slices of time and eternal truth. This token's original medium is JPEG; it is not presented as the complete moving-image installation.",
+      "curatorialNote": "The exhibition gives this fragment of Taiwan's historical images its own section, then compares image fragments with the unmaking of words in THE WORD AFTER US, without assigning both works the same political position.",
+      "wallNote": "Notice what is cut out, retained or repeated, then read the title's commemorative language.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Fragments of Taiwan's Historical Images",
+      "mediumLabel": "Static fragment of a series (JPEG)",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist's original description discusses automatic loops, repeated slices of time and eternal truth. This token's original medium is JPEG; it is not presented as the complete moving-image installation.",
+        "exhibitionReason": "The exhibition gives this fragment of Taiwan's historical images its own section, then compares image fragments with the unmaking of words in THE WORD AFTER US, without assigning both works the same political position.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj/121",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_2": {
+      "title": "Nusantara Archive 01: Wu Chi-Yu",
+      "viewingNote": "Choose an entry from the contents: video documentation, an interview with an independent bookshop, or notes on voices and geography. Treat this as a publication to leaf through. The cover is only an entrance; place names, translation and misunderstanding inside deserve time too.",
+      "makingNote": "The PDF contains video documentation of Kota Bharu, an interview with the KITARTB bookshop and geographical notes. Its contents list Chinese and English texts side by side.",
+      "curatorialNote": "Together with volume 10, it forms the reading core, moving from exchanges around images and bookshops toward food, movement and memory. Publishing lets relationships between places unfold slowly.",
+      "wallNote": "Choose an entry from the contents: video, a bookshop interview, or notes on geography.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Nusantara Reading Table",
+      "mediumLabel": "PDF publication",
+      "suggestedDuration": "Start with 3–5 minutes; open the PDF separately",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The PDF contains video documentation of Kota Bharu, an interview with the KITARTB bookshop and geographical notes. Its contents list Chinese and English texts side by side.",
+        "exhibitionReason": "Together with volume 10, it forms the reading core, moving from exchanges around images and bookshops toward food, movement and memory. Publishing lets relationships between places unfold slowly.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY/2",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1598727": {
+      "viewingNote": "See the carpet-like arrangement from a distance, then enlarge one square and inspect its edges and seams. Repetition need not mean identical forms. Look for small variations that give the pattern both rhythm and difference.",
+      "makingNote": "The artist began with a quilting theme in a creative-coding challenge, drawing inspiration from Persian rugs used at home in winter.",
+      "curatorialNote": "The gallery closes with an everyday pattern. Before leaving, look back to the opening canvas and consider how code reworks the familiar visual language of handwork.",
+      "wallNote": "See the carpet-like whole, then enlarge one square and inspect its edges and seams.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Gesture, Proportion and Time",
+      "mediumLabel": "Generative image",
+      "suggestedDuration": "1–2 minutes; zoom in to explore",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The artist began with a quilting theme in a creative-coding challenge, drawing inspiration from Persian rugs used at home in winter.",
+        "exhibitionReason": "The gallery closes with an everyday pattern. Before leaving, look back to the opening canvas and consider how code reworks the familiar visual language of handwork.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1598727",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1LEGtWuZ4xoYcpaSwDHM1GadLNG2DMdmHg_48": {
+      "viewingNote": "Read the title first, then return to the image and notice how a declaration of willingness to share changes your viewing. The artist invites potential collaborators to get in touch. Who shares, how, and with what results still require specific records of collaboration.",
+      "makingNote": "A PNG image. The original description invites contact about collaboration but names no revenue-sharing contract, beneficiary or completed distribution.",
+      "curatorialNote": "Read it with Secondary Market 2 to distinguish gratitude in exchange from a proposal to share. The exhibition does not infer a completed donation from the title.",
+      "wallNote": "Read the title, then see how a declaration of sharing changes your view of the image.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Questions of Exchange and Sharing",
+      "mediumLabel": "Digital image",
+      "suggestedDuration": "1 minute",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "A PNG image. The original description invites contact about collaboration but names no revenue-sharing contract, beneficiary or completed distribution.",
+        "exhibitionReason": "Read it with Secondary Market 2 to distinguish gratitude in exchange from a proposal to share. The exhibition does not infer a completed donation from the title.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1LEGtWuZ4xoYcpaSwDHM1GadLNG2DMdmHg/48",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1036686": {
+      "viewingNote": "Try reading the words, then watch their shapes move toward patterns that are hard to recognise. Press S in the original work to show the source lines of poetry. Move between legibility and illegibility, sensing moments when meaning fades, changes shape or returns.",
+      "makingNote": "Poetry by Sasha Stiles and her AI alter ego is transformed by Nathaniel Stern's algorithm into continuously unravelling visual poetry. Press S to toggle the source lines.",
+      "curatorialNote": "This text experiment serves as an exit, without being treated as a record of political censorship. Looking back to the blank-paper entrance, both ends pose questions of reading while retaining different creative histories.",
+      "wallNote": "Try reading the words, then watch their shapes become hard to recognise.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "The Future and Unmaking of Words",
+      "mediumLabel": "Continuously generative visual poetry",
+      "suggestedDuration": "1–2 minutes",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "Poetry by Sasha Stiles and her AI alter ego is transformed by Nathaniel Stern's algorithm into continuously unravelling visual poetry. Press S to toggle the source lines.",
+        "exhibitionReason": "This text experiment serves as an exit, without being treated as a record of political censorship. Looking back to the blank-paper entrance, both ends pose questions of reading while retaining different creative histories.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi/1036686",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_11": {
+      "title": "Nusantara Archive 10: Chang En-Man – Snail Paradise",
+      "viewingNote": "Begin with a snail recipe or a conversation and notice how food opens questions of memory, class and resistance. When you reach texts in different languages, pause to consider how local experience is translated for another group of readers.",
+      "makingNote": "The PDF's contents include interviews with Singaporean artists ila and Kin Chui, snail recipes and research on 張恩滿's snail series.",
+      "curatorialNote": "With volume 1, it extends the idea of islands from scenery into relationships built through research and publishing. The next gallery asks how collecting might care for those relationships.",
+      "wallNote": "Begin with a snail recipe or a conversation and follow its questions of memory and class.",
+      "editorialLabel": "Museum viewing guide and curatorial interpretation",
+      "selectedGroupLabel": "Nusantara Reading Table",
+      "mediumLabel": "PDF publication",
+      "suggestedDuration": "Start with 3–5 minutes; open the PDF separately",
+      "acquisitionStory": {
+        "status": "acquisition_not_yet_reconciled",
+        "title": "Collection record still to be completed",
+        "artistIntent": "The PDF's contents include interviews with Singaporean artists ila and Kin Chui, snail recipes and research on 張恩滿's snail series.",
+        "exhibitionReason": "With volume 1, it extends the idea of islands from scenery into relationships built through research and publishing. The next gallery asks how collecting might care for those relationships.",
+        "verifiedFacts": [
+          "This work appears in the Art Bank wallet's positive-balance snapshot dated 2026-09-06."
+        ],
+        "openQuestions": [
+          "This work's proposal, selection decision and individual acquisition transaction have not yet been linked. How it was obtained, its date and its price remain unverified."
+        ],
+        "sourceUrls": [
+          "https://objkt.com/tokens/KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY/11",
+          "https://api.tzkt.io/v1/tokens/balances?account=tz1cpZ7eLovJigqcUsfbjmquuezjToZLtGUZ&balance.gt=0&limit=1000"
+        ]
+      }
+    },
+    "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_4210": {
+      "curatorialBasis": "The artist records mixed techniques and a generator, but there is not yet an island or ancestral-belief context to support inclusion in the opening selection. It remains in the collection; the title is not used to infer a cultural origin."
+    },
+    "tezos_KT1S2vddoHzEfcSTaSNnxgt5wx5WWwHeF8GG_2": {
+      "curatorialBasis": "The artist describes a generative process interweaving GAN, DALL.E, physical collage and repainting in Procreate."
+    },
+    "tezos_KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW_15503": {
+      "curatorialBasis": "The token description explicitly states that all proceeds support Ukraine."
+    },
+    "tezos_KT1JhHWDfHRrwF5pNfWz1dbbjcKH6e3k4k7M_44": {
+      "curatorialBasis": "The artist focuses on debugging and the criteria for completing generative art. Shibuya is the exhibition location."
+    },
+    "tezos_KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW_15380": {
+      "curatorialBasis": "The token description points to a donation contract and a list of nonprofit organisations supporting Ukraine."
+    },
+    "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1331033": {
+      "curatorialBasis": "An fxhash anniversary work. The metadata explicitly allocates primary-sale revenue to Tezos4Iran, Women Who Code, Pakistan flood relief and the Processing Foundation."
+    },
+    "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25308": {
+      "curatorialBasis": "The token description explicitly identifies it as a candidate in the FAB Museum architecture competition, preserving a memory of the organisation's museum-building efforts."
+    },
+    "tezos_KT1GjPdfEFv44dFbGyTSysV9Qhj9FQ1Zi2zo_18": {
+      "curatorialBasis": "Inspired by The Last Emperor, the work describes freedom, the sweep of history and wanderers."
+    },
+    "tezos_KT1V6cisywX6bDJiYRxCPqwjDMw1f23cn1JJ_16": {
+      "curatorialBasis": "The artist makes collectors' on-chain acts of collecting, burning, selling and transferring part of the work."
+    },
+    "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_850483": {
+      "curatorialBasis": "The work's description records the town, valleys, glaciers and waterfalls of Olden, Norway."
+    },
+    "ethereum_0x909666d671fef2f593ef8c70cbd43abf60e75c24_53": {
+      "title": "Equinox #54"
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_3": {
+      "title": "Nusantara Archive 02: Zikri Rahman"
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_4": {
+      "title": "Nusantara Archive 03: Au Sow Yee"
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_5": {
+      "title": "Nusantara Archive 04: Hoo Fan Chon"
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_6": {
+      "title": "Nusantara Archive 05: KUNCI Cultural Studies Center"
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_7": {
+      "title": "Nusantara Archive 06: Show Ying Xin"
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_8": {
+      "title": "Nusantara Archive 07: The Broadcaster(s)"
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_9": {
+      "title": "Nusantara Archive 08: Paririmbon Investasi"
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_10": {
+      "title": "Nusantara Archive 09: A Box Photographer"
+    },
+    "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_13": {
+      "title": "Nusantara Archive 12: (In)compatible"
+    }
+  },
+  "exhibitions": {
+    "generative": {
+      "title": "Between Rules and Chance",
+      "subtitle": "When rules become a brush, chance leaves a shape",
+      "description": "Rules, gestures and time together shape the experience of generative art. Begin by finding repetition and difference in the image, then try intervening in the original. Some works leave a result; others continue to change while you stay.",
+      "introduction": "What happens between code and image? This gallery brings together surfaces left by algorithms, lines shaped by gestures, and continuously computed image and sound. Each work has its own rules, materials and sense of time. Look from a distance, zoom in, wait and interact to find its rhythm. Project % and Ars Electronica documents provide context for FAB DAO's involvement in generative art; they do not mean that every work here belongs to the Hundred Peaks Project.",
+      "question": "When an artist designs rules, are we looking at a result or at a process?",
+      "transition": "The next gallery moves from forms built through code toward place. Mountains and islands can be invented terrain, lived memories, or entrances into research and publishing.",
+      "editorialLabel": "Museum curatorial interpretation",
+      "groups": [
+        {
+          "id": "generative-rules",
+          "title": "Surfaces Shaped by Rules",
+          "description": "Surfaces Shaped by Rules: look at the works first, then read the museum's guide and the artists' original descriptions.",
+          "artworkIds": [
+            "ethereum_0x00000007cc35dcab4a396249aefa295a8b6e16ba_1000128",
+            "ethereum_0x70270e65bc37832ef845fa330c2b71501970dab9_81",
+            "ethereum_0x99a9b7c1116f9ceeb1652de04d5969cce509b069_434000268",
+            "ethereum_0x80416304142fa37929f8a4eee83ee7d2dac12d7c_8623"
+          ]
+        },
+        {
+          "id": "generative-gesture",
+          "title": "Gesture, Proportion and Time",
+          "description": "Gesture, Proportion and Time: look at the works first, then read the museum's guide and the artists' original descriptions.",
+          "artworkIds": [
+            "tezos_KT19FqQ3V6gtkxNnFBhgXRqmMZ2zhiQz7zWa_86",
+            "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1208115",
+            "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1223226",
+            "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1598727"
+          ]
+        }
+      ]
+    },
+    "islands": {
+      "title": "Mountains Becoming Islands",
+      "subtitle": "From the outline of a mountain, see islands connected to one another",
+      "description": "How is a place seen, named and recorded? Move from generative images of mountains and seas to depictions of cities and records of everyday life. Finally, stay at the Nusantara Archive reading table, where landscape opens into relationships between people.",
+      "introduction": "This gallery treats the island as a question to read slowly. pulau gen builds terrain that does not exist; The Moonlit Sea of Taitung responds to a lived moment of looking; a video of a claw machine in Changhua records an everyday setting. Nusantara Archive is the reading core, exploring exchanges across places through images, interviews, food and translation. These works are not all part of the Hundred Peaks Project. Its public narrative and historical proposals are presented separately as documents showing how connections were once made.",
+      "question": "If a place is more than a landscape, what other voices, routes and everyday experiences deserve preservation?",
+      "transition": "Reading connects places with different people's experiences. The next gallery continues the question: when we collect a work, do we also need to care for the relationships it brings?",
+      "editorialLabel": "Museum curatorial interpretation",
+      "groups": [
+        {
+          "id": "islands-landscape",
+          "title": "Terrain and Ways of Seeing",
+          "description": "Terrain and Ways of Seeing: look at the works first, then read the museum's guide and the artists' original descriptions.",
+          "artworkIds": [
+            "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1598728",
+            "tezos_KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr_65544",
+            "tezos_KT1JhHWDfHRrwF5pNfWz1dbbjcKH6e3k4k7M_46",
+            "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1321661"
+          ]
+        },
+        {
+          "id": "islands-place",
+          "title": "Depicting and Recording Place",
+          "description": "Depicting and Recording Place: look at the works first, then read the museum's guide and the artists' original descriptions.",
+          "artworkIds": [
+            "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_794532",
+            "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_633830"
+          ]
+        },
+        {
+          "id": "islands-reading",
+          "title": "Nusantara Reading Table",
+          "description": "Two PDFs form the core of the reading table; open their contents and original publications separately.",
+          "artworkIds": [
+            "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_2",
+            "tezos_KT1GGey8jSruhcNE5h5s9wt6waZnQoCJ2nXY_11"
+          ]
+        }
+      ]
+    },
+    "commons": {
+      "title": "Collecting as a Common Act",
+      "subtitle": "A work can also be the beginning of a relationship",
+      "description": "How should a museum collect a work that wants to keep circulating? This gallery begins with a work that encourages changing hands, then moves through gathering, participation, exchange and sharing, read alongside the Art Bank's proposals and institutional documents.",
+      "introduction": "Collecting may preserve a form, but it may also change what a work set out to do. a collection of collectors encourages editions to keep changing hands, while Your First Green Sofa invites people into discussion. Tickets, commemorative coins and community works leave different forms of participation. Art Bank documents connect these questions with the work of proposing, discussing and selecting. Artists, proposers, holders and museum visitors occupy different positions; the exhibition does not merge them into a 'we' that has already reached consensus.",
+      "question": "How should a museum collect a work that wants to keep circulating?",
+      "transition": "The next gallery turns to artistic responses to specific events. Supporting freedom, opposing war, participating in relief and preserving history each require their own context.",
+      "editorialLabel": "Museum curatorial interpretation",
+      "groups": [
+        {
+          "id": "commons-circulation",
+          "title": "Collecting and Circulation",
+          "description": "Collecting and Circulation: look at the works first, then read the museum's guide and the artists' original descriptions.",
+          "artworkIds": [
+            "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_364159",
+            "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25336"
+          ]
+        },
+        {
+          "id": "commons-participation",
+          "title": "Forms That Record Participation",
+          "description": "Forms That Record Participation: look at the works first, then read the museum's guide and the artists' original descriptions.",
+          "artworkIds": [
+            "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_530733",
+            "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_25625",
+            "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_14581",
+            "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_14583"
+          ]
+        },
+        {
+          "id": "commons-exchange",
+          "title": "Questions of Exchange and Sharing",
+          "description": "Questions of Exchange and Sharing: look at the works first, then read the museum's guide and the artists' original descriptions.",
+          "artworkIds": [
+            "tezos_KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton_851264",
+            "tezos_KT1LEGtWuZ4xoYcpaSwDHM1GadLNG2DMdmHg_48"
+          ]
+        }
+      ]
+    },
+    "memory": {
+      "title": "Silence, Memory, Persistence",
+      "subtitle": "When voices are hard to preserve, how can collecting respond?",
+      "description": "A blank sheet of paper can be an entrance, but a shared quiet atmosphere cannot by itself connect different events. This gallery reads the White Paper Movement, the war in Ukraine, earthquake responses, Taiwan's historical images and experiments with words in their own contexts.",
+      "introduction": "The two entrance works respond to the 2022 White Paper Movement. They are followed by a Ukrainian artist's account of displacement, protest imagery and acts of support. The earthquake video retains the time and place of Turkey and Syria in 2023 before the gallery turns to a fragment of Taiwan's historical images and closes with an experiment in the unmaking of words. This juxtaposition compares how art responds, records or changes meaning; it does not assume a shared trauma or political position. Changes of wall display allow a pause, and each section retains its own sources.",
+      "question": "When a work leaves a voice, a blank or a fragment, what context must we supply so that memory can continue to be understood?",
+      "transition": "Return to the museum timeline in the lobby. From early art support, the Hundred Peaks Project and the Art Bank to the 2024 FAB Museum competition, consider how the next exhibition space might care for works.",
+      "editorialLabel": "Museum curatorial interpretation",
+      "groups": [
+        {
+          "id": "memory-whitepaper",
+          "title": "Responses to the 2022 White Paper Movement",
+          "description": "The two entrance works face each other; begin with the White Paper Fund document.",
+          "artworkIds": [
+            "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1369187",
+            "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1370072"
+          ]
+        },
+        {
+          "id": "memory-ukraine",
+          "title": "Ukraine: Displacement, Protest and Support",
+          "description": "Three different responses: forced displacement, public protest, and giving recipients control over how to use an artwork.",
+          "artworkIds": [
+            "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1585350",
+            "tezos_KT1XE84DKaJqhZ1EvJJCieDUE8GEpSge92Lp_1",
+            "tezos_KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW_31276"
+          ]
+        },
+        {
+          "id": "memory-earthquake",
+          "title": "The 2023 Earthquakes in Turkey and Syria",
+          "description": "A one-minute loop; completion of the work and the relief statement occurred at different times.",
+          "artworkIds": [
+            "ethereum_0x15abc6361bc161073324634ef2a1e3b4b9508bbc_19"
+          ]
+        },
+        {
+          "id": "memory-taiwan",
+          "title": "Fragments of Taiwan's Historical Images",
+          "description": "A separate presentation of a fragment of Taiwan's historical images, not the complete moving-image work.",
+          "artworkIds": [
+            "tezos_KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj_121"
+          ]
+        },
+        {
+          "id": "memory-language",
+          "title": "The Future and Unmaking of Words",
+          "description": "Close with the reading questions of visual poetry; do not equate a text experiment with documentation of political censorship.",
+          "artworkIds": [
+            "tezos_KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi_1036686"
+          ]
+        }
+      ]
+    }
+  },
+  "documents": {
+    "project-percentage": {
+      "title": "Project %: The Hundred Peaks Project",
+      "summary": "A FAB DAO issuance project connecting generative art, mountain imagery and fundraising for public benefit. The 10,101 editions listed on the official website are the original planned total across three series, not a count of minted tokens or the museum's holdings.",
+      "credit": "Project % artists, design and collaboration teams; see the original project page for the full credits.",
+      "displayLabel": "Project documentation",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    },
+    "ars-2022-project-percentage": {
+      "title": "Project Percentage | Ars Electronica 2022",
+      "summary": "Ars Electronica's STUDIO(dys)TOPIA exhibition documentation introduces how Project Percentage combines generative art, Taiwan's mountains and shared funds, providing public exhibition context for the Hundred Peaks Project.",
+      "credit": "Ars Electronica; participating artists and collaboration teams of Project Percentage.",
+      "displayLabel": "Exhibition documentation",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    },
+    "supporter": {
+      "title": "supporter.tez | Seed Art Fund",
+      "summary": "Flower NFTs gathered seed resources for artists beginning to use Tezos, alongside guidance and support in bringing work on-chain. Here, small purchases become a way to help creators get started.",
+      "credit": "豆泥 (Mashbean) / FAB DAO; the project was also supported by donations from artists and the community.",
+      "displayLabel": "Project documentation",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    },
+    "fip-1": {
+      "title": "FIP-1 | The Art Bank's Governance Origins",
+      "summary": "An early governance document connects the Art Bank's collecting with FAB DAO's shared identity, providing institutional background for the purposes of collecting and the use of public funds.",
+      "credit": "FAB DAO community collaboration.",
+      "displayLabel": "Historical governance document",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    },
+    "fip-2": {
+      "title": "FIP-2 | Deciding Together What to Collect",
+      "summary": "Section 6.2 of the public version records the Art Bank's independent collection wallet, fabcollect.tez, and describes proposals, urgent proposals, selection, acquisition and curation. It is a source for institutional structure and the wallet's role; actual holdings require separate on-chain verification.",
+      "credit": "FAB DAO community collaboration.",
+      "displayLabel": "Historical governance document",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    },
+    "art-bank-protocol": {
+      "title": "Art Bank Operating Protocol",
+      "summary": "The first edition connects nomination, discussion, voting, acquisition and quarterly curation in a process, and requires an explanation of each nominated work's significance. It reveals the everyday work of collecting together.",
+      "credit": "Written by 張寶成 / FAB DAO Art Bank, first edition.",
+      "displayLabel": "Historical governance document",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    },
+    "art-bank-origins": {
+      "title": "What Does the Art Bank Do?",
+      "summary": "Early public collaborative notes discuss collecting in relation to exchanges with artists, research and shared identity. The document preserves different participants' views and can be read alongside the completed institutional rules.",
+      "credit": "Collectively recorded by participants in the FAB DAO Art Bank meeting.",
+      "displayLabel": "Public meeting notes",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    },
+    "aquaponics-kana-proposal": {
+      "title": "水耕香菜's Collection Proposal",
+      "summary": "水耕香菜's public proposal mentions the pulau gen series for its mountain forms, animal conservation themes and exchanges with artists. This series-level proposal and the museum's holding of #399 are separate pieces of evidence; the selection decision and individual acquisition of this edition remain unverified.",
+      "credit": "水耕香菜; rights in the referenced works remain with their original creators.",
+      "displayLabel": "Collection proposal",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    },
+    "white-paper-fund": {
+      "title": "White Paper Fund",
+      "summary": "After the White Paper Movement, 王新仁, 林經堯 and 林逸文 responded to freedom through their works and directed royalties toward FAB DAO's collection fund. The official website preserves the works and the fund's origins; the museum separately checks the actual holding of each NFT.",
+      "credit": "FAB DAO; contributing artists include 王新仁, 林經堯 and 林逸文. Individual credits follow the original work pages.",
+      "displayLabel": "Project documentation",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    },
+    "fab-museum-2024": {
+      "title": "FAB Museum | Metaverse Architecture Competition",
+      "summary": "In 2024, FAB Museum publicly invited architectural ideas for a virtual museum targeting Protoworld. This museum preserves that history of building together. The current website is a separate design and does not claim to use any unverified competition-winning plan.",
+      "credit": "FAB DAO / Protoworld; individual designers are credited on the original competition submissions.",
+      "displayLabel": "Museum history document",
+      "contextLabel": "Documentary context; not proof of ownership of this NFT."
+    }
+  },
+  "institution": {
+    "title": "From Supporting Art to Building a Space Together",
+    "introduction": "FAB DAO's collecting and exhibiting have grown through experiments by artists, community participants and different working groups. This museum begins with verifiable holdings in two Art Bank wallets and selects thirty-two works to read alongside project, proposal and governance documents.",
+    "authorship": "Works are credited according to the artists' original texts and verifiable sources. The viewing guides originally written in Chinese, the selection and the relationships between works are the museum's editorial interpretations. Artists, proposers, those carrying out acquisitions and visitors occupy different positions; this exhibition's texts do not stand in for historical decisions or the position of the entire community.",
+    "collectionScope": "The museum's collection data comes from positive-balance snapshots of the Ethereum and Tezos Art Bank wallets dated 2026-09-06. Issuance projects such as Project % are listed separately as project documents. Other funds, treasuries and works transferred out in the past have not yet been comprehensively inventoried.",
+    "question": "Beyond preserving the shape of works, how can a museum preserve participation, discussion and the possibility of continued change?",
+    "timeline": [
+      {
+        "date": "2022-02",
+        "title": "Flowers and the Seed Art Fund",
+        "description": "supporter.tez used flower NFTs to gather resources for artists beginning to use Tezos, alongside teaching and support.",
+        "documentIds": [
+          "supporter"
+        ],
+        "sourceUrls": [
+          "https://fabdao.world/projects/supporter/"
+        ]
+      },
+      {
+        "date": "2022",
+        "title": "Project %: The Hundred Peaks Project",
+        "description": "An issuance project linking generative art, Taiwan's mountains and public funds, with an exhibition context at Ars Electronica. The issued series and the Art Bank's holdings are presented separately.",
+        "documentIds": [
+          "project-percentage",
+          "ars-2022-project-percentage"
+        ],
+        "sourceUrls": [
+          "https://fabdao.world/project-percentage/",
+          "https://ars.electronica.art/planetb/en/studiotopia/"
+        ]
+      },
+      {
+        "date": "2022-12",
+        "title": "The White Paper Fund's Artistic Response",
+        "description": "Artists voiced support for freedom through their works. The official website records the origins of royalty support for a collection fund. The museum preserves the context of the event and distinguishes evidence of holding from evidence of acquisition for each work.",
+        "documentIds": [
+          "white-paper-fund"
+        ],
+        "sourceUrls": [
+          "https://fabdao.world/projects/whitepaper/"
+        ]
+      },
+      {
+        "date": "2023-02—03",
+        "title": "The Art Bank: Research, Proposals and Shared Decisions",
+        "description": "Public collaborative notes discuss exchanges with artists, directions for collecting and shared identity. The first protocol in March sets out a process of nomination, selection, acquisition and quarterly curation.",
+        "documentIds": [
+          "art-bank-origins",
+          "art-bank-protocol"
+        ],
+        "sourceUrls": [
+          "https://hackmd.io/@FABDAO/rJt8YQipi",
+          "https://hackmd.io/@FABDAO/Sy8SGSHx3"
+        ]
+      },
+      {
+        "date": "2024-04",
+        "title": "The FAB Museum Architecture Competition",
+        "description": "Targeting Protoworld, the competition invited participants from different backgrounds to propose virtual museum ideas and explore three-dimensional presentation and visitor routes.",
+        "documentIds": [
+          "fab-museum-2024"
+        ],
+        "sourceUrls": [
+          "https://fabdao.world/projects/fab-museum/"
+        ]
+      },
+      {
+        "date": "2026-09",
+        "title": "This Museum: Reading Works Alongside Documents",
+        "description": "The current website assembles holdings from two Art Bank wallets and continues the question of exhibition space through four galleries. Its architecture was designed for this version and is documented separately from the 2024 competition proposals.",
+        "documentIds": [],
+        "sourceUrls": [
+          "https://fabdao-museum.mashbean.net/"
+        ]
+      }
+    ],
+    "sourceUrls": [
+      "https://fabdao.world/projects/supporter/",
+      "https://fabdao.world/project-percentage/",
+      "https://fabdao.world/projects/whitepaper/",
+      "https://hackmd.io/@FABDAO/rJt8YQipi",
+      "https://hackmd.io/@FABDAO/Sy8SGSHx3",
+      "https://fabdao.world/projects/fab-museum/"
+    ],
+    "editorialLabel": "Compiled by the museum from public documents."
+  }
+}

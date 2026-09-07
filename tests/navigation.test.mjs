@@ -194,6 +194,23 @@ function testMuseum() {
 }
 const sampleArtwork = id => ({ id, title: id, artist: 'Test Artist', theme: 'generative', image: `/${id}.jpg` });
 
+test('language switching restores a valid view and rejects invalid saved positions', () => {
+  const museum = testMuseum();
+  const saved = { position: { x: 2.7, y: 100, z: 7.7 - 22 }, yaw: 1.2, pitch: -.3 };
+  assert.equal(museum.restoreView(saved), true);
+  assert.equal(museum.room, 1);
+  assert.equal(museum.camera.position.y, EYE_HEIGHT);
+  closeTo(museum.camera.position.x, saved.position.x);
+  closeTo(museum.camera.position.z, saved.position.z);
+  closeTo(museum.yaw, saved.yaw);
+  closeTo(museum.pitch, saved.pitch);
+  for (const invalid of [null, { ...saved, yaw: NaN }, { ...saved, position: { x: 999, z: 999 } }]) {
+    assert.equal(museum.restoreView(invalid), false);
+    assert.equal(museum.room, 1);
+    closeTo(museum.yaw, saved.yaw);
+  }
+});
+
 test('an image failure retains the entire previous gallery and frees successful partial loads', async () => {
   const museum = testMuseum();
   await museum.displayRoom(0, [sampleArtwork('existing')], []);
