@@ -50,7 +50,7 @@ npx wrangler deploy --dry-run
 npx wrangler deploy
 ```
 
-No application secrets or API keys are needed. Deployment uses the operator's existing Cloudflare authentication, which is never stored in this repository. The GitHub repository is private; the deployed museum and its public-source data are publicly readable.
+No application secrets or API keys are needed. Deployment uses the operator's existing Cloudflare authentication, which is never stored in this repository. The source repository is public under [FABDAOtw/fabdao-museum](https://github.com/FABDAOtw/fabdao-museum); the deployed museum and its public-source data are publicly readable.
 
 ## Collection and editorial workflow
 
